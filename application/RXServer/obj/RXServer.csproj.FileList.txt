@@ -1,0 +1,6 @@
+obj\Debug\ResolveAssemblyReference.cache
+bin\Debug\RXServer.dll
+bin\Debug\RXServer.pdb
+bin\Debug\iCXmlDbClient.dll
+obj\Debug\RXServer.dll
+obj\Debug\RXServer.pdb

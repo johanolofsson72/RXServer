@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>RXServer</name>
+  </assembly>
+  <members>
+    <member name="T:Cambia.Web.CoreLib.PathHelper">
+      <summary>PathHelper retrieves and converts URLs and physical file paths in ASP.NET applications. Definitions: ------------- Absolute URL: http://www.cambiaresearch.com/c4/Default.aspx Virtual Path: /c4/Default.aspx Physical Path: C:\inetpub\wwwroot\cambia\c4\Default.aspx Application Path: Default.aspx (if a path is not one of the 3 classes above it is assumed to be application relative)</summary>
+    </member>
+    <member name="P:Cambia.Web.CoreLib.PathHelper.AppPath">
+      <summary>The virtual application path: "/myapp/" "/apps/myapp/" "/"</summary>
+    </member>
+    <member name="M:Cambia.Web.CoreLib.PathHelper.GetImmediateFolderName(System.String)">
+      <summary>Returns the last folder name in a path with a trailing slash IE. "c:\myfolder\myspace\afile.txt" will return "myspace" IE. "c:\myfolder\myspace" will return "myfolder" IE. "myfolder/myspace/" will return "myspace" IE. "myfolder/myspace" will return "myfolder" IE. "myspace" will return ""</summary>
+    </member>
+    <member name="M:Cambia.Web.CoreLib.PathHelper.SyncSlashes(System.String)">
+      <summary>Makes sure the slashes are all going the right direction,. Back for physical, forward for URL</summary>
+    </member>
+    <member name="M:RXServer.Authentication.SignIn(System.String,System.String,System.String,System.Int32)">
+      <summary>Only use this for Bayer website.</summary>
+    </member>
+    <member name="M:RXServer.Authentication.SignInAndRedirect(System.String,System.String,System.String,System.Int32,System.String)">
+      <summary>Only use this for Bayer website.</summary>
+    </member>
+    <member name="M:RXServer.Authentication.SignInAndRedirectFromSSL(System.String,System.String,System.String,System.Int32,System.String)">
+      <param name="Email" />
+      <param name="Password" />
+      <param name="Role" />
+      <param name="Group" />
+      <param name="Redirect" />
+    </member>
+    <member name="P:RXServer.Data.Login">
+      <summary>RXServer.Data.Login is replaced with RXServer.Security.LoggedInUserName This property will be removed in next version of RXServer.</summary>
+    </member>
+    <member name="P:RXServer.Data.Password">
+      <summary>RXServer.Data.Password is replaced with RXServer.Security.LoggedInUserPassword This property will be removed in next version of RXServer.</summary>
+    </member>
+    <member name="M:RXServer.Data.SignOut">
+      <summary>RXServer.Data.SignOut() is replaced with RXServer.Security.SignOut() This method will be removed in next version of RXServer.</summary>
+    </member>
+    <member name="M:RXServer.DocumentCollection.Add(RXServer.Document)">
+      <param name="site" />
+    </member>
+    <member name="M:RXServer.DocumentCollection.Contains(System.Int32)">
+      <param name="id" />
+    </member>
+    <member name="M:RXServer.DocumentCollection.Contains(System.String)">
+      <param name="alias" />
+    </member>
+    <member name="M:RXServer.DocumentCollection.GetDocument(System.Int32)">
+      <param name="id" />
+    </member>
+    <member name="M:RXServer.DocumentCollection.GetDocument(System.String)">
+      <param name="alias" />
+    </member>
+    <member name="M:RXServer.DocumentCollection.Remove(RXServer.Document)">
+      <param name="site" />
+    </member>
+    <member name="M:RXServer.DocumentCollection.Remove(System.Int32)">
+      <param name="id" />
+    </member>
+    <member name="M:RXServer.ModuleCollection.Contains(System.Int32)">
+      <param name="id" />
+    </member>
+    <member name="M:RXServer.ModuleCollection.Contains(System.String)">
+      <param name="name" />
+    </member>
+    <member name="M:RXServer.ModuleCollection.GetModule(System.Int32)">
+      <param name="id" />
+    </member>
+    <member name="M:RXServer.ObjectCollection.Contains(System.Int32)">
+      <param name="id" />
+    </member>
+    <member name="M:RXServer.ObjectCollection.Contains(System.String)">
+      <param name="alias" />
+    </member>
+    <member name="M:RXServer.ObjectCollection.GetAllForNFM">
+      <summary>Only use in nfm, will be deleted in future RXServer</summary>
+    </member>
+    <member name="M:RXServer.ObjectCollection.GetObject(System.Int32)">
+      <param name="id" />
+    </member>
+    <member name="M:RXServer.ObjectCollection.GetObject(System.String)">
+      <param name="alias" />
+    </member>
+    <member name="T:RXServer.PageCollection">
+      <summary>PageCollection</summary>
+    </member>
+    <member name="M:RXServer.PageCollection.Contains(System.Int32)">
+      <summary>Contains</summary>
+      <param name="Id" />
+      <returns>true | false</returns>
+    </member>
+    <member name="M:RXServer.PageCollection.Contains(System.String)">
+      <param name="Name" />
+    </member>
+    <member name="M:RXServer.PageCollection.GetPage(System.Int32)">
+      <param name="Id" />
+    </member>
+    <member name="T:RXServer.RXMasterPageVirtual">
+      <summary>Under utveckling</summary>
+    </member>
+    <member name="M:RXServer.Security.Login(System.String,System.String,System.Int32)">
+      <summary>RXServer.Security.Login() is replaced with RXServer.Security.SignIn() This method will be removed in next version of RXServer.</summary>
+    </member>
+    <member name="M:RXServer.SiteCollection.Add(RXServer.Site)">
+      <param name="site" />
+    </member>
+    <member name="M:RXServer.SiteCollection.Contains(System.Int32)">
+      <param name="id" />
+    </member>
+    <member name="M:RXServer.SiteCollection.Contains(System.String)">
+      <param name="alias" />
+    </member>
+    <member name="M:RXServer.SiteCollection.GetSite(System.Int32)">
+      <param name="id" />
+    </member>
+    <member name="M:RXServer.SiteCollection.GetSite(System.String)">
+      <param name="alias" />
+    </member>
+    <member name="M:RXServer.SiteCollection.Remove(RXServer.Site)">
+      <param name="site" />
+    </member>
+    <member name="M:RXServer.SiteCollection.Remove(System.Int32)">
+      <param name="id" />
+    </member>
+    <member name="T:RXServer.TaskCollection">
+      <summary>TaskCollection</summary>
+    </member>
+    <member name="M:RXServer.TaskCollection.Add(RXServer.Task)">
+      <summary>Add</summary>
+      <param name="page" />
+    </member>
+    <member name="M:RXServer.TaskCollection.Clear">
+      <summary>Clear</summary>
+    </member>
+    <member name="M:RXServer.TaskCollection.Contains(System.Int32)">
+      <summary>Contains</summary>
+      <param name="Id" />
+      <returns>true | false</returns>
+    </member>
+    <member name="M:RXServer.TaskCollection.Contains(System.String)">
+      <param name="Name" />
+    </member>
+    <member name="M:RXServer.TaskCollection.GetTask(System.Int32)">
+      <param name="Id" />
+    </member>
+    <member name="M:RXServer.TaskCollection.Remove(RXServer.Task)">
+      <param name="page" />
+    </member>
+    <member name="M:RXServer.TaskCollection.Remove(System.Int32)">
+      <param name="id" />
+    </member>
+    <member name="T:RXServer.Users">
+      <summary>Classer enligt ny standard Bindable, Sortable 2007-05-23</summary>
+    </member>
+    <member name="T:RXServer.Dev.List">
+      <summary>RXServer.Web.List.Meta</summary>
+    </member>
+    <member name="M:RXServer.Dev.List.ListItem.Save">
+      <summary>Save</summary>
+    </member>
+    <member name="M:RXServer.Dev.List.ListItem.Update">
+      <summary>Update</summary>
+    </member>
+    <member name="T:RXServer.Web.List.Meta">
+      <summary>RXServer.Web.List.Meta</summary>
+    </member>
+    <member name="M:RXServer.Web.List.Meta.Tag.Save">
+      <summary>Save</summary>
+    </member>
+    <member name="M:RXServer.Web.List.Meta.Tag.Update">
+      <summary>Update</summary>
+    </member>
+    <member name="T:RXServer.Web.List.PageFlip">
+      <summary>RXServer.Web.List.Meta</summary>
+    </member>
+    <member name="M:RXServer.Web.List.PageFlip.ListItem.Save">
+      <summary>Save</summary>
+    </member>
+    <member name="M:RXServer.Web.List.PageFlip.ListItem.Update">
+      <summary>Update</summary>
+    </member>
+    <member name="T:RXServer.Web.Menus.Menu">
+      <summary>RXServer.Web.Menus.Menu m = (RXServer.Web.Menus.Menu)this.RXMenu;</summary>
+    </member>
+    <member name="M:RXServer.Web.Modules.Article.CreateRSSFile(System.Int32,System.Int32,System.String,System.String,System.String,System.String,System.Int32)">
+      <summary>This is used only for creating rss file based on sitid and pagid</summary>
+      <param name="SitId" />
+      <param name="PagId" />
+      <param name="FilePath" />
+    </member>
+    <member name="M:RXServer.Web.Modules.Article.GetArticles(System.String[],System.Int32)">
+      <summary>Only use in nfm, will be deleted in future RXServer</summary>
+      <param name="Alias" />
+      <param name="Max" />
+    </member>
+    <member name="M:RXServer.Web.Modules.Article.GetArticles2(System.String[],System.Int32)">
+      <summary>Only use in reaktor, will be deleted in future RXServer</summary>
+      <param name="Alias" />
+      <param name="Max" />
+    </member>
+    <member name="M:RXServer.Web.Modules.ArticleBase.Save">
+      <summary>Save the Object Article and create readmore page if it not exist...</summary>
+    </member>
+    <member name="T:RXServer.Web.Modules.Module">
+      <summary>Overrides the base class Module in ModuleCollection</summary>
+    </member>
+    <member name="T:RXServer.Web.Modules.ModuleCollection">
+      <summary>Overrides the base class ModuleCollection in RXServer</summary>
+    </member>
+    <member name="T:RXServer.Web.Parse.Attribute">
+      <summary>Attribute holds one attribute, as is normally stored in an HTML or XML file. This includes a name, value and delimiter. This source code may be used freely under the Limited GNU Public License(LGPL). Written by Jeff Heaton (http://www.jeffheaton.com)</summary>
+    </member>
+    <member name="P:RXServer.Web.Parse.Attribute.Delim">
+      <summary>The delimiter for this attribute.</summary>
+    </member>
+    <member name="P:RXServer.Web.Parse.Attribute.Name">
+      <summary>The name for this attribute.</summary>
+    </member>
+    <member name="P:RXServer.Web.Parse.Attribute.Value">
+      <summary>The value for this attribute.</summary>
+    </member>
+    <member name="T:RXServer.Web.Parse.AttributeList">
+      <summary>The AttributeList class is used to store list of Attribute classes. This source code may be used freely under the Limited GNU Public License(LGPL). Written by Jeff Heaton (http://www.jeffheaton.com)</summary>
+    </member>
+    <member name="F:RXServer.Web.Parse.AttributeList.m_list">
+      <summary>An internally used Vector. This vector contains the entire list of attributes.</summary>
+    </member>
+    <member name="P:RXServer.Web.Parse.AttributeList.Count">
+      <summary>How many attributes are in this AttributeList?</summary>
+    </member>
+    <member name="P:RXServer.Web.Parse.AttributeList.Item(System.Int32)">
+      <summary>Access the individual attributes</summary>
+    </member>
+    <member name="P:RXServer.Web.Parse.AttributeList.Item(System.String)">
+      <summary>Access the individual attributes by name.</summary>
+    </member>
+    <member name="P:RXServer.Web.Parse.AttributeList.List">
+      <summary>A list of the attributes in this AttributeList</summary>
+    </member>
+    <member name="M:RXServer.Web.Parse.AttributeList.Clear">
+      <summary>Clear all attributes from this AttributeList and return it to a empty state.</summary>
+    </member>
+    <member name="M:RXServer.Web.Parse.AttributeList.Clone">
+      <summary>Make an exact copy of this object using the cloneable interface.</summary>
+      <returns>A new object that is a clone of the specified object.</returns>
+    </member>
+    <member name="M:RXServer.Web.Parse.AttributeList.IsEmpty">
+      <summary>Returns true of this AttributeList is empty, with no attributes.</summary>
+      <returns>True if this AttributeList is empty, false otherwise.</returns>
+    </member>
+    <member name="M:RXServer.Web.Parse.AttributeList.Set(System.String,System.String)">
+      <summary>If there is already an attribute with the specified name, it will have its value changed to match the specified value. If there is no Attribute with the specified name, one will be created. This method is case-insensitive.</summary>
+      <param name="name">The name of the Attribute to edit or create. Case-insensitive.</param>
+      <param name="value">The value to be held in this attribute.</param>
+    </member>
+    <member name="T:RXServer.Web.Parse.Parse">
+      <summary>Base class for parsing tag based files, such as HTML, HTTP headers, or XML. This source code may be used freely under the Limited GNU Public License(LGPL). Written by Jeff Heaton (http://www.jeffheaton.com)</summary>
+    </member>
+    <member name="F:RXServer.Web.Parse.Parse.m_tag">
+      <summary>The most recently parsed tag.</summary>
+    </member>
+    <member name="M:RXServer.Web.Parse.Parse.AddAttribute">
+      <summary>Add a parsed attribute to the collection.</summary>
+    </member>
+    <member name="M:RXServer.Web.Parse.Parse.Advance">
+      <summary>Move the index forward by one.</summary>
+    </member>
+    <member name="M:RXServer.Web.Parse.Parse.AdvanceCurrentChar">
+      <summary>Obtain the next character and advance the index by one.</summary>
+      <returns>The next character</returns>
+    </member>
+    <member name="M:RXServer.Web.Parse.Parse.EatWhiteSpace">
+      <summary>Advance the index until past any whitespace.</summary>
+    </member>
+    <member name="M:RXServer.Web.Parse.Parse.Eof">
+      <summary>Determine if the end of the source text has been reached.</summary>
+      <returns>True if the end of the source text has been reached.</returns>
+    </member>
+    <member name="M:RXServer.Web.Parse.Parse.GetCurrentChar">
+      <summary>Get the current character that is being parsed.</summary>
+    </member>
+    <member name="M:RXServer.Web.Parse.Parse.GetCurrentChar(System.Int32)">
+      <summary>Get a few characters ahead of the current character.</summary>
+      <param name="peek">How many characters to peek ahead for.</param>
+      <returns>The character that was retrieved.</returns>
+    </member>
+    <member name="M:RXServer.Web.Parse.Parse.IsWhiteSpace(System.Char)">
+      <summary>Determine if the specified character is whitespace or not.</summary>
+      <param name="ch">A character to check</param>
+      <returns>true if the character is whitespace</returns>
+    </member>
+    <member name="M:RXServer.Web.Parse.Parse.ParseAttributeName">
+      <summary>Parse the attribute name.</summary>
+    </member>
+    <member name="M:RXServer.Web.Parse.Parse.ParseAttributeValue">
+      <summary>Parse the attribute value</summary>
+    </member>
+  </members>
+</doc>

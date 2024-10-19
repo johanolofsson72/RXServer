@@ -1,0 +1,47 @@
+<%@ Master Language="C#" AutoEventWireup="true"  CodeFile="MainTemplate.master.cs" Inherits="MainMaster"  %>
+<%@ Register TagPrefix="telerik" Namespace="Telerik.Web.UI" Assembly="Telerik.Web.UI" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head id="PageHead" runat="server">
+    <title id="metaTitle" runat="server"/>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <telerik:RadScriptManager ID="RadScriptManager1" Runat="server">
+</telerik:RadScriptManager>
+<%--        <asp:ScriptManager id="ScriptManager" runat="server" />--%>
+        <telerik:RadAjaxManager ID="RadAjaxManager1" runat="server"
+             DefaultLoadingPanelID="RadAjaxLoadingPanel1">
+        </telerik:RadAjaxManager>
+        
+        <div id="site_container">
+            <div id="admin_container" runat="server" visible="false" style="position: relative; float: left; width: 100%; margin:auto; height: 35px; background-color: #666666; border-bottom: solid 1px #1A1A1A;">
+                 <div id="adminheader_container" style="position: relative; margin:auto; width: 900px; height: 35px;">
+                   <asp:ContentPlaceHolder ID="SystemContentPane1" runat="server"/>
+                </div>
+            </div>
+           <div id="safari_fix"></div>
+           <div id="header_bg"></div> 
+           <div id="header_container">
+                <div id="header">	            
+	                <asp:ContentPlaceHolder ID="SiteContentPane2"  runat="server"/><asp:ContentPlaceHolder ID="SiteContentPane4" runat="server"/>
+                </div>
+            </div>
+            <div id="main_container">
+                <div id="page_container">
+                    <asp:ContentPlaceHolder ID="SystemContentPane0" runat="server"/>
+                    <asp:ContentPlaceHolder ID="MainContentPane1" runat="server"/>
+	        </div>
+	    </div>
+	    <div id="footer_container">
+	    	<div id="footer">
+	        	<asp:ContentPlaceHolder ID="SiteContentPane3" runat="server"/>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
+

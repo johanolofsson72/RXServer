@@ -1,0 +1,35 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="WebLogin.master.cs" EnableTheming="true" Inherits="Structure_WebLogin_WebLogin" %>
+<%@ Register TagPrefix="telerik" Namespace="Telerik.Web.UI" Assembly="Telerik.Web.UI" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title id="metaTitle" runat="server"/>
+    <link href="~/App_Themes/WebAdmin/admin.css" rel="stylesheet" type="text/css" />
+    <link href="~/App_Themes/Telecom/text.css" rel="stylesheet" type="text/css" />
+    <link href="~/App_Themes/Telecom/site.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="../../../JS/JScript.js"></script>
+    <script type="text/javascript" src="../../../JS/swfobject.js"></script>
+    
+</head>
+<body>
+    <form id="form1" runat="server">    
+       
+        <!-- Script Manager for RadControls -->        
+        <asp:ScriptManager id="ScriptManager" runat="server" />
+        
+        
+        <!-- Form Design from RadControls -->
+    
+        <div id="RXAdmin_all" style="position: relative; margin: 0px; padding:0px; margin-bottom: 4px; display: inline; float: left; height: 100%; width: 100%; z-index: 1;">
+            
+            <!-- INFORMATION -->
+            <div id="RXAdmin_main" style="position: relative; float: left; width: 100%;">
+                <asp:ContentPlaceHolder ID="MainAdminContent" runat="server"/>                    
+            </div>   
+
+        </div>
+    </form>
+</body>
+</html>

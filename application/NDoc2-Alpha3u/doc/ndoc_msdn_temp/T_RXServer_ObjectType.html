@@ -1,0 +1,377 @@
+<html dir="LTR" xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:MSHelp="http://msdn.microsoft.com/mshelp" xmlns:tool="http://www.microsoft.com/tooltip" xmlns:ndoc="urn:ndoc-preprocess">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=Windows-1252" />
+    <title>ObjectType Enumeration</title>
+    <link rel="stylesheet" type="text/css" href="ndoc.css"> </link>
+    <link rel="stylesheet" type="text/css" href="user.css"> </link>
+    <script type="text/javascript" src="ndoc.js"> </script>
+  </head>
+  <body style="display: none;">
+    <input type="hidden" id="userDataCache" class="userDataStyle" />
+    <input type="hidden" id="hiddenScrollOffset" />
+    <img id="dropDownImage" style="display:none; height:0; width:0;" src="drpdown.gif" />
+    <img id="dropDownHoverImage" style="display:none; height:0; width:0;" src="drpdown_orange.gif" />
+    <img id="collapseImage" style="display:none; height:0; width:0;" src="collapse.gif" />
+    <img id="expandImage" style="display:none; height:0; width:0;" src="exp.gif" />
+    <img id="collapseAllImage" style="display:none; height:0; width:0;" src="collall.gif" />
+    <img id="expandAllImage" style="display:none; height:0; width:0;" src="expall.gif" />
+    <img id="copyImage" style="display:none; height:0; width:0;" src="copycode.gif" />
+    <img id="copyHoverImage" style="display:none; height:0; width:0;" src="copycodeHighlight.gif" />
+    <div id="header">
+      <table width="100%" id="topTable">
+        <tr id="headerTableRow1">
+          <td align="left">
+            <span id="runningHeaderText">An NDoc documented library</span>
+          </td>
+        </tr>
+        <tr id="headerTableRow2">
+          <td align="left">
+            <span id="nsrTitle">ObjectType Enumeration</span>
+          </td>
+        </tr>
+        <tr id="headerTableRow3">
+          <td>
+            <a id="seeAlsoSectionLink" href="#seeAlsoToggle" onclick="OpenSection(seeAlsoToggle)">See Also</a>
+            <a id="exampleSectionLink" href="#codeExampleToggle" onclick="OpenSection(codeExampleToggle)">Example</a>
+          </td>
+        </tr>
+      </table>
+      <table width="100%" id="bottomTable" cellspacing="0" cellpadding="0">
+        <tr>
+          <td>
+            <span onclick="ExpandCollapseAll(toggleAllImage)" style="cursor:default;" onkeypress="ExpandCollapseAll_CheckKey(toggleAllImage)" tabindex="0">
+              <img ID="toggleAllImage" class="toggleAll" src="collall.gif" />
+              <label id="collapseAllLabel" for="toggleAllImage" style="display: none;">
+							Collapse All
+						</label>
+              <label id="expandAllLabel" for="toggleAllImage" style="display: none;">
+							Expand All
+						</label>
+            </span>
+            <span id="languageFilterToolTip" style="cursor:default;" onmouseover="languageFilterImage.src=dropDownHoverImage.src;" onfocusin="languageFilterImage.src=dropDownHoverImage.src;" onmouseout="languageFilterImage.src=dropDownImage.src;" onfocusout="languageFilterImage.src=dropDownImage.src;" tabindex="0">
+              <img id="languageFilterImage" src="drpdown.gif" />
+              <label id="showAllLabel" for="languageFilterImage" style="display: none;">
+				Language Filter: All
+			</label>
+              <label id="multipleLabel" for="languageFilterImage" style="display: none;">
+				Language Filter: Multiple
+			</label>
+              <label id="vbLabel" for="languageFilterImage" style="display: none;">
+				Language Filter: Visual Basic
+			</label>
+              <label id="csLabel" for="languageFilterImage" style="display: none;">
+				Language Filter: C#
+			</label>
+              <label id="cLabel" for="languageFilterImage" style="display: none;">
+				Language Filter: C++
+			</label>
+              <label id="jsharpLabel" for="languageFilterImage" style="display: none;">
+				Language Filter: J#
+			</label>
+              <label id="jsLabel" for="languageFilterImage" style="display: none;">
+				Language Filter: JScript
+			</label>
+            </span>
+          </td>
+        </tr>
+      </table>
+      <span style="display:none" id="languageSpan">
+        <input id="vbDeclarationCheckbox" type="checkbox" name="languageFilter" onClick="SetLanguage(this)" />
+        <label class="languageFilter" for="vbDeclarationCheckbox">
+				Visual Basic (Declaration)
+			</label>
+        <br />
+        <input id="vbUsageCheckbox" type="checkbox" name="languageFilter" onClick="SetLanguage(this)" />
+        <label class="languageFilter" for="vbUsageCheckbox">
+				Visual Basic (Usage)
+			</label>
+        <br />
+        <input id="csCheckbox" type="checkbox" name="languageFilter" onClick="SetLanguage(this)" />
+        <label class="languageFilter" for="csCheckbox">
+				C#
+			</label>
+        <br />
+        <input id="cCheckbox" type="checkbox" name="languageFilter" onClick="SetLanguage(this)" />
+        <label class="languageFilter" for="cCheckbox">
+				C++
+			</label>
+        <br />
+        <input id="jsharpCheckbox" type="checkbox" name="languageFilter" onClick="SetLanguage(this)" />
+        <label class="languageFilter" for="jsharpCheckbox">
+				J#
+			</label>
+        <br />
+        <input id="jsCheckbox" type="checkbox" name="languageFilter" onClick="SetLanguage(this)" />
+        <label class="languageFilter" for="jsCheckbox">
+				JScript
+			</label>
+        <br />
+      </span>
+    </div>
+    <div id="mainSection">
+      <div id="mainBody">
+        <div id="allHistory" class="saveHistory" onsave="saveAll()" onload="loadAll()" />
+        <p />
+        <br />
+        <b>Namespace: </b>
+        <a href="N_RXServer.html">RXServer</a>
+        <br />
+        <b>Assembly: </b>RXServer (in RXServer.dll)
+		<br /><h1 class="heading"><span onclick="ExpandCollapse(syntaxToggle)" style="cursor:default;" onkeypress="ExpandCollapse_CheckKey(syntaxToggle)" tabindex="0"><img id="syntaxToggle" class="toggle" name="toggleSwitch" src="collapse.gif" />Syntax</span></h1><div id="syntaxSection" class="section" name="collapseableSection"><div id="syntaxCodeBlocks" class="code"><span codeLanguage="VisualBasicDeclaration"><table width="100%" cellspacing="0" cellpadding="0"><tr><th align="left">Visual Basic (Declaration)</th></tr><tr><td class="syntax">Public Enum ObjectType</td></tr></table></span><span codeLanguage="CSharp"><table width="100%" cellspacing="0" cellpadding="0"><tr><th align="left">C#</th></tr><tr><td class="syntax">public enum ObjectType</td></tr></table></span><span codeLanguage="ManagedCPlusPlus"><table width="100%" cellspacing="0" cellpadding="0"><tr><th align="left">C++</th></tr><tr><td class="syntax">public enum class ObjectType</td></tr></table></span><span codeLanguage="JSharp"><table width="100%" cellspacing="0" cellpadding="0"><tr><th align="left">J#</th></tr><tr><td class="syntax">public enum ObjectType</td></tr></table></span><span codeLanguage="JScript"><table width="100%" cellspacing="0" cellpadding="0"><tr><th align="left">JScript</th></tr><tr><td class="syntax">public enum ObjectType</td></tr></table></span></div></div><h1 class="heading"><span style="cursor:default;" onclick="ExpandCollapse(membersToggle)" onkeypress="ExpandCollapse_CheckKey(membersToggle)" tabindex="0"><img id="membersToggle" class="toggle" name="toggleSwitch" src="collapse.gif" />Members</span></h1><div id="membersSection" class="section" name="collapseableSection"><table width="100%" class="memberListTable"><tr valign="top"><th><nobr>Member Name</nobr></th><th width="90%">Description</th></tr>
+<tr valign="top"><td><b>Undefined</b></td><td> </td></tr>
+<tr valign="top"><td><b>Editor</b></td><td> </td></tr>
+<tr valign="top"><td><b>News</b></td><td> </td></tr>
+<tr valign="top"><td><b>Menu</b></td><td> </td></tr>
+<tr valign="top"><td><b>SubMenu</b></td><td> </td></tr>
+<tr valign="top"><td><b>Announcement</b></td><td> </td></tr>
+<tr valign="top"><td><b>Banner</b></td><td> </td></tr>
+<tr valign="top"><td><b>Survey</b></td><td> </td></tr>
+<tr valign="top"><td><b>Whois</b></td><td> </td></tr>
+<tr valign="top"><td><b>Contact</b></td><td> </td></tr>
+<tr valign="top"><td><b>Discussion</b></td><td> </td></tr>
+<tr valign="top"><td><b>Event</b></td><td> </td></tr>
+<tr valign="top"><td><b>Faq</b></td><td> </td></tr>
+<tr valign="top"><td><b>Feedback</b></td><td> </td></tr>
+<tr valign="top"><td><b>Html</b></td><td> </td></tr>
+<tr valign="top"><td><b>IFrame</b></td><td> </td></tr>
+<tr valign="top"><td><b>Link</b></td><td> </td></tr>
+<tr valign="top"><td><b>Maps</b></td><td> </td></tr>
+<tr valign="top"><td><b>Search</b></td><td> </td></tr>
+<tr valign="top"><td><b>UsersOnline</b></td><td> </td></tr>
+<tr valign="top"><td><b>Weather</b></td><td> </td></tr>
+<tr valign="top"><td><b>Vendor</b></td><td> </td></tr>
+<tr valign="top"><td><b>Xml</b></td><td> </td></tr>
+<tr valign="top"><td><b>Generic</b></td><td> </td></tr>
+<tr valign="top"><td><b>UserDefined</b></td><td> </td></tr>
+<tr valign="top"><td><b>UserMenu</b></td><td> </td></tr>
+<tr valign="top"><td><b>StyleSheet</b></td><td> </td></tr>
+<tr valign="top"><td><b>Web</b></td><td> </td></tr>
+<tr valign="top"><td><b>Console</b></td><td> </td></tr>
+<tr valign="top"><td><b>Window</b></td><td> </td></tr>
+<tr valign="top"><td><b>MetaData</b></td><td> </td></tr>
+<tr valign="top"><td><b>Scope</b></td><td> </td></tr>
+<tr valign="top"><td><b>Entity</b></td><td> </td></tr>
+<tr valign="top"><td><b>Port</b></td><td> </td></tr>
+<tr valign="top"><td><b>Operation</b></td><td> </td></tr>
+<tr valign="top"><td><b>Transformation</b></td><td> </td></tr>
+<tr valign="top"><td><b>Schema</b></td><td> </td></tr>
+<tr valign="top"><td><b>Calendar</b></td><td> </td></tr>
+<tr valign="top"><td><b>Chart</b></td><td> </td></tr>
+<tr valign="top"><td><b>Dock</b></td><td> </td></tr>
+<tr valign="top"><td><b>Grid</b></td><td> </td></tr>
+<tr valign="top"><td><b>Panel</b></td><td> </td></tr>
+<tr valign="top"><td><b>Spell</b></td><td> </td></tr>
+<tr valign="top"><td><b>Tabstrip</b></td><td> </td></tr>
+<tr valign="top"><td><b>Toolbar</b></td><td> </td></tr>
+<tr valign="top"><td><b>Flash</b></td><td> </td></tr>
+<tr valign="top"><td><b>Mail</b></td><td> </td></tr>
+<tr valign="top"><td><b>Treeview</b></td><td> </td></tr>
+<tr valign="top"><td><b>WebSite</b></td><td> </td></tr>
+<tr valign="top"><td><b>VirtualDirectory</b></td><td> </td></tr>
+<tr valign="top"><td><b>ApplicationPool</b></td><td> </td></tr>
+<tr valign="top"><td><b>FtpSite</b></td><td> </td></tr>
+<tr valign="top"><td><b>Quota</b></td><td> </td></tr>
+<tr valign="top"><td><b>IO</b></td><td> </td></tr>
+<tr valign="top"><td><b>User</b></td><td> </td></tr>
+<tr valign="top"><td><b>Customer</b></td><td> </td></tr>
+<tr valign="top"><td><b>Role</b></td><td> </td></tr>
+<tr valign="top"><td><b>Queue</b></td><td> </td></tr>
+<tr valign="top"><td><b>ChangeQuota</b></td><td> </td></tr>
+<tr valign="top"><td><b>RemoveQuota</b></td><td> </td></tr>
+<tr valign="top"><td><b>AddQuota</b></td><td> </td></tr>
+<tr valign="top"><td><b>ChangeWebSite</b></td><td> </td></tr>
+<tr valign="top"><td><b>DeleteWebSite</b></td><td> </td></tr>
+<tr valign="top"><td><b>AddWebSite</b></td><td> </td></tr>
+<tr valign="top"><td><b>SupportTicket</b></td><td> </td></tr>
+<tr valign="top"><td><b>Ticket</b></td><td> </td></tr>
+<tr valign="top"><td><b>NewCustomer</b></td><td> </td></tr>
+<tr valign="top"><td><b>MySQLSystem</b></td><td> </td></tr>
+<tr valign="top"><td><b>MySQLDatabase</b></td><td> </td></tr>
+<tr valign="top"><td><b>XMLSystem</b></td><td> </td></tr>
+<tr valign="top"><td><b>XMLDatabase</b></td><td> </td></tr>
+<tr valign="top"><td><b>Directories</b></td><td> </td></tr>
+<tr valign="top"><td><b>Files</b></td><td> </td></tr>
+<tr valign="top"><td><b>DirectoryPermission</b></td><td> </td></tr>
+<tr valign="top"><td><b>FilePermission</b></td><td> </td></tr>
+<tr valign="top"><td><b>Article1</b></td><td> </td></tr>
+<tr valign="top"><td><b>Article2</b></td><td> </td></tr>
+<tr valign="top"><td><b>Article3</b></td><td> </td></tr>
+<tr valign="top"><td><b>Article4</b></td><td> </td></tr>
+<tr valign="top"><td><b>Article5</b></td><td> </td></tr>
+<tr valign="top"><td><b>SiteSettings</b></td><td> </td></tr>
+<tr valign="top"><td><b>PageSettings</b></td><td> </td></tr>
+<tr valign="top"><td><b>TaskSettings</b></td><td> </td></tr>
+<tr valign="top"><td><b>ObjectSettings</b></td><td> </td></tr>
+<tr valign="top"><td><b>DocumentSettings</b></td><td> </td></tr>
+<tr valign="top"><td><b>ModuleSettings</b></td><td> </td></tr>
+<tr valign="top"><td><b>Forum</b></td><td> </td></tr>
+<tr valign="top"><td><b>ForumThread</b></td><td> </td></tr>
+<tr valign="top"><td><b>RXServerDefined_Menu</b></td><td> </td></tr>
+<tr valign="top"><td><b>RXServerDefined_SubMenu</b></td><td> </td></tr>
+<tr valign="top"><td><b>RXServerDefined_MenuItem</b></td><td> </td></tr>
+<tr valign="top"><td><b>RXServerDefined_MenuItems</b></td><td> </td></tr>
+<tr valign="top"><td><b>ForumReplies</b></td><td> </td></tr>
+<tr valign="top"><td><b>Visitor</b></td><td> </td></tr>
+<tr valign="top"><td><b>OrderMaterial</b></td><td> </td></tr>
+<tr valign="top"><td><b>Message</b></td><td> </td></tr>
+<tr valign="top"><td><b>RXServerDefined_UserSettings</b></td><td> </td></tr>
+<tr valign="top"><td><b>RXServerDefined_Modules_ArticleType1</b></td><td> </td></tr>
+<tr valign="top"><td><b>RXServerDefined_Modules_DocumentType1</b></td><td> </td></tr>
+<tr valign="top"><td><b>RXServerDefined_MenuSettings</b></td><td> </td></tr>
+<tr valign="top"><td><b>RXServerDefined_MenuItemSettings</b></td><td> </td></tr>
+<tr valign="top"><td><b>RXServerDefined_Modules_PageFlipItem</b></td><td> </td></tr>
+<tr valign="top"><td><b>RXServerDefined_Modules_List</b></td><td> </td></tr>
+<tr valign="top"><td><b>RXServerDefined_Modules_ListItem</b></td><td> </td></tr>
+<tr valign="top"><td><b>RXServerDefined_Modules_ListItem_Material</b></td><td> </td></tr>
+<tr valign="top"><td><b>RXServerDefined_Modules_ListItem_Products</b></td><td> </td></tr>
+<tr valign="top"><td><b>RXServerDefined_Modules_ListItem_Mail</b></td><td> </td></tr>
+<tr valign="top"><td><b>RXServerDefined_Modules_HtmlMail</b></td><td> </td></tr>
+<tr valign="top"><td><b>RXServerDefined_Modules_ListItem_Meta</b></td><td> </td></tr>
+<tr valign="top"><td><b>RXServerDefined_Modules_ListItem_Dropdown</b></td><td> </td></tr>
+<tr valign="top"><td><b>RXServerDefined_Modules_ListItem_Dropdown_Type1</b></td><td> </td></tr>
+<tr valign="top"><td><b>RXServerDefined_Modules_ListItem_Dropdown_Type2</b></td><td> </td></tr>
+<tr valign="top"><td><b>RXServerDefined_Modules_ListItem_Dropdown_Type3</b></td><td> </td></tr>
+<tr valign="top"><td><b>RXServerDefined_Modules_ListItem_Dropdown_Type4</b></td><td> </td></tr>
+<tr valign="top"><td><b>RXServerDefined_Modules_ListItem_Dropdown_Type5</b></td><td> </td></tr>
+<tr valign="top"><td><b>RXServerDefined_Modules_ListItem_Dropdown_Type6</b></td><td> </td></tr>
+<tr valign="top"><td><b>RXServerDefined_Modules_ListItem_Dropdown_Type7</b></td><td> </td></tr>
+<tr valign="top"><td><b>RXServerDefined_Modules_ListItem_Dropdown_Type8</b></td><td> </td></tr>
+<tr valign="top"><td><b>RXServerDefined_Modules_ListItem_Dropdown_Type9</b></td><td> </td></tr>
+<tr valign="top"><td><b>RXServerDefined_Modules_ListItem_Contacts</b></td><td> </td></tr></table></div><h1 class="heading"><span style="cursor:default;" onclick="ExpandCollapse(seeAlsoToggle)" onkeypress="ExpandCollapse_CheckKey(seeAlsoToggle)" tabindex="0"><img id="seeAlsoToggle" class="toggle" name="toggleSwitch" src="collapse.gif" />See Also</span></h1><div id="seeAlsoSection" class="section" name="collapseableSection"><a href="N_RXServer.html">RXServer Namespace</a></div></div>
+      <object type="application/x-oleobject" classid="clsid:1e2a7bd0-dab9-11d0-b93a-00c04fc99f9e" viewastext="true" style="display: none;">
+        <param name="Keyword" value="Undefined enumeration member" />
+        <param name="Keyword" value="Editor enumeration member" />
+        <param name="Keyword" value="News enumeration member" />
+        <param name="Keyword" value="Menu enumeration member" />
+        <param name="Keyword" value="SubMenu enumeration member" />
+        <param name="Keyword" value="Announcement enumeration member" />
+        <param name="Keyword" value="Banner enumeration member" />
+        <param name="Keyword" value="Survey enumeration member" />
+        <param name="Keyword" value="Whois enumeration member" />
+        <param name="Keyword" value="Contact enumeration member" />
+        <param name="Keyword" value="Discussion enumeration member" />
+        <param name="Keyword" value="Event enumeration member" />
+        <param name="Keyword" value="Faq enumeration member" />
+        <param name="Keyword" value="Feedback enumeration member" />
+        <param name="Keyword" value="Html enumeration member" />
+        <param name="Keyword" value="IFrame enumeration member" />
+        <param name="Keyword" value="Link enumeration member" />
+        <param name="Keyword" value="Maps enumeration member" />
+        <param name="Keyword" value="Search enumeration member" />
+        <param name="Keyword" value="UsersOnline enumeration member" />
+        <param name="Keyword" value="Weather enumeration member" />
+        <param name="Keyword" value="Vendor enumeration member" />
+        <param name="Keyword" value="Xml enumeration member" />
+        <param name="Keyword" value="Generic enumeration member" />
+        <param name="Keyword" value="UserDefined enumeration member" />
+        <param name="Keyword" value="UserMenu enumeration member" />
+        <param name="Keyword" value="StyleSheet enumeration member" />
+        <param name="Keyword" value="Web enumeration member" />
+        <param name="Keyword" value="Console enumeration member" />
+        <param name="Keyword" value="Window enumeration member" />
+        <param name="Keyword" value="MetaData enumeration member" />
+        <param name="Keyword" value="Scope enumeration member" />
+        <param name="Keyword" value="Entity enumeration member" />
+        <param name="Keyword" value="Port enumeration member" />
+        <param name="Keyword" value="Operation enumeration member" />
+        <param name="Keyword" value="Transformation enumeration member" />
+        <param name="Keyword" value="Schema enumeration member" />
+        <param name="Keyword" value="Calendar enumeration member" />
+        <param name="Keyword" value="Chart enumeration member" />
+        <param name="Keyword" value="Dock enumeration member" />
+        <param name="Keyword" value="Grid enumeration member" />
+        <param name="Keyword" value="Panel enumeration member" />
+        <param name="Keyword" value="Spell enumeration member" />
+        <param name="Keyword" value="Tabstrip enumeration member" />
+        <param name="Keyword" value="Toolbar enumeration member" />
+        <param name="Keyword" value="Flash enumeration member" />
+        <param name="Keyword" value="Mail enumeration member" />
+        <param name="Keyword" value="Treeview enumeration member" />
+        <param name="Keyword" value="WebSite enumeration member" />
+        <param name="Keyword" value="VirtualDirectory enumeration member" />
+        <param name="Keyword" value="ApplicationPool enumeration member" />
+        <param name="Keyword" value="FtpSite enumeration member" />
+        <param name="Keyword" value="Quota enumeration member" />
+        <param name="Keyword" value="IO enumeration member" />
+        <param name="Keyword" value="User enumeration member" />
+        <param name="Keyword" value="Customer enumeration member" />
+        <param name="Keyword" value="Role enumeration member" />
+        <param name="Keyword" value="Queue enumeration member" />
+        <param name="Keyword" value="ChangeQuota enumeration member" />
+        <param name="Keyword" value="RemoveQuota enumeration member" />
+        <param name="Keyword" value="AddQuota enumeration member" />
+        <param name="Keyword" value="ChangeWebSite enumeration member" />
+        <param name="Keyword" value="DeleteWebSite enumeration member" />
+        <param name="Keyword" value="AddWebSite enumeration member" />
+        <param name="Keyword" value="SupportTicket enumeration member" />
+        <param name="Keyword" value="Ticket enumeration member" />
+        <param name="Keyword" value="NewCustomer enumeration member" />
+        <param name="Keyword" value="MySQLSystem enumeration member" />
+        <param name="Keyword" value="MySQLDatabase enumeration member" />
+        <param name="Keyword" value="XMLSystem enumeration member" />
+        <param name="Keyword" value="XMLDatabase enumeration member" />
+        <param name="Keyword" value="Directories enumeration member" />
+        <param name="Keyword" value="Files enumeration member" />
+        <param name="Keyword" value="DirectoryPermission enumeration member" />
+        <param name="Keyword" value="FilePermission enumeration member" />
+        <param name="Keyword" value="Article1 enumeration member" />
+        <param name="Keyword" value="Article2 enumeration member" />
+        <param name="Keyword" value="Article3 enumeration member" />
+        <param name="Keyword" value="Article4 enumeration member" />
+        <param name="Keyword" value="Article5 enumeration member" />
+        <param name="Keyword" value="SiteSettings enumeration member" />
+        <param name="Keyword" value="PageSettings enumeration member" />
+        <param name="Keyword" value="TaskSettings enumeration member" />
+        <param name="Keyword" value="ObjectSettings enumeration member" />
+        <param name="Keyword" value="DocumentSettings enumeration member" />
+        <param name="Keyword" value="ModuleSettings enumeration member" />
+        <param name="Keyword" value="Forum enumeration member" />
+        <param name="Keyword" value="ForumThread enumeration member" />
+        <param name="Keyword" value="RXServerDefined_Menu enumeration member" />
+        <param name="Keyword" value="RXServerDefined_SubMenu enumeration member" />
+        <param name="Keyword" value="RXServerDefined_MenuItem enumeration member" />
+        <param name="Keyword" value="RXServerDefined_MenuItems enumeration member" />
+        <param name="Keyword" value="ForumReplies enumeration member" />
+        <param name="Keyword" value="Visitor enumeration member" />
+        <param name="Keyword" value="OrderMaterial enumeration member" />
+        <param name="Keyword" value="Message enumeration member" />
+        <param name="Keyword" value="RXServerDefined_UserSettings enumeration member" />
+        <param name="Keyword" value="RXServerDefined_Modules_ArticleType1 enumeration member" />
+        <param name="Keyword" value="RXServerDefined_Modules_DocumentType1 enumeration member" />
+        <param name="Keyword" value="RXServerDefined_MenuSettings enumeration member" />
+        <param name="Keyword" value="RXServerDefined_MenuItemSettings enumeration member" />
+        <param name="Keyword" value="RXServerDefined_Modules_PageFlipItem enumeration member" />
+        <param name="Keyword" value="RXServerDefined_Modules_List enumeration member" />
+        <param name="Keyword" value="RXServerDefined_Modules_ListItem enumeration member" />
+        <param name="Keyword" value="RXServerDefined_Modules_ListItem_Material enumeration member" />
+        <param name="Keyword" value="RXServerDefined_Modules_ListItem_Products enumeration member" />
+        <param name="Keyword" value="RXServerDefined_Modules_ListItem_Mail enumeration member" />
+        <param name="Keyword" value="RXServerDefined_Modules_HtmlMail enumeration member" />
+        <param name="Keyword" value="RXServerDefined_Modules_ListItem_Meta enumeration member" />
+        <param name="Keyword" value="RXServerDefined_Modules_ListItem_Dropdown enumeration member" />
+        <param name="Keyword" value="RXServerDefined_Modules_ListItem_Dropdown_Type1 enumeration member" />
+        <param name="Keyword" value="RXServerDefined_Modules_ListItem_Dropdown_Type2 enumeration member" />
+        <param name="Keyword" value="RXServerDefined_Modules_ListItem_Dropdown_Type3 enumeration member" />
+        <param name="Keyword" value="RXServerDefined_Modules_ListItem_Dropdown_Type4 enumeration member" />
+        <param name="Keyword" value="RXServerDefined_Modules_ListItem_Dropdown_Type5 enumeration member" />
+        <param name="Keyword" value="RXServerDefined_Modules_ListItem_Dropdown_Type6 enumeration member" />
+        <param name="Keyword" value="RXServerDefined_Modules_ListItem_Dropdown_Type7 enumeration member" />
+        <param name="Keyword" value="RXServerDefined_Modules_ListItem_Dropdown_Type8 enumeration member" />
+        <param name="Keyword" value="RXServerDefined_Modules_ListItem_Dropdown_Type9 enumeration member" />
+        <param name="Keyword" value="RXServerDefined_Modules_ListItem_Contacts enumeration member" />
+        <param name="Keyword" value="RXServer.ObjectType enumeration" />
+        <param name="Keyword" value="ObjectType enumeration" /> </object>
+      <DIV CLASS="footer">
+        <p>
+          <center>
+            <font color="red">
+              <i>
+                Syntax based on .NET Framework version 2.0.<br />
+                Documentation version 1.0.0.0.
+              </i>
+            </font>
+          </center>
+        </p>
+      </DIV><!--[if gte IE 5]><tool:tip element="languageFilterToolTip" avoidmouse="false" /><![endif]--></div>
+  </body>
+</html>

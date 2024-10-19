@@ -1,0 +1,1051 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>RXServer</name>
+    </assembly>
+    <members>
+        <member name="T:RXServer.Web.List.PageFlip">
+            <summary>
+            RXServer.Web.List.Meta
+            </summary>
+            <example>The following is an example of initializing a 
+            <c>RXServer.Web.List.Meta</c> type:
+              <code>
+            protected void Page_Load(object sender, EventArgs e)
+            {
+                if (!Page.IsPostBack)
+                    BindData();
+            }
+            private void BindData()
+            {
+                ListBox1.Items.Clear();
+                using (RXServer.Web.List.Meta m = new RXServer.Web.List.Meta(1, 1))
+                {
+                    m.Sort(RXServer.Web.List.Meta.SortParamEnum.Name, RXServer.Web.List.Meta.SortOrderEnum.Ascending);
+                    foreach (RXServer.Web.List.Meta.Tag t in m)
+                    {
+                        ListBox1.Items.Add(new ListItem(t.Name, t.Id.ToString()));
+                    }
+                }
+            }
+            protected void Add_Click(object sender, EventArgs e)
+            {
+                using(RXServer.Web.List.Meta m = new RXServer.Web.List.Meta(1, 1))
+                {
+                    m.Add(new RXServer.Web.List.Meta.Tag(TextBox1.Text, TextBox2.Text));
+                }
+                BindData();
+            }
+            protected void ListBox1_SelectedIndexChanged(object sender, EventArgs e)
+            {
+                using (RXServer.Web.List.Meta.Tag t = new RXServer.Web.List.Meta.Tag(Convert.ToInt32(ListBox1.SelectedValue)))
+                {
+                    t.Deleted = true;
+                    t.Save();
+                }
+                BindData();
+            }
+              </code>
+            </example>
+        </member>
+        <member name="M:RXServer.Web.List.PageFlip.#ctor(System.Int32,System.Int32)">
+            <summary>
+            Used for creating new PageFlip items only...
+            </summary>
+        </member>
+        <member name="M:RXServer.Web.List.PageFlip.ListItem.Update">
+            <summary>
+            Update
+            </summary>
+        </member>
+        <member name="M:RXServer.Web.List.PageFlip.ListItem.Save">
+            <summary>
+            Save
+            </summary>
+        </member>
+        <member name="T:RXServer.Users">
+            <summary>
+            Classer enligt ny standard 
+            Bindable, Sortable
+            2007-05-23
+            </summary>
+        </member>
+        <member name="T:RXServer.Web.List.Meta">
+            <summary>
+            RXServer.Web.List.Meta
+            </summary>
+            <example>The following is an example of initializing a 
+            <c>RXServer.Web.List.Meta</c> type:
+              <code>
+            protected void Page_Load(object sender, EventArgs e)
+            {
+                if (!Page.IsPostBack)
+                    BindData();
+            }
+            private void BindData()
+            {
+                ListBox1.Items.Clear();
+                using (RXServer.Web.List.Meta m = new RXServer.Web.List.Meta(1, 1))
+                {
+                    m.Sort(RXServer.Web.List.Meta.SortParamEnum.Name, RXServer.Web.List.Meta.SortOrderEnum.Ascending);
+                    foreach (RXServer.Web.List.Meta.Tag t in m)
+                    {
+                        ListBox1.Items.Add(new ListItem(t.Name, t.Id.ToString()));
+                    }
+                }
+            }
+            protected void Add_Click(object sender, EventArgs e)
+            {
+                using(RXServer.Web.List.Meta m = new RXServer.Web.List.Meta(1, 1))
+                {
+                    m.Add(new RXServer.Web.List.Meta.Tag(TextBox1.Text, TextBox2.Text));
+                }
+                BindData();
+            }
+            protected void ListBox1_SelectedIndexChanged(object sender, EventArgs e)
+            {
+                using (RXServer.Web.List.Meta.Tag t = new RXServer.Web.List.Meta.Tag(Convert.ToInt32(ListBox1.SelectedValue)))
+                {
+                    t.Deleted = true;
+                    t.Save();
+                }
+                BindData();
+            }
+              </code>
+            </example>
+        </member>
+        <member name="M:RXServer.Web.List.Meta.Tag.Update">
+            <summary>
+            Update
+            </summary>
+        </member>
+        <member name="M:RXServer.Web.List.Meta.Tag.Save">
+            <summary>
+            Save
+            </summary>
+        </member>
+        <member name="T:RXServer.Dev.List">
+            <summary>
+            RXServer.Web.List.Meta
+            </summary>
+            <example>The following is an example of initializing a 
+            <c>RXServer.Web.List.Meta</c> type:
+              <code>
+            protected void Page_Load(object sender, EventArgs e)
+            {
+                if (!Page.IsPostBack)
+                    BindData();
+            }
+            private void BindData()
+            {
+                ListBox1.Items.Clear();
+                using (RXServer.Web.List.Meta m = new RXServer.Web.List.Meta(1, 1))
+                {
+                    m.Sort(RXServer.Web.List.Meta.SortParamEnum.Name, RXServer.Web.List.Meta.SortOrderEnum.Ascending);
+                    foreach (RXServer.Web.List.Meta.Tag t in m)
+                    {
+                        ListBox1.Items.Add(new ListItem(t.Name, t.Id.ToString()));
+                    }
+                }
+            }
+            protected void Add_Click(object sender, EventArgs e)
+            {
+                using(RXServer.Web.List.Meta m = new RXServer.Web.List.Meta(1, 1))
+                {
+                    m.Add(new RXServer.Web.List.Meta.Tag(TextBox1.Text, TextBox2.Text));
+                }
+                BindData();
+            }
+            protected void ListBox1_SelectedIndexChanged(object sender, EventArgs e)
+            {
+                using (RXServer.Web.List.Meta.Tag t = new RXServer.Web.List.Meta.Tag(Convert.ToInt32(ListBox1.SelectedValue)))
+                {
+                    t.Deleted = true;
+                    t.Save();
+                }
+                BindData();
+            }
+              </code>
+            </example>
+        </member>
+        <member name="M:RXServer.Dev.List.ListItem.Update">
+            <summary>
+            Update
+            </summary>
+        </member>
+        <member name="M:RXServer.Dev.List.ListItem.Save">
+            <summary>
+            Save
+            </summary>
+        </member>
+        <member name="M:RXServer.Data.SignOut">
+            <summary>
+            RXServer.Data.SignOut() is replaced with RXServer.Security.SignOut()
+            This method will be removed in next version of RXServer.
+            </summary>
+        </member>
+        <member name="P:RXServer.Data.Login">
+            <summary>
+            RXServer.Data.Login is replaced with RXServer.Security.LoggedInUserName
+            This property will be removed in next version of RXServer.
+            </summary>
+        </member>
+        <member name="P:RXServer.Data.Password">
+            <summary>
+            RXServer.Data.Password is replaced with RXServer.Security.LoggedInUserPassword
+            This property will be removed in next version of RXServer.
+            </summary>
+        </member>
+        <member name="T:RXServer.SiteCollection">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:RXServer.SiteCollection.GetSite(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:RXServer.SiteCollection.GetSite(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="alias"></param>
+            <returns></returns>
+        </member>
+        <member name="M:RXServer.SiteCollection.Contains(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:RXServer.SiteCollection.Contains(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="alias"></param>
+            <returns></returns>
+        </member>
+        <member name="M:RXServer.SiteCollection.Add(RXServer.Site)">
+            <summary>
+            
+            </summary>
+            <param name="site"></param>
+        </member>
+        <member name="M:RXServer.SiteCollection.Remove(RXServer.Site)">
+            <summary>
+            
+            </summary>
+            <param name="site"></param>
+        </member>
+        <member name="M:RXServer.SiteCollection.Remove(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="id"></param>
+        </member>
+        <member name="M:RXServer.SiteCollection.Clear">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:RXServer.SiteCollection.Count">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:RXServer.SiteCollection.Item(System.Int32)">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:RXServer.SiteCollection.Items">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:RXServer.Site.#ctor(System.String,System.Boolean,System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="Alias"></param>
+            <param name="AutoUpdate"></param>
+        </member>
+        <member name="M:RXServer.Site.#ctor(System.Int32,System.Boolean,System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="Id"></param>
+            <param name="AutoUpdate"></param>
+        </member>
+        <member name="M:RXServer.Site.#ctor(System.Boolean,System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="AutoUpdate"></param>
+        </member>
+        <member name="M:RXServer.Site.#ctor(System.String,System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="Alias"></param>
+        </member>
+        <member name="M:RXServer.Site.#ctor(System.Int32,System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="Id"></param>
+        </member>
+        <member name="M:RXServer.Site.#ctor(System.String,System.String)">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:RXServer.PageCollection">
+            <summary>
+            PageCollection
+            </summary>
+        </member>
+        <member name="M:RXServer.PageCollection.GetPage(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="Id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:RXServer.PageCollection.Contains(System.Int32)">
+            <summary>
+            Contains
+            </summary>
+            <param name="Id"></param>
+            <returns>true | false</returns>
+        </member>
+        <member name="M:RXServer.PageCollection.Contains(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="Name"></param>
+            <returns></returns>
+        </member>
+        <member name="P:RXServer.PageCollection.Item(System.Int32)">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:RXServer.PageCollection.Items">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:RXServer.Page.Update">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:RXServer.TaskCollection">
+            <summary>
+            TaskCollection
+            </summary>
+        </member>
+        <member name="M:RXServer.TaskCollection.GetTask(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="Id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:RXServer.TaskCollection.Contains(System.Int32)">
+            <summary>
+            Contains
+            </summary>
+            <param name="Id"></param>
+            <returns>true | false</returns>
+        </member>
+        <member name="M:RXServer.TaskCollection.Contains(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="Name"></param>
+            <returns></returns>
+        </member>
+        <member name="M:RXServer.TaskCollection.Add(RXServer.Task)">
+            <summary>
+            Add
+            </summary>
+            <param name="page"></param>
+        </member>
+        <member name="M:RXServer.TaskCollection.Remove(RXServer.Task)">
+            <summary>
+            
+            </summary>
+            <param name="page"></param>
+        </member>
+        <member name="M:RXServer.TaskCollection.Remove(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="id"></param>
+        </member>
+        <member name="M:RXServer.TaskCollection.Clear">
+            <summary>
+            Clear
+            </summary>
+        </member>
+        <member name="M:RXServer.TaskCollection.Count">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:RXServer.TaskCollection.Item(System.Int32)">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:RXServer.TaskCollection.Items">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:RXServer.Task.#ctor(System.Int32,System.Int32,System.Boolean,System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="SitId"></param>
+            <param name="PagId"></param>
+            <param name="AutoUpdate"></param>
+        </member>
+        <member name="M:RXServer.Task.#ctor(System.Int32,System.Int32,System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="SitId"></param>
+            <param name="PagId"></param>
+        </member>
+        <member name="M:RXServer.Task.#ctor(System.Int32,System.Boolean,System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="SitId"></param>
+            <param name="AutoUpdate"></param>
+        </member>
+        <member name="M:RXServer.Task.#ctor(System.Boolean,System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="AutoUpdate"></param>
+        </member>
+        <member name="M:RXServer.Task.#ctor(System.String,System.String)">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:RXServer.ObjectCollection">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:RXServer.ObjectCollection.GetObject(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:RXServer.ObjectCollection.GetObject(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="alias"></param>
+            <returns></returns>
+        </member>
+        <member name="M:RXServer.ObjectCollection.Contains(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:RXServer.ObjectCollection.Contains(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="alias"></param>
+            <returns></returns>
+        </member>
+        <member name="M:RXServer.ObjectCollection.#ctor(RXServer.ObjectType,System.Int32,System.Int32,System.Boolean,System.String,System.String)">
+            <summary>
+            This method will be removed in next version of RXServer.
+            </summary>
+        </member>
+        <member name="M:RXServer.ObjectCollection.#ctor(RXServer.ObjectType,System.Int32,System.Int32,System.Boolean,System.String,System.String,System.Boolean)">
+            <summary>
+            This method will be removed in next version of RXServer.
+            </summary>
+        </member>
+        <member name="M:RXServer.ObjectCollection.GetAllForNFM">
+            <summary>
+            Only use in nfm, will be deleted in future RXServer
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:RXServer.ObjectCollection.getAllNews(System.String,System.Int32,System.String,System.String)">
+            <summary>
+            Returns a ds with Articles from the specific inparameters values
+            </summary>
+            <param name="_alias"></param>
+            <param name="_max"></param>
+            <param name="_orderBy"></param>
+            <param name="_sortBy"></param>
+            <returns></returns>
+        </member>
+        <member name="P:RXServer.ObjectCollection.Item(System.Int32)">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:RXServer.ObjectCollection.Items">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:RXServer.Object.Update">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:RXServer.DocumentCollection">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:RXServer.DocumentCollection.GetDocument(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:RXServer.DocumentCollection.GetDocument(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="alias"></param>
+            <returns></returns>
+        </member>
+        <member name="M:RXServer.DocumentCollection.Contains(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:RXServer.DocumentCollection.Contains(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="alias"></param>
+            <returns></returns>
+        </member>
+        <member name="M:RXServer.DocumentCollection.Add(RXServer.Document)">
+            <summary>
+            
+            </summary>
+            <param name="site"></param>
+        </member>
+        <member name="M:RXServer.DocumentCollection.Remove(RXServer.Document)">
+            <summary>
+            
+            </summary>
+            <param name="site"></param>
+        </member>
+        <member name="M:RXServer.DocumentCollection.Remove(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="id"></param>
+        </member>
+        <member name="M:RXServer.DocumentCollection.Clear">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:RXServer.DocumentCollection.Count">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:RXServer.DocumentCollection.Item(System.Int32)">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:RXServer.DocumentCollection.Items">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:RXServer.ModuleCollection">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:RXServer.ModuleCollection.GetModule(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:RXServer.ModuleCollection.Contains(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:RXServer.ModuleCollection.Contains(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="name"></param>
+            <returns></returns>
+        </member>
+        <member name="P:RXServer.ModuleCollection.Item(System.Int32)">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:RXServer.ModuleCollection.Items">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:RXServer.Security.Login(System.String,System.String,System.Int32)">
+            <summary>
+            RXServer.Security.Login() is replaced with RXServer.Security.SignIn()
+            This method will be removed in next version of RXServer.
+            </summary>
+        </member>
+        <member name="T:RXServer.RXMasterPageVirtual">
+            <summary>
+            Under utveckling, kommer att komma mer sedan i RXSK
+            </summary>
+        </member>
+        <member name="M:RXServer.Web.Modules.List.Dropdown.#ctor(System.String,System.Int32,System.Int32)">
+            <summary>
+            Use this when you cant define mod_id, alias will be used insted...
+            </summary>
+            <param name="UserDefined"></param>
+            <param name="SitId"></param>
+            <param name="PagId"></param>
+        </member>
+        <member name="T:RXServer.Web.Menus.Menu">
+            <summary>
+            RXServer.Web.Menus.Menu m = (RXServer.Web.Menus.Menu)this.RXMenu;
+            </summary>
+        </member>
+        <member name="T:Cambia.Web.CoreLib.PathHelper">
+            <summary>
+            PathHelper retrieves and converts URLs and physical file paths in ASP.NET
+            applications.
+            
+            Definitions:
+            -------------
+            Absolute URL:     http://www.cambiaresearch.com/c4/Default.aspx
+            Virtual Path:     /c4/Default.aspx
+            Physical Path:    C:\inetpub\wwwroot\cambia\c4\Default.aspx
+            Application Path: Default.aspx (if a path is not one of the 3 classes above it is assumed 
+                              to be application relative)
+            
+            </summary>
+        </member>
+        <member name="M:Cambia.Web.CoreLib.PathHelper.GetImmediateFolderName(System.String)">
+            <summary>
+            Returns the last folder name in a path with a trailing slash
+            IE. "c:\myfolder\myspace\afile.txt" will return "myspace"
+            IE. "c:\myfolder\myspace" will return "myfolder"
+            IE. "myfolder/myspace/" will return "myspace"
+            IE. "myfolder/myspace" will return "myfolder"
+            IE. "myspace" will return ""
+            </summary>
+        </member>
+        <member name="M:Cambia.Web.CoreLib.PathHelper.SyncSlashes(System.String)">
+            <summary>
+            Makes sure the slashes are all going the right direction,.
+            Back for physical, forward for URL
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:Cambia.Web.CoreLib.PathHelper.GetUriSegments(System.String)" -->
+        <member name="P:Cambia.Web.CoreLib.PathHelper.AppPath">
+            <summary>
+            The virtual application path:
+            "/myapp/"
+            "/apps/myapp/"
+            "/"
+            </summary>
+        </member>
+        <member name="T:RXServer.Web.Modules.Module">
+            <summary>
+            Overrides the base class Module in ModuleCollection
+            </summary>
+        </member>
+        <member name="M:RXServer.Web.Modules.Module.#ctor">
+            <summary>
+            No specific, just the orginal constuctor.
+            </summary>
+        </member>
+        <member name="T:RXServer.Web.Modules.ModuleCollection">
+            <summary>
+            Overrides the base class ModuleCollection in RXServer
+            </summary>
+        </member>
+        <member name="M:RXServer.Web.Modules.ModuleCollection.#ctor(System.Int32[])">
+            <summary>
+            This use a specific constructor in RXServer.ModuleCollection
+            that is only for use with this inherit...
+            </summary>
+        </member>
+        <member name="M:RXServer.Web.Modules.ArticleBase.Save">
+            <summary>
+            Save the Object Article and create readmore page if it not exist...
+            </summary>
+        </member>
+        <member name="M:RXServer.Web.Modules.Article.GetArticles(System.String[],System.Int32)">
+            <summary>
+            Only use in nfm, will be deleted in future RXServer
+            </summary>
+            <param name="Alias"></param>
+            <param name="Max"></param>
+            <returns></returns>
+        </member>
+        <member name="M:RXServer.Web.Modules.Article.GetArticles2(System.String[],System.Int32)">
+            <summary>
+            Only use in reaktor, will be deleted in future RXServer
+            </summary>
+            <param name="Alias"></param>
+            <param name="Max"></param>
+            <returns></returns>
+        </member>
+        <member name="M:RXServer.Web.Modules.Article.GetArticles3(System.String[],System.Int32)">
+            <summary>
+            Only use in reaktor, will be deleted in future RXServer
+            </summary>
+            <param name="Alias"></param>
+            <param name="Max"></param>
+            <returns></returns>
+        </member>
+        <member name="M:RXServer.Web.Modules.Article.GetArticlesFromArchive(System.String)">
+            <summary>
+            Only use in blogg, will be deleted in future RXServer
+            </summary>
+            <param name="Alias"></param>
+            <param name="Max"></param>
+            <returns></returns>
+        </member>
+        <member name="M:RXServer.Web.Modules.Article.GetNewsArticles(System.String,System.Int32,System.String,System.String)">
+            <summary>
+            Returns a dataset with _max news articles, which has the same _alias in the db. 
+            </summary>
+            <param name="Alias"></param>
+            <param name="Max"></param>
+            <param name="OrderBy"></param>
+            <param name="SortBy"></param>
+            <returns></returns>
+        </member>
+        <member name="M:RXServer.Web.Modules.Article.CreateRSSFile(System.Int32,System.Int32,System.String,System.String,System.String,System.String,System.Int32)">
+            <summary>
+            This is used only for creating rss file based on sitid and pagid
+            </summary>
+            <param name="SitId"></param>
+            <param name="PagId"></param>
+            <param name="FilePath"></param>
+        </member>
+        <member name="M:RXServer.Web.Modules.Article.CreateFlashXML(System.Int32,System.Int32,System.String,System.String,System.String,System.String,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="SitId"></param>
+            <param name="PagId"></param>
+            <param name="FilePath"></param>
+            <param name="Title"></param>
+            <param name="Link"></param>
+            <param name="Description"></param>
+            <param name="MaxPosts"></param>
+        </member>
+        <member name="M:RXServer.Authentication.SignIn(System.String,System.String,System.String,System.Int32)">
+            <summary>
+            Only use this for Bayer website.
+            </summary>
+        </member>
+        <member name="M:RXServer.Authentication.SignInAndRedirect(System.String,System.String,System.String,System.Int32,System.String)">
+            <summary>
+            Only use this for Bayer website.
+            </summary>
+        </member>
+        <member name="M:RXServer.Authentication.SignInAndRedirectFromSSL(System.String,System.String,System.String,System.Int32,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="Email"></param>
+            <param name="Password"></param>
+            <param name="Role"></param>
+            <param name="Group"></param>
+            <param name="Redirect"></param>
+        </member>
+        <member name="T:RXServer.Web.Parse.Attribute">
+             <summary>
+             Attribute holds one attribute, as is normally stored in an
+             HTML or XML file. This includes a name, value and delimiter.
+             This source code may be used freely under the
+             Limited GNU Public License(LGPL).
+            
+             Written by Jeff Heaton (http://www.jeffheaton.com)
+             </summary>
+        </member>
+        <member name="F:RXServer.Web.Parse.Attribute.m_name">
+            <summary>
+            The name of this attribute
+            </summary>
+        </member>
+        <member name="F:RXServer.Web.Parse.Attribute.m_value">
+            <summary>
+            The value of this attribute
+            </summary>
+        </member>
+        <member name="F:RXServer.Web.Parse.Attribute.m_delim">
+            <summary>
+            The delimiter for the value of this attribute(i.e. " or ').
+            </summary>
+        </member>
+        <member name="M:RXServer.Web.Parse.Attribute.#ctor(System.String,System.String,System.Char)">
+            <summary>
+            Construct a new Attribute.  The name, delim, and value
+            properties can be specified here.
+            </summary>
+            <param name="name">The name of this attribute.</param>
+            <param name="value">The value of this attribute.</param>
+            <param name="delim">The delimiter character for the value.
+            </param>
+        </member>
+        <member name="M:RXServer.Web.Parse.Attribute.#ctor">
+            <summary>
+            The default constructor.  Construct a blank attribute.
+            </summary>
+        </member>
+        <member name="M:RXServer.Web.Parse.Attribute.#ctor(System.String,System.String)">
+            <summary>
+            Construct an attribute without a delimiter.
+            </summary>
+            <param name="name">The name of this attribute.</param>
+            <param name="value">The value of this attribute.</param>
+        </member>
+        <member name="P:RXServer.Web.Parse.Attribute.Delim">
+            <summary>
+            The delimiter for this attribute.
+            </summary>
+        </member>
+        <member name="P:RXServer.Web.Parse.Attribute.Name">
+            <summary>
+            The name for this attribute.
+            </summary>
+        </member>
+        <member name="P:RXServer.Web.Parse.Attribute.Value">
+            <summary>
+            The value for this attribute.
+            </summary>
+        </member>
+        <member name="T:RXServer.Web.Parse.AttributeList">
+             <summary>
+             The AttributeList class is used to store list of
+             Attribute classes.
+             This source code may be used freely under the
+             Limited GNU Public License(LGPL).
+            
+             Written by Jeff Heaton (http://www.jeffheaton.com)
+             </summary>
+            
+        </member>
+        <member name="F:RXServer.Web.Parse.AttributeList.m_list">
+            <summary>
+            An internally used Vector.  This vector contains
+            the entire list of attributes.
+            </summary>
+        </member>
+        <member name="M:RXServer.Web.Parse.AttributeList.Clone">
+            <summary>
+            Make an exact copy of this object using the cloneable
+            interface.
+            </summary>
+            <returns>A new object that is a clone of the specified
+            object.</returns>
+        </member>
+        <member name="M:RXServer.Web.Parse.AttributeList.#ctor">
+            <summary>
+            Create a new, empty, attribute list.
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:RXServer.Web.Parse.AttributeList.Add(RXServer.Web.Parse.Attribute)" -->
+        <member name="M:RXServer.Web.Parse.AttributeList.Clear">
+            <summary>
+            Clear all attributes from this AttributeList and return
+            it to a empty state.
+            </summary>
+        </member>
+        <member name="M:RXServer.Web.Parse.AttributeList.IsEmpty">
+            <summary>
+            Returns true of this AttributeList is empty, with no
+            attributes.
+            </summary>
+            <returns>True if this AttributeList is empty, false
+            otherwise.</returns>
+        </member>
+        <member name="M:RXServer.Web.Parse.AttributeList.Set(System.String,System.String)">
+            <summary>
+            If there is already an attribute with the specified name,
+            it will have its value changed to match the specified
+            value. If there is no Attribute with the specified name,
+            one will be created. This method is case-insensitive.
+            </summary>
+            <param name="name">The name of the Attribute to edit or
+            create.  Case-insensitive.</param>
+            <param name="value">The value to be held in this
+            attribute.</param>
+        </member>
+        <member name="P:RXServer.Web.Parse.AttributeList.Count">
+            <summary>
+            How many attributes are in this AttributeList?
+            </summary>
+        </member>
+        <member name="P:RXServer.Web.Parse.AttributeList.List">
+            <summary>
+            A list of the attributes in this AttributeList
+            </summary>
+        </member>
+        <member name="P:RXServer.Web.Parse.AttributeList.Item(System.Int32)">
+            <summary>
+            Access the individual attributes
+            </summary>
+        </member>
+        <member name="P:RXServer.Web.Parse.AttributeList.Item(System.String)">
+            <summary>
+            Access the individual attributes by name.
+            </summary>
+        </member>
+        <member name="T:RXServer.Web.Parse.Parse">
+             <summary>
+             Base class for parsing tag based files, such as HTML,
+             HTTP headers, or XML.
+            
+             This source code may be used freely under the
+             Limited GNU Public License(LGPL).
+            
+             Written by Jeff Heaton (http://www.jeffheaton.com)
+             </summary>
+        </member>
+        <member name="F:RXServer.Web.Parse.Parse.m_source">
+            <summary>
+            The source text that is being parsed.
+            </summary>
+        </member>
+        <member name="F:RXServer.Web.Parse.Parse.m_idx">
+            <summary>
+            The current position inside of the text that
+            is being parsed.
+            </summary>
+        </member>
+        <member name="F:RXServer.Web.Parse.Parse.m_parseDelim">
+            <summary>
+            The most recently parsed attribute delimiter.
+            </summary>
+        </member>
+        <member name="F:RXServer.Web.Parse.Parse.m_parseName">
+            <summary>
+            This most recently parsed attribute name.
+            </summary>
+        </member>
+        <member name="F:RXServer.Web.Parse.Parse.m_parseValue">
+            <summary>
+            The most recently parsed attribute value.
+            </summary>
+        </member>
+        <member name="F:RXServer.Web.Parse.Parse.m_tag">
+            <summary>
+            The most recently parsed tag.
+            </summary>
+        </member>
+        <member name="M:RXServer.Web.Parse.Parse.IsWhiteSpace(System.Char)">
+            <summary>
+            Determine if the specified character is whitespace or not.
+            </summary>
+            <param name="ch">A character to check</param>
+            <returns>true if the character is whitespace</returns>
+        </member>
+        <member name="M:RXServer.Web.Parse.Parse.EatWhiteSpace">
+            <summary>
+            Advance the index until past any whitespace.
+            </summary>
+        </member>
+        <member name="M:RXServer.Web.Parse.Parse.Eof">
+            <summary>
+            Determine if the end of the source text has been reached.
+            </summary>
+            <returns>True if the end of the source text has been
+            reached.</returns>
+        </member>
+        <member name="M:RXServer.Web.Parse.Parse.ParseAttributeName">
+            <summary>
+            Parse the attribute name.
+            </summary>
+        </member>
+        <member name="M:RXServer.Web.Parse.Parse.ParseAttributeValue">
+            <summary>
+            Parse the attribute value
+            </summary>
+        </member>
+        <member name="M:RXServer.Web.Parse.Parse.AddAttribute">
+            <summary>
+            Add a parsed attribute to the collection.
+            </summary>
+        </member>
+        <member name="M:RXServer.Web.Parse.Parse.GetCurrentChar">
+            <summary>
+            Get the current character that is being parsed.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:RXServer.Web.Parse.Parse.GetCurrentChar(System.Int32)">
+            <summary>
+            Get a few characters ahead of the current character.
+            </summary>
+            <param name="peek">How many characters to peek ahead
+            for.</param>
+            <returns>The character that was retrieved.</returns>
+        </member>
+        <member name="M:RXServer.Web.Parse.Parse.AdvanceCurrentChar">
+            <summary>
+            Obtain the next character and advance the index by one.
+            </summary>
+            <returns>The next character</returns>
+        </member>
+        <member name="M:RXServer.Web.Parse.Parse.Advance">
+            <summary>
+            Move the index forward by one.
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "P:RXServer.Web.Parse.Parse.ParseName" -->
+        <!-- Badly formed XML comment ignored for member "P:RXServer.Web.Parse.Parse.ParseValue" -->
+        <!-- Badly formed XML comment ignored for member "P:RXServer.Web.Parse.Parse.ParseDelim" -->
+        <!-- Badly formed XML comment ignored for member "P:RXServer.Web.Parse.Parse.Source" -->
+        <member name="T:RXServer.Web.Parse.ParseHTML">
+            <summary>
+            Summary description for ParseHTML.
+            </summary>
+        </member>
+    </members>
+</doc>

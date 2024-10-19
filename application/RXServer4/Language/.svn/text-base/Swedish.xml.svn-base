@@ -1,0 +1,375 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Translations>
+	<Common>
+		<sitename>RXServer4</sitename>
+		<siteurl>?</siteurl>
+		<password>Lösenord</password>
+		<username>Användarnamn</username>
+		<name>Namn</name>
+		<email>E-postadress</email>
+		<login>Logga in</login>
+    <ok>Ok</ok>
+		<logout>Logga ut</logout>
+		<admin>Administratör</admin>
+		<settings>Inställningar</settings>
+		<send>Skicka</send>
+		<show>Visa</show>
+		<role>Roll</role>
+		<close>Stäng</close>
+		<cancel>Avbryt</cancel>
+		<save>Spara</save>
+		<back>Back</back>
+		<continue>Fortsätt</continue>
+		<print>Skriv ut</print>
+		<today>Idag</today>
+		<tomorrow>Imorgon</tomorrow>
+		<place>Plats</place>
+		<time>Tid</time>
+		<activationcode>Aktiveringskod</activationcode>
+		<anonymous>Anonym</anonymous>
+		<updated>Uppdaterad</updated>
+		<fontsize>Teckenstorlek</fontsize>
+		<error_mess>Ett fel uppstod. Var vänlig kontakta en administratör.</error_mess>
+		<pieces>st</pieces>
+		<youremail>Din e-post</youremail>
+		<yourname>Ditt namn</yourname>
+	</Common>
+	<Error>
+		<login>Felaktig Användarnamns/Lösenordskombination</login>
+		<password>Felaktigt lösenord</password>
+		<email>Felaktig e-postadress</email>
+		<code>Felaktig kod</code>
+		<image>Felaktig storlek/bildformat.</image>
+		<media>Felaktigt media/storleksformat.</media>
+		<email_exists>E-postadress existerar redan</email_exists>
+		<email_dont_exist>E-postadress existerar inte</email_dont_exist>
+		<user_exists>Användare existerar redan</user_exists>
+		<username>Felaktigt Användarnamn</username>
+		<password_mismatch>Lösenorden är inte likadana</password_mismatch>
+		<user_active>Användaren är redan aktiv</user_active>
+		<yourname>Var god fyll i ditt namn.</yourname>
+		<no_content>Var god fyll i information.</no_content>
+		<fill_old_password>Var god skriv in ditt gamla lösenord för att ditt nya skall fungera.</fill_old_password>
+		<upload_valid>Var vänlig att ladda upp en gilitg fil.</upload_valid>
+    <firstname>Var god fyll i ditt förnamn.</firstname>
+    <lastname>Var god fyll i ditt efternamn.</lastname>
+    <city>Var god fyll i din stad.</city>
+    <address>Var god fyll i din adress.</address>
+    <zipcode>Var god fyll i ditt postnr.</zipcode>
+	</Error>
+	<Success>
+		<information_updated>Informationen är nu uppdaterad</information_updated>
+	</Success>
+	<Modules>
+		<RegisterMail>
+			<select_group>Välj en grupp</select_group>
+			<title>Nyhetsbrev</title>
+			<text>Vill du få tillgång till vårt nyhetsbrev? Registera dig nedan.</text>
+			<button>Registera</button>
+			<link_to_unregister>Vill du avregistrera dig?</link_to_unregister>
+			<Error>
+				<select_group>Var god välj en grupp</select_group>
+				<mail_exists_in_group>E-postadressen är redan registrerad för den gruppen.</mail_exists_in_group>
+			</Error>
+			<Success>
+				<added>blev tillagd i</added>
+			</Success>
+		</RegisterMail>
+		<UnregisterMail>
+			<button>Avregistrera mig</button>
+			<found_groups>E-postadressen fanns i fler än en grupp. Var snäll att avregistera dig själv ifrån de specifika grupperna.</found_groups>
+			<Error>
+				<mail_dont_exists>E-postadressen kunde inte hittas i någon av grupperna.</mail_dont_exists>
+			</Error>
+			<Success>
+				<removed>blev borttagen ur</removed>
+			</Success>
+		</UnregisterMail>
+    <User>
+      <welcome>Välkommen</welcome>
+      <not_logged>Ej inloggad</not_logged>
+      <logged>Inloggad</logged>
+      <choose_password>Välj Lösenord</choose_password>
+      <choose_role>Välj Roll</choose_role>
+      <confirm_password>Bekräfta Lösenord</confirm_password>
+      <forgot_pass>Glömt Lösenord?</forgot_pass>
+      <create_user>Skapa Användare</create_user>
+      <create_account>Skapa Konto</create_account>
+      <activate_account>Aktivera Konto</activate_account>
+      <mypage>Min Sida</mypage>
+      <settings_title>Inställningar</settings_title>
+      <settings_ingress>Här kan du editera dina inställningar</settings_ingress>
+      <settings_text>Klicka sedan på "Save"</settings_text>
+    </User>
+    <Register>
+      <title>Skapa Konto</title>
+      <text>
+        Fyll i dina uppgifter för att skapa ett nytt konto. [newline]
+        Detta behövs för att du skall bli godkänd som en medlem.
+      </text>
+      <user_created>Kontot skapades. Du kan nu stänga detta fönster.[newline]Så fort du får ett bekräftelsemail från administratören kan du logga in med dina uppgifter.</user_created>
+    </Register>
+    <ForgotPassword>
+      <title>Glömt Lösenord?</title>
+      <text>Ange e-postadressen eller användarnamnet du använde när du registrerade dig, så skickar vi dig ett e-postmeddelande med ditt användarnamn och lösenord.</text>
+      <password_sent>Dina kontouppgifter är nu skickade till den registerade e-postadressen.</password_sent>
+    </ForgotPassword>
+    <EditProfile>
+      <title>Redigera Profil</title>
+      <text>Här kan du redigera din profil.</text>
+      <tab_1>Personuppgifter</tab_1>
+      <tab_2>Profilbild</tab_2>
+      <tab_3>Presentation</tab_3>
+      <tab_4>Ta bort mig!</tab_4>
+      <tab_5>Byt användarnamn</tab_5>
+      <firstname>Förnamn</firstname>
+      <lastname>Efternamn</lastname>
+      <address>Adress</address>
+      <zipcode>Postnr</zipcode>
+      <city>Stad</city>
+      <phonenumber>Telefonummer</phonenumber>
+      <company>Företagsnamn</company>
+      <old_password>Gammalt lösenord</old_password>
+      <new_password>Nytt lösenord</new_password>
+      <verify_password>Verifiera nytt lösenord</verify_password>
+      <profile_info>Skriv en kort presentation av dig själv.</profile_info>
+      <upload_image>Ladda upp en bild</upload_image>
+      <remove_image>Ta bort bilden</remove_image>
+      <image_properties>
+        Du kan ladda upp foton i formaten JPG, GIF och PNG. [newline][newline]
+        Maximal filstorlek är 0,5 MB. Om bilden inte går att ladda upp, bör du försöka med en mindre bild.[newline]
+      </image_properties>
+      <remove_user_text>Är du helt säker att du vill ta bort själv ur registret?</remove_user_text>
+      <remove_me>Ta bort mig!</remove_me>
+      <change_username_text>Byt användarnamn här.</change_username_text>
+    </EditProfile>
+    <Forum>
+      <enter_title>Skriv in en titel här</enter_title>
+      <create_thread_title>Skapa en ny tråd</create_thread_title>
+      <created_by>Skapad av</created_by>
+      <last_post>Senaste post</last_post>
+      <threads>Trådar</threads>
+      <posts>Poster</posts>
+      <visits>Besök</visits>
+      <by>av</by>
+      <permalink>direktlänk</permalink>
+      <home_directory>Forum</home_directory>
+    </Forum>
+    <Annons>
+      <enter_title>Skriv in en titel här</enter_title>
+      <upload_image>Ladda upp en bild</upload_image>
+      <create_thread_title>Skapa en ny annons</create_thread_title>
+      <created_by>Skapad av</created_by>
+      <last_post>Senaste svar</last_post>
+      <threads>Annonser</threads>
+      <posts>Svar</posts>
+      <visits>Besök</visits>
+      <by>av</by>
+      <permalink>direktlänk</permalink>
+      <home_directory>Start</home_directory>
+    </Annons>
+		<News>
+			<readmore_link>Läs mer</readmore_link>
+		</News>
+		<Search>
+			<search>Sök</search>
+			<search_results_for>Sökresultat för</search_results_for>
+			<search_hits>Antal sökträffar</search_hits>
+			<previous>Föregående</previous>
+			<next>Nästa</next>
+			<first>Första</first>
+			<read_more>Mer information</read_more>
+		</Search>
+		<ContactBox>
+			<category>Kategori</category>
+			<subcategory>Underkategori</subcategory>
+			<whoareyou>Vem är du?</whoareyou>
+			<field1>Land / Region</field1>
+			<field2>E-postadress</field2>
+			<field3>Telefon</field3>
+			<question>Meddelande</question>
+			<Error>
+				<select_category>Var god välj en kategori</select_category>
+				<select_subcategory>Var god välj en underkategori</select_subcategory>
+				<select_client>Var god specificera vem du är</select_client>
+				<check_policy>Var god acceptera vår policy</check_policy>
+				<question>Var vänlig skriv ett meddelande till oss</question>
+			</Error>
+		</ContactBox>
+    <ContactBox2>
+      <category>Kategori</category>
+      <subcategory>Underkategori</subcategory>
+      <whoareyou>Vem är du?</whoareyou>
+      <field1>Ditt namn</field1>
+      <field2>Din e-postadress</field2>
+      <field3>Telefon</field3>
+      <question>Meddelande</question>
+      <Error>
+        <select_category>Var god välj en kategori</select_category>
+        <select_client>Var god specificera vem du är</select_client>
+        <check_policy>Var god acceptera vår policy</check_policy>
+        <question>Var vänlig skriv ett meddelande till oss</question>
+      </Error>
+    </ContactBox2>
+		<Social>
+			<Tooltip>
+				<facebook>Dela med på Facebook</facebook>
+				<delicious>Dela med på Delicious</delicious>
+				<myspace>Dela med på MySpace</myspace>
+				<print>Skriv ut</print>
+			</Tooltip>
+		</Social>
+		<PopUp>
+			<Tellafriend>
+				<link>Tipsa en vän</link>
+				<header>Tipsa en vän!</header>
+				<info>Fyll i alla fält och tryck på skicka</info>
+				<yourname>Ditt namn</yourname>
+				<youremail>Din epostadress</youremail>
+				<friendsemail>Din väns epostadress</friendsemail>
+				<confirmation>Din vän har du blivit tipsad!</confirmation>
+				<mailtext>vill tipsa dig om en sida på RXServer4!</mailtext>
+				<mailsubject>Du har blivit tipsad av</mailsubject>
+				<followlink>Klicka här för att se sidan</followlink>
+			</Tellafriend>
+			<Print>
+				<title>Utskriftsvänligt Text</title>
+				<info>En utskrift från RXServer4</info>
+			</Print>
+		</PopUp>
+		<RSS>
+			<invalid_feed>Invalid Feed</invalid_feed>
+			<no_data>Ingen Data/Invalid Feed</no_data>
+		</RSS>
+    <TopMenu>
+      <searchdefaulttext>Sök</searchdefaulttext>
+    </TopMenu>
+    <ShopBox>
+      <currencysymbol>:-</currencysymbol>
+      <quantitysymbol>st</quantitysymbol>
+    </ShopBox>
+    <SmallCart>
+      <emptytext>DIN KUNDKORG INNEHÅLLER 0 PRODUKTER</emptytext>
+      <product> PRODUKT, </product>
+      <products> PRODUKTER, </products>
+      <currencysymbol>:-</currencysymbol>
+      <withvatsymbol>INKL. MOMS</withvatsymbol>
+      <withoutvatsymbol>EXKL. MOMS</withoutvatsymbol>
+      <checkout>KASSA</checkout>
+    </SmallCart>
+    <BigCart>
+      <title>Kundkorg</title>
+      <desc>Beskrivning</desc>
+      <quantity>Antal</quantity>
+      <price>Pris</price>
+      <totalprice>Total</totalprice>
+      <currencysymbol> SEK</currencysymbol>
+      <delete>Ta bort</delete>
+      <totalcartprice>Summa</totalcartprice>
+      <shiping>Frakt</shiping>
+      <totalcartpricewithshiping>TOTAL</totalcartpricewithshiping>
+      <withvatsymbol>inkl. moms</withvatsymbol>
+      <withoutvatsymbol>exkl. moms</withoutvatsymbol>
+      <update>Uppdatera korgen</update>
+      <empty>Töm korgen</empty>
+      <return>Fortsätt handla</return>
+      <checkout>Till kassan</checkout>
+    </BigCart>
+    <Checkout>
+      <title>Kassa</title>
+      <desc>Beskrivning</desc>
+      <quantity>Antal</quantity>
+      <name>Produktnamn</name>
+      <instock>Lagerstatus</instock>
+      <isinstock>I lager</isinstock>
+      <isnotinstock>Ej i lager</isnotinstock>
+      <price>Pris</price>
+      <totalprice>Total</totalprice>
+      <quantitysymbol> st</quantitysymbol>
+      <currencysymbol> SEK</currencysymbol>
+      <delete>Ta bort</delete>
+      <totalcartprice>Summa</totalcartprice>
+      <shiping>Frakt</shiping>
+      <totalcartpricewithshiping>TOTAL</totalcartpricewithshiping>
+      <withvatsymbol>inkl. moms</withvatsymbol>
+      <withoutvatsymbol>exkl. moms</withoutvatsymbol>
+      <update>Uppdatera korgen</update>
+      <empty>Töm korgen</empty>
+      <return>Fortsätt handla</return>
+      <customertype>Kundtyp</customertype>
+      <customererror>Ingen kundtyp anginven</customererror>
+      <paymentmethods>Betalningsalternativ</paymentmethods>
+      <paymenterror>Inget betalningsalternativ angivet</paymenterror>
+      <shipping>Fraktalternativ</shipping>
+      <shippingerror>Inget fraktalternativ angivet</shippingerror>
+      <private>Privatperson</private>
+      <company>Företag</company>
+      <paypal>PayPal</paypal>
+      <sms>SMS</sms>
+      <invoice>Faktura</invoice>
+      <creditcard>Kortbetalning</creditcard>
+      <cashondelivery>Postförskott</cashondelivery>
+      <postal>Postpaket</postal>
+      <pickup>Hämta i butik</pickup>
+      <delivery>Hemleverans i 0457-området</delivery>
+      <address>Leveransinformation</address>
+      <companyname>Företagsnamn</companyname>
+      <orgnr>Organisationsnummer</orgnr>
+      <firstname>Förnamn</firstname>
+      <lastname>Efternamn</lastname>
+      <streetaddress>Gatuadress</streetaddress>
+      <zipcode>Postnummer</zipcode>
+      <city>Ort</city>
+      <country>Land</country>
+      <phonenumber>Telefonnummer</phonenumber>
+      <email>E-post</email>
+      <terms>Försäljningsvilkor</terms>
+      <termserror>Du måste godkänna våra vilkor</termserror>
+      <confirm>Bekräfta order</confirm>
+      <successmessage>Order mottagen. Återgår nu till butiken.</successmessage>
+    </Checkout>
+  </Modules>
+	<Mail>
+		<Global>
+			<footer>RXServer4</footer>
+			<thank_you>Med vänliga hälsningar / RXServer4</thank_you>
+		</Global>
+		<ContactBox>
+			<header>E-post från www.rxserver4.se</header>
+		</ContactBox>
+    <ContactBox2>
+      <header>E-post från www.rxserver4.se</header>
+    </ContactBox2>
+    <Tellafriend>
+			<subject>Du har blivit tipsad av</subject>
+			<header>Ett tips från RXServer4</header>
+			<text>vill tipsa dig om en sida på RXServer4</text>
+			<link>Klicka här för att se sidan</link>
+		</Tellafriend>
+    <LostPassword>
+      <subject>Kontouppgifter för RXServer4</subject>
+      <header>Kontouppgifter</header>
+      <text>Dina kontouppgifter för RXServer4</text>
+      <link>Klicka här för att logga in</link>
+    </LostPassword>
+    <Register>
+      <subject>Registrering av konto</subject>
+      <header>Registrering av konto</header>
+      <text>Det har registrerats ett konto på RXServer4.</text>
+    </Register>
+    <Welcome>
+      <subject>Välkommen till RXServer4!</subject>
+      <header>Välkommen till RXServer4!</header>
+      <text>
+        Ditt konto har nu blivit godkänt.[newline] Du kan numera logga in på vår sida.[newline]
+        [newline]
+        Dina uppgifter:
+      </text>
+    </Welcome>
+	</Mail>
+</Translations>
+
+
+
+
+

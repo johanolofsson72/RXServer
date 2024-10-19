@@ -1,0 +1,5 @@
+D:\My Documents\Visual Studio 2008\Projects\RSSReader\RSSReader\obj\Debug\ResolveAssemblyReference.cache
+D:\My Documents\Visual Studio 2008\Projects\RSSReader\RSSReader\bin\Debug\RSSReader.dll
+D:\My Documents\Visual Studio 2008\Projects\RSSReader\RSSReader\bin\Debug\RSSReader.pdb
+D:\My Documents\Visual Studio 2008\Projects\RSSReader\RSSReader\obj\Debug\RSSReader.dll
+D:\My Documents\Visual Studio 2008\Projects\RSSReader\RSSReader\obj\Debug\RSSReader.pdb

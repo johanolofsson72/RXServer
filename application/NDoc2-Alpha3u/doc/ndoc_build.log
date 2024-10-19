@@ -1,0 +1,34 @@
+Memory before build: 1093044
+Initializing Workspace
+Creating Help Project Resources
+Analyzing Assemblies & Merging XML Documentation
+Memory making xml: 2359432
+An error occured while trying to build the documentation.
+
+
+
+Exception: NDoc.Core.DocumenterException
+An error occured while creating the documentation
+
+Exception: System.BadImageFormatException
+Could not load file or assembly 'C:\Development\LiquidCore\LiquidCore\application\RXSK\Default.aspx' or one of its dependencies. The module was expected to contain an assembly manifest.
+
+
+
+Exception: NDoc.Core.DocumenterException
+   at NDoc.Documenter.UnifiedMsdn.UnifiedMsdnDocumenter.Build(Project project) in M:\ndoc_vs2005\src\Documenter\UnifiedMsdn\Common\UnifiedMsdnDocumenter.cs:line 195
+   at NDoc.Gui.BuildWorker.ThreadProc() in M:\ndoc_vs2005\src\Gui\BuildWorker.cs:line 89
+
+Exception: System.BadImageFormatException
+   at System.Reflection.AssemblyName.nGetFileInformation(String s)
+   at System.Reflection.AssemblyName.GetAssemblyName(String assemblyFile)
+   at NDoc.Core.Reflection.AssemblyLoader.LoadAssemblyFile(String fileName) in M:\ndoc_vs2005\src\Core\ReflectionEngine\AssemblyLoading\AssemblyLoader2.cs:line 242
+   at NDoc.Core.Reflection.AssemblyLoader.LoadProjectAssembly(String fileName) in M:\ndoc_vs2005\src\Core\ReflectionEngine\AssemblyLoading\AssemblyLoader2.cs:line 160
+   at NDoc.Core.Reflection.ReflectionEngine.LoadProjectAssemblies() in M:\ndoc_vs2005\src\Core\ReflectionEngine\ReflectionEngine.cs:line 340
+   at NDoc.Core.Reflection.ReflectionEngine.BuildXml(XmlWriter writer) in M:\ndoc_vs2005\src\Core\ReflectionEngine\ReflectionEngine.cs:line 221
+   at NDoc.Core.Reflection.ReflectionEngine.MakeXmlFile(ReflectionEngineParameters rep, String xmlFile, DocBuildingEventHandler progressHandler) in M:\ndoc_vs2005\src\Core\ReflectionEngine\ReflectionEngine.cs:line 172
+   at NDoc.Core.Reflection.ReflectionEngine.MakeXmlFile(ReflectionEngineParameters rep, String xmlFile, DocBuildingEventHandler progressHandler)
+   at NDoc.Core.Reflection.BaseReflectionDocumenter.MakeXmlFile(Project project, String& fileName) in M:\ndoc_vs2005\src\Core\Documenters\BaseReflectionDocumenter.cs:line 93
+   at NDoc.Documenter.UnifiedMsdn.UnifiedMsdnDocumenter.Build(Project project) in M:\ndoc_vs2005\src\Documenter\UnifiedMsdn\Common\UnifiedMsdnDocumenter.cs:line 146
+
+

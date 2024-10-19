@@ -1,0 +1,89 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="WebAdmin.master.cs" EnableTheming="true" Inherits="Structure_WebAdmin_WebAdmin" %>
+<%@ Register TagPrefix="telerik" Namespace="Telerik.Web.UI" Assembly="Telerik.Web.UI" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>&nbsp;RX Server Content Manager</title>  
+    <link href="~/App_Themes/WebAdmin/admin.css" rel="stylesheet" type="text/css" />  
+    <script type="text/javascript">
+        function GetRadWindow()
+        {
+            var oWindow = null;
+            if (window.radWindow) oWindow = window.radWindow;
+            else if (window.frameElement.radWindow) oWindow = window.frameElement.radWindow;
+            return oWindow;
+        }            
+                        
+        function returnToParent()
+        {
+            var oArg = new Object();
+            var oWnd = GetRadWindow();         
+            var win = window.parent;
+            win.location.reload(); 
+            oWnd.close();
+        }
+
+        function CloseWindow()
+        {
+            var oArg = new Object();
+            var oWnd = GetRadWindow();         
+            oWnd.close();
+        }   
+
+  </script>
+    
+</head>
+<body>
+    <form id="form1" runat="server">    
+       
+        <!-- Script Manager for RadControls -->        
+        <telerik:RadScriptManager ID="RadScriptManager1" Runat="server">
+    </telerik:RadScriptManager>
+<%--        <asp:ScriptManager id="ScriptManager" runat="server" />--%>
+        <telerik:RadAjaxManager ID="RadAjaxManager1" runat="server">
+        </telerik:RadAjaxManager>
+        
+        
+        <!-- Form Design from RadControls -->
+    
+        <div id="RXAdmin_all" style="position: relative; margin: 0px; padding:0px; margin-top: 4px; margin-bottom: 4px; display: inline; float: left; height: 100%; width: 100%; z-index: 1;">
+              
+
+                    
+            <!-- HEADER INFORMATION, STANDARD -->
+            <div id="RXAdmin_header" style="position: relative; float: left; height: 57px; width: 100%; background-color: #666666;">
+                <div id="left_img" style="position: relative; float: left; height: 57px; width: 6px;">
+                    <img src="~/App_Themes/WebAdmin/Images/header_bg_left.gif" runat="server" alt="" /></div>
+                <div id="RXAdmin_header_text" style="position: relative; float: left; padding-top:9px; padding-left: 13px;"><span class="Text27_bold_white">RXSK</span></div>
+                <div id="right_img" style="position: relative; float: right; height: 57px; width: 6px;">
+                    <img src="~/App_Themes/WebAdmin/Images/header_bg_right.gif" runat="server" alt="" /></div>
+                <div id="window_close" style="position: relative; float: right; left:-10px; top: 10px;">
+                    <asp:ImageButton ID="imgClose" ImageUrl="~/App_Themes/WebAdmin/Images/window_close.gif"  OnClientClick="returnToParent(); return false;" runat="server" /></div>
+            </div>
+
+            <div id="RXAdmin_menu" style="position: relative; float: left; width: 100%; background-color: #666666;">
+            <asp:ContentPlaceHolder ID="MainAdminMenuContent" runat="server"/></div>              
+
+            <!-- ADMIN INFORMATION -->
+            <div id="RXAdmin_main_left" style="position: relative; float: left;  width: 75%;">
+                <asp:ContentPlaceHolder ID="MainAdminContent" runat="server"/>                    
+            </div>
+
+            <!-- HELPTEXT INFORMATION -->                               
+            <div id="RXAdmin_main_right" style="position: relative; float: right; width: 22%; ">
+                <asp:ContentPlaceHolder ID="MainAdminTextContent" runat="server"/>
+            </div>
+            
+            <!-- FOOTER INFORMATION -->
+            <div id="RXAdmin_footer" style="position: relative;	float: left; width: 100%; height: 34px; background-color: #666666; padding: 0px;">
+                <div id="RXAdmin_footer_right" style="position: relative; float: right; margin: 0px; padding-right: 10px; padding-top: 10px; display: inline;">
+                   <span class="Text10_lightgray">Thank you for using <span class="Text10_white">RX Server</span> - a <span class="Text10_white">Noisy Cricket</span> Innovation</span>
+                </div>
+            </div>
+            
+        </div>
+    </form>
+</body>
+</html>

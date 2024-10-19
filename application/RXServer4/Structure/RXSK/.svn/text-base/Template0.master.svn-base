@@ -1,0 +1,4 @@
+<%@ Master Language="C#" AutoEventWireup="true" MasterPageFile="MainTemplate.master" CodeFile="Template0.master.cs" Inherits="Template0" %>
+<%@ Register Assembly="RXContentHolder" Namespace="RXServer" TagPrefix="rx" %>
+<asp:Content ID="Content" ContentPlaceHolderId="MainContentPane1" runat="server">
+</asp:Content>

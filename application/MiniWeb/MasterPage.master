@@ -1,0 +1,37 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+<%@ Register src="TopMenu.ascx" tagname="TopMenu" tagprefix="uc1" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>iZon</title>
+    <link href="StyleSheet.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div  style="width: 720px; margin-right: auto; margin-left: auto;">
+            <div style=" width:120px;position: relative;float:left;">
+                <a href="Hem.aspx"><img src="Images/Logga.gif" alt="iZon"  border=""0 /></a>
+                <br />
+                <br />
+                <div style="margin-left:15px; width:100px;">
+                    <asp:ImageButton ID="imbExit" ImageUrl="~/Images/exit.gif" runat="server" OnClick="imbExit_Click" />
+                </div>
+            </div>
+            
+            <div style="float:right; height:40px;  position: relative; top: 26px; right: 105px;">
+                <uc1:TopMenu ID="TopMenu1" runat="server" />
+            </div>
+            
+            <div style="float:right;width:510px;  position: relative; top: 20px; right:100px;">
+                <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+                <div style="float:right">
+                    <font face="verdana" size="1" color="#d3d3d3">&copy 2007 - www.iZon.se &nbsp;</font>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<loadingpanel>
+	<loadingmessage visible="true" text="Loading administration data, please wait..." height="50" width="300" forecolor="white" backcolor="#5d5d5d" font-weight="bold" font-size="14" font-family="Trebuchet MS, Arial, Helvetica" font-style="normal" loadingimage="" />
+	<modalpanel modal="true" backcolor="black" opacity="70" />
+</loadingpanel>

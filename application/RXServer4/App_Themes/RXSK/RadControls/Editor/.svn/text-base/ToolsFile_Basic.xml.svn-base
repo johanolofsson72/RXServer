@@ -1,0 +1,27 @@
+﻿<root>
+  <tools name="Formatting" enabled="true" dockable="true">
+    <tool name="Bold" />
+    <tool name="Italic" />
+    <tool name="Underline" />
+  </tools>
+  <tools name="MainToolbar" dockable="true" enabled="true">
+      <tool name="Undo" />
+      <tool name="Redo" />
+      <tool separator="true"/>
+      <tool name="Cut" />
+      <tool name="Copy" />
+      <tool Name="PastePlainText" shortcut="CTRL+V"/>
+  </tools>
+  <tools name="Links" dockable="true" enabled="true">
+    <tool name="LinkManager" />
+    <tool name="Unlink" />
+    <tool name="InsertSpecialLink" />
+  </tools>
+  <tools name="Formatting2" dockable="true" enabled="true">
+    <tool name="Subscript" />
+    <tool name="Superscript" />
+    <tool name="InsertOrderedList" />
+    <tool name="InsertUnorderedList" />
+  </tools>
+
+</root>

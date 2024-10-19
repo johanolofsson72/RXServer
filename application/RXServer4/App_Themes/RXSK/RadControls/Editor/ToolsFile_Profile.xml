@@ -1,0 +1,11 @@
+﻿<root>
+  <tools name="Formatting" enabled="true" dockable="true">
+    <tool name="Bold" />
+    <tool name="Italic" />
+    <tool name="Underline" />
+  </tools>
+  <tools name="Links" dockable="true" enabled="true">
+      <tool name="LinkManager" />
+  </tools>
+
+</root>

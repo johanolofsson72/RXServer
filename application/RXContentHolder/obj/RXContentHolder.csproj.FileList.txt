@@ -1,0 +1,5 @@
+bin\Debug\RXContentHolder.dll
+bin\Debug\RXContentHolder.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\RXContentHolder.dll
+obj\Debug\RXContentHolder.pdb

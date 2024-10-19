@@ -1,0 +1,126 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{85A9884F-A749-47D3-AC2F-58DA1609222B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RXServer</RootNamespace>
+    <AssemblyName>RXServer</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\RXServer.XML</DocumentationFile>
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+    <CheckForOverflowUnderflow>true</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ASPPainterNET, Version=1.0.1791.26444, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\source\ASPPainterNET.dll</HintPath>
+    </Reference>
+    <Reference Include="epicFlashControl, Version=1.0.2318.34722, Culture=neutral, PublicKeyToken=f4a98255818e9e8e">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Com\epicFlashControl.dll</HintPath>
+    </Reference>
+    <Reference Include="iCDataHandler, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\iCDataHandler\iCDataHandler\bin\Debug\iCDataHandler.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib, Version=0.81.0.1407, Culture=neutral, PublicKeyToken=1b03e6acf1164f73">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\iCDataHandler\iCDataHandler\bin\Debug\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="iCXmlDbClient, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\iCDataHandler\iCDataHandler\bin\Debug\iCXmlDbClient.dll</HintPath>
+    </Reference>
+    <Reference Include="ImageQuantization, Version=1.0.2271.36542, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Com\ImageQuantization.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=1.0.7.30072, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\iCDataHandler\iCDataHandler\bin\Debug\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="RadUpload.Net2, Version=2.1.0.1, Culture=neutral, PublicKeyToken=b4e93c26a31a21f0, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Com\RadUpload.Net2.dll</HintPath>
+    </Reference>
+    <Reference Include="RXContentHolder, Version=1.0.2463.22946, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Com\RXContentHolder.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="RXServer.Web.Modules.PageFlip.cs" />
+    <Compile Include="RXServer.Web.Model.cs" />
+    <Compile Include="RXServer.Web.Menus.cs" />
+    <Compile Include="RXServer.Authentication.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RXServer.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RXServer.Library.cs" />
+    <Compile Include="RXServer.Web.cs" />
+    <Compile Include="RXServer.Web.Modules.Article.cs" />
+    <Compile Include="RXServer.Web.Parse.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Database5.sql" />
+    <None Include="Database4.sql" />
+    <Content Include="Database1.sql" />
+    <Content Include="Database2.sql" />
+    <Content Include="Database6.sql" />
+    <Content Include="RXServer.Overrides.cs.txt" />
+    <Compile Include="PathHelper.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="RXServer2.0.cs">
+    </Compile>
+    <Compile Include="RXServer.Web.Authorization.Users.cs" />
+    <Compile Include="RXServer.Web.Modules.HtmlMail.cs" />
+    <Compile Include="RXServer.Web.Modules.List.cs" />
+    <Compile Include="RXServer.Web.UrlRewrite.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Database3.sql" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

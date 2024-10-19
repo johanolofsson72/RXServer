@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<project SchemaVersion="2.0">
+    <assemblies>
+        <assembly location="D:\Development\RFLX\RXServer\application\RXServer2.0\bin\Debug\RXServer.dll" documentation="D:\Development\RFLX\RXServer\application\RXServer2.0\bin\Debug\RXServer.xml" />
+        <assembly location="C:\Development\RFLX\RXServer\application\RXServer2.0\bin\Debug\RXServer.dll" documentation="C:\Development\RFLX\RXServer\application\RXServer2.0\bin\Debug\RXServer.xml" />
+    </assemblies>
+    <documenters>
+        <documenter name="MSDN-CHM">
+            <property name="OutputDirectory" value=".\doc\" />
+            <property name="HtmlHelpName" value="RXServer" />
+            <property name="Title" value="An NDoc documented library" />
+        </documenter>
+        <documenter name="Intellisense">
+            <property name="OutputDirectory" value=".\intellisense\" />
+            <property name="DocumentExplicitInterfaceImplementations" value="True" />
+            <property name="DocumentInternals" value="True" />
+            <property name="DocumentSealedProtected" value="True" />
+            <property name="DocumentPrivates" value="True" />
+        </documenter>
+    </documenters>
+</project>

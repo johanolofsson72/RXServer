@@ -1,0 +1,57 @@
+Memory before build: 870552
+Initializing Workspace
+Analyzing Assemblies & Merging XML Documentation
+Memory making xml: 1312072
+AssemblyLoader: Loading "C:\Development\RFLX\RXServer\application\RXServer2.0\bin\Debug\RXServer.dll".
+XmlDocCommentLoader: Loaded 'C:\Development\RFLX\RXServer\application\RXServer2.0\bin\Debug\RXServer.xml' (0,274 sec.)
+XmlDocCommentLoader: Cache 142
+Docs found : C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\mscorlib.xml
+XmlDocCommentLoader: Loaded 'C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\mscorlib.xml' (1,198 sec.)
+XmlDocCommentLoader: Cache 14150
+XmlDocCommentLoader: Loaded 'C:\Development\RFLX\RXServer\application\NDoc2-Alpha3u\Configuration\Supplemental Docs\en\mscorlib.xml' (0,073 sec.)
+XmlDocCommentLoader: Cache 15172
+AssemblyLoader: Attempting to resolve "System.Web, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+AssemblyLoader: Loaded "C:/WINDOWS/assembly/GAC_32/System.Web/2.0.0.0__b03f5f7f11d50a3a/System.Web.dll"
+AssemblyLoader: Attempting to resolve "System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089".
+AssemblyLoader: Loaded "C:/WINDOWS/assembly/GAC_MSIL/System/2.0.0.0__b77a5c561934e089/System.dll"
+Writing namespace Cambia.Web.CoreLib...
+    Wrote 1 classes.
+    Wrote 1 enumerations.
+Writing namespace RXServer...
+    AssemblyLoader: Attempting to resolve "System.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089".
+    AssemblyLoader: Loaded "C:/WINDOWS/assembly/GAC_32/System.Data/2.0.0.0__b77a5c561934e089/System.Data.dll"
+    AssemblyLoader: Attempting to resolve "System.Xml, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089".
+    AssemblyLoader: Loaded "C:/WINDOWS/assembly/GAC_MSIL/System.Xml/2.0.0.0__b77a5c561934e089/System.Xml.dll"
+    Wrote 43 classes.
+    Wrote 16 enumerations.
+Writing namespace RXServer.Dev...
+    Wrote 5 classes.
+    Wrote 2 enumerations.
+Writing namespace RXServer.Library...
+    AssemblyLoader: Attempting to resolve "System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+    AssemblyLoader: Loaded "C:/WINDOWS/assembly/GAC_MSIL/System.Drawing/2.0.0.0__b03f5f7f11d50a3a/System.Drawing.dll"
+    Wrote 3 classes.
+Writing namespace RXServer.Web...
+    Wrote 8 classes.
+Writing namespace RXServer.Web.List...
+    Wrote 6 classes.
+    Wrote 4 enumerations.
+Writing namespace RXServer.Web.Menus...
+    Wrote 4 classes.
+    Wrote 1 enumerations.
+Writing namespace RXServer.Web.Model...
+    Wrote 2 classes.
+Writing namespace RXServer.Web.Modules...
+    Wrote 18 classes.
+Writing namespace RXServer.Web.Parse...
+    Wrote 5 classes.
+Completed RXServer, Version=2.0.1.42813, Culture=neutral, PublicKeyToken=null
+0,531 sec.
+MakeXML : 2,531 sec.
+Initializing Documenter
+    assembly.xslt
+Generating XML files
+RXServer.xml
+63 msec.
+Build Completed.
+The build took a total of 3 seconds

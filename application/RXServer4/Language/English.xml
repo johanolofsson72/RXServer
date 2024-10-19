@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Translations>
+	<Common>
+		<sitename>RXServer4</sitename>
+		<siteurl>rxserver4.se</siteurl>
+		<password>Password</password>
+		<username>User name</username>
+		<name>Name</name>
+		<email>E-mail address</email>
+		<login>Login</login>
+		<logout>Logout</logout>
+		<admin>Administrator</admin>
+		<settings>Settings</settings>
+		<send>Send</send>
+		<show>Show</show>
+		<role>Role</role>
+		<close>Close</close>
+		<cancel>Cancel</cancel>
+		<save>Save</save>
+		<back>Back</back>
+		<continue>Continue</continue>
+		<print>Print</print>
+		<today>Today</today>
+		<tomorrow>Tomorrow</tomorrow>
+		<place>Place</place>
+		<time>Time</time>
+		<activationcode>Activation code</activationcode>
+		<anonymous>Anonymous</anonymous>
+		<updated>Updated</updated>
+		<fontsize>Font size</fontsize>
+		<error_mess>Error. Please contact an administrator.</error_mess>
+		<pieces>pcs</pieces>
+		<youremail>Your email</youremail>
+		<yourname>Your name</yourname>
+	</Common>
+	<Error>
+		<login>Wrong user name/password combination</login>
+		<password>Incorrect password</password>
+		<email>Invalid e-mail address</email>
+		<code>Invalid code</code>
+		<image>Invalid picture size or format.</image>
+		<media>Invalid media or size.</media>
+		<email_exists>E-mail address exists already</email_exists>
+		<email_dont_exist>E-mail address does not exist</email_dont_exist>
+		<user_exists>User exists already</user_exists>
+		<username>Invalid user name</username>
+		<password_mismatch>Passwords does not match</password_mismatch>
+		<user_active>User is already active</user_active>
+		<yourname>Please enter your name</yourname>
+		<no_content>Please enter the information</no_content>
+		<fill_old_password>Please enter you old password</fill_old_password>
+		<upload_valid>Please select a valid file before you can upload.</upload_valid>
+	</Error>
+	<Success>
+		<information_updated>The information is now updated</information_updated>
+	</Success>
+	<Modules>
+		<RegisterMail>
+			<select_group>Select a group</select_group>
+			<title>Newsletter</title>
+			<text>Do you want to receive news from RXServer4? Then signup here.</text>
+			<button>Signup</button>
+			<link_to_unregister>Do you want to remove yourself from the list?</link_to_unregister>
+			<Error>
+				<select_group>Please select a mailing group</select_group>
+				<mail_exists_in_group>Mail already exists in that group.</mail_exists_in_group>
+			</Error>
+			<Success>
+				<added>was added to</added>
+			</Success>
+		</RegisterMail>
+		<UnregisterMail>
+			<button>Please remove me</button>
+			<found_groups>Your e-mail address was found in more than one mailing list. Please select which to remove.</found_groups>
+			<Error>
+				<mail_dont_exists>Sorry but your mail doesn't exist in our mailing list</mail_dont_exists>
+			</Error>
+			<Success>
+				<removed>was removed from</removed>
+			</Success>
+		</UnregisterMail>
+    <User>
+      <welcome>Welcome</welcome>
+      <not_logged>Not logged in</not_logged>
+      <logged>Logged</logged>
+      <choose_password>Choose Password</choose_password>
+      <choose_role>Choose Role</choose_role>
+      <confirm_password>Confirm Password</confirm_password>
+      <forgot_pass>Forgot Password?</forgot_pass>
+      <create_user>Create User</create_user>
+      <create_account>Create Account</create_account>
+      <activate_account>Activate Account</activate_account>
+      <mypage>My Page</mypage>
+      <settings_title>Settings</settings_title>
+      <settings_ingress>Change your personal settngs here</settings_ingress>
+      <settings_text>Click on save</settings_text>
+    </User>
+    <Forum>
+      <enter_title>Write a title</enter_title>
+      <create_thread_title>Create a new thread</create_thread_title>
+      <created_by>Created by</created_by>
+      <last_post>Last post</last_post>
+      <threads>Threads</threads>
+      <posts>Posts</posts>
+      <visits>Visits</visits>
+      <by>by</by>
+      <permalink>permalink</permalink>
+      <home_directory>Forum</home_directory>
+    </Forum>
+		<News>
+			<readmore_link>Read More</readmore_link>
+		</News>
+		<Search>
+			<search>Search</search>
+			<search_results_for>Search results for</search_results_for>
+			<search_hits>Total hits</search_hits>
+			<previous>Previous</previous>
+			<next>Next</next>
+			<first>First</first>
+			<read_more>More information</read_more>
+		</Search>
+		<ContactBox>
+			<category>Topic</category>
+			<subcategory>Sub topic</subcategory>
+			<whoareyou>Client area</whoareyou>
+			<field1>Country / Region</field1>
+			<field2>E-mail adress</field2>
+			<field3>Phone</field3>
+			<question>Question</question>
+			<Error>
+				<select_category>Please select a category</select_category>
+				<select_subcategory>Please select a subcategory</select_subcategory>
+				<select_client>Please select a client area</select_client>
+				<check_policy>Please accept our registration policy!</check_policy>
+				<question>Please write a message to us</question>
+			</Error>
+		</ContactBox>
+		<Social>
+			<Tooltip>
+				<facebook>Share on Facebook</facebook>
+				<delicious>Share on Delicious</delicious>
+				<myspace>Share on MySpace</myspace>
+				<print>Print</print>
+			</Tooltip>
+		</Social>
+		<PopUp>
+			<Tellafriend>
+				<link>Tell a friend</link>
+				<header>Tell a friend!</header>
+				<info>Fill in all fields and click send</info>
+				<yourname>Your name</yourname>
+				<youremail>Your e-mail address</youremail>
+				<friendsemail>Your friend's e-mail address</friendsemail>
+				<confirmation>Your friend has been tipped</confirmation>
+			</Tellafriend>
+			<Print>
+				<title>Printer friendly text</title>
+				<info>A printout from www.rxserver4.se</info>
+			</Print>
+		</PopUp>
+		<RSS>
+			<invalid_feed>Invalid Feed</invalid_feed>
+			<no_data>No Data/Invalid Feed</no_data>
+		</RSS>
+	</Modules>
+	<Mail>
+		<Global>
+			<footer>RXServer4</footer>
+			<thank_you>Kind Regards / RXServer4</thank_you>
+		</Global>
+		<ContactBox>
+			<header>Mail from RXServer4</header>
+		</ContactBox>
+		<Tellafriend>
+			<subject>You have been tipped by</subject>
+			<header>A tip from RXServer4</header>
+			<text>wants to tell you about a page at www.rxserver.se</text>
+			<link>Click here to see the page</link>
+      			<linkurlprefix>http://www.rxserver4.se</linkurlprefix>
+		</Tellafriend>
+	</Mail>
+</Translations>
+
+
+
+
+

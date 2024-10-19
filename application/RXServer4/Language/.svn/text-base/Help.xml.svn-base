@@ -1,0 +1,456 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Translations>
+	<ContentManager>
+		<Welcome>
+			<Text>
+				Choose a tab for more functionality.
+			</Text>
+		</Welcome>	
+		<Modules>
+			<Text>
+				This page contains more advanced information.[newline][newline]
+				Leave this for the developers.[newline][newline]
+			</Text>
+		</Modules>
+		<Roles>
+			<Text>
+				This page contains information about all the roles.[newline][newline]				
+			</Text>
+		</Roles>
+		<Pages>
+			<List>
+				[img]../../../App_Themes/WebAdmin/Images/icon_expand.gif[/img]  Click on the arrow to see subpages.[newline][newline]
+				[img]../../../App_Themes/WebAdmin/Images/icon_visible_on.gif[/img]  Item is visible for all visitors.[newline][newline]
+				[img]../../../App_Themes/WebAdmin/Images/icon_visible_off.gif[/img]  Item is hidden for all except admins.[newline][newline]
+				[img]../../../App_Themes/WebAdmin/Images/icon_bullet_delete.gif[/img]  Delete Items by clicking "Delete".[newline][newline]
+				[img]../../../App_Themes/WebAdmin/Images/icon_edit.gif[/img]  Edit Items by clicking "Edit" or on the id.
+			</List>
+			<Add>
+        1. Write a name for the page. [newline][newline]
+        2. Write a friendly URL for the page. [newline][newline]
+        3. Click "Save".
+      </Add>
+		</Pages>
+		<Users>
+			<List>
+				[img]../../../App_Themes/WebAdmin/Images/icon_user_active.gif[/img]  User is active.[newline][newline]
+				[img]../../../App_Themes/WebAdmin/Images/icon_user_unactive.gif[/img]  User is inactive.[newline][newline]
+				[img]../../../App_Themes/WebAdmin/Images/icon_bullet_delete.gif[/img]  Delete Items by clicking "Delete".[newline][newline]
+				[img]../../../App_Themes/WebAdmin/Images/icon_edit.gif[/img]  Edit Items by clicking "Edit" or on the id.[newline][newline]
+			</List>
+			<Add>
+				1. Choose a Role.[newline][newline]
+				2. Enter an email.[newline][newline]
+				3. Enter a username.[newline][newline]
+				4. Enter a password and verify it.[newline][newline]
+				5. Click "Save"				
+			</Add>
+			<Edit>
+				1. Control all your values and click "Save" to edit.
+			</Edit>
+		</Users>	
+	</ContentManager>
+  <ShopManager>
+    <Tree>
+      To edit a node right click on it and choose "Edit node".[newline][newline]
+      To add a node press on the parent node and choose "Add node".[newline][newline]
+      To delete a node right click on it and choose "Delete node".[newline][newline]
+      To copy a node right click on it and choose "Copy node".[newline][newline]
+    </Tree>
+    <Edit>
+      1. Edit the data fields.[newline][newline]
+      2. Save your changes.[newline][newline]
+      By pressing the "move up" and "move down" buttons the node will be moved up and down within the same level.[newline][newline]
+      By deleting a node all child nodes will be deleted as well.
+    </Edit>
+    <Add>
+      1. Enter a title for the node.[newline][newline]
+      2. Choose a node type. Available options will be dependent on the parent node type.[newline][newline]
+      3. Save.
+    </Add>
+    <Terms>
+      1. Enter the terms the customer has to agree to at checkout.[newline][newline]
+      2. Save.
+    </Terms>
+  </ShopManager>
+	<PageTemplate>
+		<Set>
+			The first thing you need to do when creating a new page or a menu level is to choose the right template.[newline][newline]
+			When you choose and save a template, you will automatically activate the next step of the page administration, which is adding and editing the actual content/modules.[newline][newline]		
+			1. Select a template for the type of content you want to create. [newline][newline]
+			2. Click "Set Template".
+		</Set>
+		<Remove>
+			1. Click "Remove Template" to remove the current template for this page.
+		</Remove>
+	</PageTemplate>
+	<Menu>
+		<List>
+			[img]../../../App_Themes/WebAdmin/Images/icon_visible_on.gif[/img]  Item is visible for all visitors.[newline][newline]
+			[img]../../../App_Themes/WebAdmin/Images/icon_visible_off.gif[/img]  Item is hidden for all except admins.[newline][newline]
+			[img]../../../App_Themes/WebAdmin/Images/icon_arrow_up.gif[/img]  Move item up in the order.[newline][newline]
+			[img]../../../App_Themes/WebAdmin/Images/icon_arrow_down.gif[/img]  Move item down in the order.[newline][newline]			
+			[img]../../../App_Themes/WebAdmin/Images/icon_bullet_delete.gif[/img]  Delete Items by clicking "Delete".[newline][newline]
+			[img]../../../App_Themes/WebAdmin/Images/icon_edit.gif[/img]  Edit Items by clicking "Edit" or on the title.	
+		</List>
+    <List2>
+      [img]../../../App_Themes/WebAdmin/Images/icon_visible_on.gif[/img]  Item is visible for all visitors.[newline][newline]
+      [img]../../../App_Themes/WebAdmin/Images/icon_visible_off.gif[/img]  Item is hidden for all except admins.[newline][newline]
+      [img]../../../App_Themes/WebAdmin/Images/icon_arrow_up.gif[/img]  Move item up in the order.[newline][newline]
+      [img]../../../App_Themes/WebAdmin/Images/icon_arrow_down.gif[/img]  Move item down in the order.[newline][newline]
+      [img]../../../App_Themes/WebAdmin/Images/icon_bullet_delete.gif[/img]  Delete Items by clicking "Delete".[newline][newline]
+    </List2>
+    <Behaviour>
+      Sets whether the menu links will take you straight to the child or add a padding page.
+    </Behaviour>
+    <Header>Header of category page.</Header>
+		<Add>
+      1. Write a name for the page. [newline][newline]
+      2. Write a friendly URL for the page. [newline][newline]
+      3. Click "Save".
+    </Add>
+    <Edit>
+      1. Write a name for the page. [newline][newline]
+      2. Write a friendly URL for the page. [newline][newline]
+      3. Click "Save".
+    </Edit>
+	</Menu>
+	<Meta>
+		<Text>
+			This is where you add Meta-tag content your webpages.[newline]
+			There are three different types.[newline][newline]
+			1. Add your title-tag. This is the title that will appear at the top left in your browser window. This is the tag search engines will look at first.[newline][newline]
+			2. Add keywords. Type your keywords in a comma-seperated list (dogs, dog, puppy...etc)[newline][newline]
+			3. Add a description. This is where you type a description of the page's content in a brief narrative.[newline][newline]
+			4. Control your input and click "Save &amp; Close"			
+		</Text>
+	</Meta>
+	<Default>
+		<Text>
+			This is where you add Meta-tag content your webpages.[newline]
+			There are three different types.[newline][newline]
+			1. Add your title-tag. This is the title that will appear at the top left in your browser window. This is the tag search engines will look at first.[newline][newline]
+			2. Add keywords. Type your keywords in a comma-seperated list (dogs, dog, puppy...etc)[newline][newline]
+			3. Add a description. This is where you type a description of the page's content in a brief narrative.[newline][newline]
+			4. Add an author. This is the person or organization responsible for the content.[newline][newline]
+			5. Add a copyright statement.[newline][newline]
+			6. Control your input and click "Save &amp; Close"		
+			
+		</Text>
+	</Default>
+	<TeaserBoxes>
+		<Text>
+
+      1. Choose the size (width) of your textbox.[newline][newline]
+      2. Align it to the left or to the right. If you are unsure, select left.[newline][newline]
+      3. Write a header. [newline][newline]
+      4. Write a text. [newline][newline]
+      5. Write a text for extended article. [newline][newline]
+
+      6. Upload a media file.[newline][newline]
+      7. Write a tooltip text for the image. This text is shown when hovering with the mouse pointer over the image.[newline][newline]
+      8. Choose if your media file shall be shown on your webpage.[newline][newline]
+
+      9. Select a target if the media file shall be a link to another page. [newline][newline]
+      10. Select type. [newline] Internal link links to a page. Extended article displays article in window. [newline][newline]
+      11. Control your input and click "Save".
+
+    </Text>
+	</TeaserBoxes>
+	<Exit>
+		<Text>
+			1. Write a title. [newline][newline]
+			2. Write a text. [newline][newline]
+			3. Control your input and click "Save &amp; Close".	
+		</Text>
+	</Exit>	
+	<Search>
+		<Text>
+			1. Write a title. [newline][newline]
+			2. Control your input and click "Save &amp; Close".	
+		</Text>
+	</Search>	
+	<TextBoxes>
+		<Text>
+			1. Choose the size (width) of your textbox.[newline][newline]
+			2. Align it to the left or to the right. If you are unsure, select left.[newline][newline]
+			3. Choose whether you want your textbox to have a fontsize functionality.[newline][newline]
+			4. Write a header. [newline][newline]
+			5. Write an introduction. [newline][newline]
+			6. Write a text. [newline][newline]
+			7. Control your input and click "Save &amp; Close".	
+		</Text>
+	</TextBoxes>
+	<MediaBoxes>
+		<Text>
+			1. Select a size (width) of the media.[newline][newline]
+			2. Align it to the left or to the right. If you are unsure choose left.[newline][newline]
+			3. Upload a media file.[newline][newline]
+      4. Write a tooltip text for the image. This text is shown when hovering with the mouse pointer over the image.[newline][newline]
+			5. Choose if your media file shall be shown on your webpage.[newline][newline]
+			6. Select a target if the media file shall be a link to another page. [newline][newline]
+			7. Control your input and click "Save".	
+		</Text>
+	</MediaBoxes>
+	<StartBox>
+		<Text>
+      1. To edit the content select a column above.[newline][newline]
+      or[newline][newline]
+      1. Select the size (width) of the module.[newline][newline]
+      2. Align it to the left or to the right. If you are unsure, select left.[newline][newline]
+      3. Control your input and click "Save".
+    </Text>
+		<Add>
+      1. Write a header [newline][newline]
+      2. Write a text. [newline][newline]
+      3. Upload a media file. [newline][newline]
+      4. Write a tooltip text for the image. This text is shown when hovering with the mouse pointer over the image. [newline][newline]
+      5. Write a link text.[newline][newline]
+      6. Select the page to which the link shall lead.[newline][newline]
+      7. Control your input and click "Save".
+    </Add>
+	</StartBox>
+	<TabTextBox>
+    <List>
+      Select a tab to edit.[newline][newline]
+      or [newline][newline]
+      Create a new tab by clicking the "Add tab" button above.[newline][newline]
+      or [newline][newline]
+      To edit the module, click "Module" in the navigation above.
+
+    </List>
+    <Add>
+      1. Check if the tab shall be visible.[newline][newline]
+      2. Write a tab name.[newline][newline]
+      3. Write a header.[newline][newline]
+      4. Write a text.[newline][newline]
+      5. Control your input and click "Save".
+    </Add>
+		<Text>
+      1. Select a size (width) of the media.[newline][newline]
+      2. Align it to the left or to the right. If you are unsure choose left.[newline][newline]
+      3. Control your input and click "Save &amp; Close".
+    </Text>
+		<Edit>
+      1. Check if the tab shall be visible.[newline][newline]
+      2. Write a tab name.[newline][newline]
+      3. Write a header.[newline][newline]
+      4. Write a text.[newline][newline]
+      5. Control your input and click "Save".
+    </Edit>
+	</TabTextBox>
+	<News>
+		<Text>
+      1. Select a size (width) of the media.[newline][newline]
+      2. Align it to the left or to the right. If you are unsure choose left.[newline][newline]
+      3. Write a title. [newline][newline]
+      4. Click on "Save &amp; Close".		
+		</Text>
+		<Add>
+		 	1. Choose if this item shall be shown on your webpage. [newline][newline]
+			2. Write a title. [newline][newline]
+			3. Write an introduction.[newline][newline]
+			4. Write an ingress.[newline][newline]
+			5. Write a text. [newline][newline]
+			6. Select a date.[newline][newline]
+			7. Control your input and click "Save".	
+		</Add>
+		<List>
+			[img]../../../App_Themes/WebAdmin/Images/icon_visible_on.gif[/img]  Item is visible.[newline][newline]
+			[img]../../../App_Themes/WebAdmin/Images/icon_visible_off.gif[/img]  Item is hidden.[newline][newline]
+			[img]../../../App_Themes/WebAdmin/Images/icon_arrow_up.gif[/img]  Move item up in the order.[newline][newline]
+			[img]../../../App_Themes/WebAdmin/Images/icon_arrow_down.gif[/img]  Move item down in the order.[newline][newline]			
+			[img]../../../App_Themes/WebAdmin/Images/icon_bullet_delete.gif[/img]  Delete Items by clicking on "Delete".[newline][newline]
+			[img]../../../App_Themes/WebAdmin/Images/icon_edit.gif[/img]  Edit Items by clicking on "Edit" or on the title.	
+		</List>
+	</News>
+	<GalleryBox>
+		<Text>
+      1. Select a size (width) of the media.[newline][newline]
+      2. Align it to the left or to the right. If you are unsure choose left.[newline][newline]
+      3. Control your input and click "Save".
+    </Text>
+		<Add>
+			1. Choose if your Image shall be shown on your webpage.[newline][newline]
+			2. Upload a mediafile.[newline][newline]
+      3. Write a Image name for the image. This text is shown when hovering with the mouse pointer over the image.[newline][newline]
+			4. Control your input and click "Save".	
+		</Add>
+		<List>
+			[img]../../../App_Themes/WebAdmin/Images/icon_visible_on.gif[/img]  Item is visible.[newline][newline]
+			[img]../../../App_Themes/WebAdmin/Images/icon_visible_off.gif[/img]  Item is hidden.[newline][newline]
+			[img]../../../App_Themes/WebAdmin/Images/icon_arrow_up.gif[/img]  Move item up in the order.[newline][newline]
+			[img]../../../App_Themes/WebAdmin/Images/icon_arrow_down.gif[/img]  Move item down in the order.[newline][newline]			
+			[img]../../../App_Themes/WebAdmin/Images/icon_bullet_delete.gif[/img]  Delete Items by clicking on "Delete".[newline][newline]
+			[img]../../../App_Themes/WebAdmin/Images/icon_edit.gif[/img]  Edit Items by clicking on "Edit" or on the title.	
+		</List>
+	</GalleryBox>
+	<GalleryBox2>
+		<Text>
+      1. Select a size (width) of the media.[newline][newline]
+      2. Align it to the left or to the right. If you are unsure choose left.[newline][newline]
+      3. Control your input and click "Save &amp; Close".
+    </Text>
+		<Add>
+      1. Upload a media file by clicking "Select".[newline][newline]
+      2. Add more upload fields by clicking "Add".[newline][newline]
+      3. Repeat step 1-2 until you're satisfied.[newline][newline]
+      2. Control your input and click "Save".
+    </Add>
+		<Edit>
+			1. Choose if your Image shall be shown on your webpage.[newline][newline]
+			2. Upload a mediafile.[newline][newline]
+      3. Write a Image name for the image. This text is shown when hovering with the mouse pointer over the image.[newline][newline]
+			4. Control your input and click "Save".	
+		</Edit>
+		<List>
+			[img]../../../App_Themes/WebAdmin/Images/icon_visible_on.gif[/img]  Item is visible.[newline][newline]
+			[img]../../../App_Themes/WebAdmin/Images/icon_visible_off.gif[/img]  Item is hidden.[newline][newline]
+			[img]../../../App_Themes/WebAdmin/Images/icon_arrow_up.gif[/img]  Move item up in the order.[newline][newline]
+			[img]../../../App_Themes/WebAdmin/Images/icon_arrow_down.gif[/img]  Move item down in the order.[newline][newline]			
+			[img]../../../App_Themes/WebAdmin/Images/icon_bullet_delete.gif[/img]  Delete Items by clicking on "Delete".[newline][newline]
+			[img]../../../App_Themes/WebAdmin/Images/icon_edit.gif[/img]  Edit Items by clicking on "Edit" or on the title.	
+		</List>
+	</GalleryBox2>
+  <ProductBrowser>
+    <Text>
+      Header: A header for the product.[newline][newline]
+      Text: The text to show under price.[newline][newline]
+      Category view text: The text to show in category module.[newline][newline]
+      Choices title: Title shown if multiple choises is added.[newline][newline]
+      Product ID: Unique id for the product.[newline][newline]
+      Product name: Name displayed in cart.[newline][newline]
+      Price: Can be a decimal number.[newline][newline]
+      Old price: If this price is higher that the normal price a special price banner is displayed. Can be a decimal number.[newline]Can be left empty if you don't want to use it.[newline][newline]
+      Vat: Value added tax. Can be a decimal number.[newline][newline]
+      Amount in stock: This is automatically deducted when a purchase is made.[newline]Can be left empty if you don't want to use it.
+    </Text>
+    <ProductData>
+      Name: The product name shown in the shopping cart.[newline][newline]
+      Price: Can be a decimal number.[newline][newline]
+      Vat: Value added tax. Can be a decimal number.
+    </ProductData>
+    <Add>
+      1. Upload a media file by clicking "Select".[newline][newline]
+      2. Add more upload fields by clicking "Add".[newline][newline]
+      3. Repeat step 1-2 until you're satisfied.[newline][newline]
+      2. Control your input and click "Save".
+    </Add>
+    <Edit>
+      1. Choose if your Image shall be shown on your webpage.[newline][newline]
+      2. Upload a mediafile.[newline][newline]
+      3. Write a Image name for the image. This text is shown when hovering with the mouse pointer over the image.[newline][newline]
+      4. Control your input and click "Save".
+    </Edit>
+    <List>
+      [img]../../../App_Themes/WebAdmin/Images/icon_visible_on.gif[/img]  Item is visible.[newline][newline]
+      [img]../../../App_Themes/WebAdmin/Images/icon_visible_off.gif[/img]  Item is hidden.[newline][newline]
+      [img]../../../App_Themes/WebAdmin/Images/icon_arrow_up.gif[/img]  Move item up in the order.[newline][newline]
+      [img]../../../App_Themes/WebAdmin/Images/icon_arrow_down.gif[/img]  Move item down in the order.[newline][newline]
+      [img]../../../App_Themes/WebAdmin/Images/icon_bullet_delete.gif[/img]  Delete Items by clicking on "Delete".[newline][newline]
+      [img]../../../App_Themes/WebAdmin/Images/icon_edit.gif[/img]  Edit Items by clicking on "Edit" or on the title.
+    </List>
+  </ProductBrowser>
+	<ContactBox>
+		<Text>
+      1. Select a size (width) of the media.[newline][newline]
+      2. Align it to the left or to the right. If you are unsure choose left.[newline][newline]
+      3. Write a title.[newline][newline]
+      4. Write a text.[newline][newline]
+      5. Write a policy text.[newline][newline]
+      6. Write a confirmation text.[newline][newline]
+      7. Write a subject for the e-mail.[newline][newline]
+      8. Write a e-mail address that will be used as the sender.[newline][newline]
+      9. Control your input and click "Save &amp; Close".[newline][newline]
+    </Text>
+		<AddCategory>
+      1. Choose if the item shall be shown on your webpage.[newline][newline]
+      2. Write a name.[newline][newline]
+      3. Control your input and click "Save".
+    </AddCategory>
+		<AddSubCategory>
+      1. Choose if the item shall be shown on your webpage.[newline][newline]
+      2. Choose the parent item of this item.[newline][newline]
+      3. Write a name.[newline][newline]
+      4. Write a valid e-mail address for the recipient of the message.[newline][newline]
+      5. Control your input and click "Save".
+    </AddSubCategory>
+		<AddClient>
+      1. Choose if the item shall be shown on your webpage.[newline][newline]
+      2. Write a name.[newline][newline]
+      3. Control your input and click "Save".
+    </AddClient>
+		<CategoryList>
+			[img]../../../App_Themes/WebAdmin/Images/icon_visible_on.gif[/img]  Item is visible.[newline][newline]
+			[img]../../../App_Themes/WebAdmin/Images/icon_visible_off.gif[/img]  Item is hidden.[newline][newline]
+			[img]../../../App_Themes/WebAdmin/Images/icon_arrow_up.gif[/img]  Move item up in the order.[newline][newline]
+			[img]../../../App_Themes/WebAdmin/Images/icon_arrow_down.gif[/img]  Move item down in the order.[newline][newline]			
+			[img]../../../App_Themes/WebAdmin/Images/icon_bullet_delete.gif[/img]  Delete Items by clicking on "Delete".[newline][newline]
+			[img]../../../App_Themes/WebAdmin/Images/icon_edit.gif[/img]  Edit Items by clicking on "Edit" or on the title.	
+		</CategoryList>
+		<ClientList>
+			[img]../../../App_Themes/WebAdmin/Images/icon_visible_on.gif[/img]  Item is visible.[newline][newline]
+			[img]../../../App_Themes/WebAdmin/Images/icon_visible_off.gif[/img]  Item is hidden.[newline][newline]
+			[img]../../../App_Themes/WebAdmin/Images/icon_arrow_up.gif[/img]  Move item up in the order.[newline][newline]
+			[img]../../../App_Themes/WebAdmin/Images/icon_arrow_down.gif[/img]  Move item down in the order.[newline][newline]			
+			[img]../../../App_Themes/WebAdmin/Images/icon_bullet_delete.gif[/img]  Delete Items by clicking on "Delete".[newline][newline]
+			[img]../../../App_Themes/WebAdmin/Images/icon_edit.gif[/img]  Edit Items by clicking on "Edit" or on the title.	
+		</ClientList>
+	</ContactBox>
+	<RSS>
+		<Text>
+			1. [ ADMIN : SIZE ][newline][newline]
+			2. [ ADMIN : ALIGN ][newline][newline]
+			3. Write a title. [newline][newline]
+			4. Enter the url for your rss. [newline][newline]
+			5. Choose a default number of items to show. [newline][newline]
+			6. Control your input and click "Save".	
+		</Text>
+	</RSS>
+	<Footer>
+		<Text>
+			1. Write a copyright text for the content on this website. [newline][newline]
+			2. Write informational texts, i.e. contact information, visiting adress, phone number etc. [newline][newline]
+			3. Click "Save &amp; Close".		
+		</Text>
+		<Add>
+		 	1. Choose if this item shall be shown on your webpage. [newline][newline]
+			2. Write a link name. [newline][newline]
+			3. Choose a column. [newline][newline]
+			4. Select a type for your item. [newline][newline]
+			5. Write a link name if you chose a external link.[newline][newline]
+			6. Select a internal link if you choosed an internal link.[newline][newline]
+			7. Control your input and click "Save".	
+		</Add>
+		<List>
+			[img]../../../App_Themes/WebAdmin/Images/icon_visible_on.gif[/img]  Item is visible.[newline][newline]
+			[img]../../../App_Themes/WebAdmin/Images/icon_visible_off.gif[/img]  Item is hidden.[newline][newline]
+			[img]../../../App_Themes/WebAdmin/Images/icon_arrow_up.gif[/img]  Move item up in the order.[newline][newline]
+			[img]../../../App_Themes/WebAdmin/Images/icon_arrow_down.gif[/img]  Move item down in the order.[newline][newline]			
+			[img]../../../App_Themes/WebAdmin/Images/icon_bullet_delete.gif[/img]  Delete Items by clicking "Delete".[newline][newline]
+			[img]../../../App_Themes/WebAdmin/Images/icon_edit.gif[/img]  Edit Items by clicking "Edit" or on the Title.	
+		</List>
+	</Footer>
+	<DeleteModule>
+		<Text>
+			1. Click "Delete Module" to remove this module from the page. [newline][newline]
+		</Text>
+	</DeleteModule>
+	<EditModules>
+		<Text>
+			1. Add a module by clicking on the modules icon. [newline][newline]
+		</Text>
+	</EditModules>
+  <Unregister>
+    <Text>
+      1. Write a title.[newline][newline]
+      2. Write a text.[newline][newline]
+      3. Control your input and click "Save &amp; Close"
+    </Text>
+  </Unregister>
+</Translations>
+
+
+
+
+

@@ -1,0 +1,1248 @@
+<html dir="LTR" xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:MSHelp="http://msdn.microsoft.com/mshelp" xmlns:tool="http://www.microsoft.com/tooltip" xmlns:ndoc="urn:ndoc-preprocess">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=Windows-1252" />
+    <title>RXMasterPageVirtual Members</title>
+    <link rel="stylesheet" type="text/css" href="ndoc.css"> </link>
+    <link rel="stylesheet" type="text/css" href="user.css"> </link>
+    <script type="text/javascript" src="ndoc.js"> </script>
+  </head>
+  <body style="display: none;">
+    <input type="hidden" id="userDataCache" class="userDataStyle" />
+    <input type="hidden" id="hiddenScrollOffset" />
+    <img id="dropDownImage" style="display:none; height:0; width:0;" src="drpdown.gif" />
+    <img id="dropDownHoverImage" style="display:none; height:0; width:0;" src="drpdown_orange.gif" />
+    <img id="collapseImage" style="display:none; height:0; width:0;" src="collapse.gif" />
+    <img id="expandImage" style="display:none; height:0; width:0;" src="exp.gif" />
+    <img id="collapseAllImage" style="display:none; height:0; width:0;" src="collall.gif" />
+    <img id="expandAllImage" style="display:none; height:0; width:0;" src="expall.gif" />
+    <img id="copyImage" style="display:none; height:0; width:0;" src="copycode.gif" />
+    <img id="copyHoverImage" style="display:none; height:0; width:0;" src="copycodeHighlight.gif" />
+    <div id="header">
+      <table width="100%" id="topTable">
+        <tr id="headerTableRow1">
+          <td align="left">
+            <span id="runningHeaderText">An NDoc documented library</span>
+          </td>
+        </tr>
+        <tr id="headerTableRow2">
+          <td align="left">
+            <span id="nsrTitle">RXMasterPageVirtual Members</span>
+          </td>
+        </tr>
+        <tr id="headerTableRow3">
+          <td>
+            <a id="seeAlsoSectionLink" href="#seeAlsoToggle" onclick="OpenSection(seeAlsoToggle)">See Also</a>
+            <a id="exampleSectionLink" href="#codeExampleToggle" onclick="OpenSection(codeExampleToggle)">Example</a>
+            <a href="#PublicConstructorsToggle" onclick="OpenSection(PublicConstructorsToggle)">Constructors</a>
+            <a href="#PublicFieldsToggle" onclick="OpenSection(PublicFieldsToggle)">Fields</a>
+            <a href="#PublicPropertiesToggle" onclick="OpenSection(PublicPropertiesToggle)">Properties</a>
+            <a href="#PublicMethodsToggle" onclick="OpenSection(PublicMethodsToggle)">Methods</a>
+            <a href="#PublicEventsToggle" onclick="OpenSection(PublicEventsToggle)">Events</a>
+          </td>
+        </tr>
+      </table>
+      <table width="100%" id="bottomTable" cellspacing="0" cellpadding="0">
+        <tr>
+          <td>
+            <span onclick="ExpandCollapseAll(toggleAllImage)" style="cursor:default;" onkeypress="ExpandCollapseAll_CheckKey(toggleAllImage)" tabindex="0">
+              <img ID="toggleAllImage" class="toggleAll" src="collall.gif" />
+              <label id="collapseAllLabel" for="toggleAllImage" style="display: none;">
+							Collapse All
+						</label>
+              <label id="expandAllLabel" for="toggleAllImage" style="display: none;">
+							Expand All
+						</label>
+            </span>
+            <span id="membersOptionsFilterToolTip" style="cursor:default;" onmouseover="membersOptionsFilterImage.src=dropDownHoverImage.src;" onfocusin="membersOptionsFilterImage.src=dropDownHoverImage.src;" onmouseout="membersOptionsFilterImage.src=dropDownImage.src;" onfocusout="membersOptionsFilterImage.src=dropDownImage.src;" tabindex="0">
+              <img id="membersOptionsFilterImage" src="drpdown.gif" />
+              <label id="showAllMembersLabel" for="membersOptionsFilterImage" style="display: none;">
+				Members Options: Show All
+			</label>
+              <label id="filteredMembersLabel" for="membersOptionsFilterImage" style="display: none;">
+				Members Options: Filtered
+			</label>
+            </span>
+          </td>
+        </tr>
+      </table>
+      <span style="display:none" id="membersOptionsSpan">
+        <input id="inheritedCheckbox" type="checkbox" name="membersOptionsFilter" onClick="SetMembersOptions(this)" />
+        <label class="membersOptionsFilter" for="inheritedCheckbox">
+				Include Inherited Members
+			</label>
+        <br />
+        <input id="protectedCheckbox" type="checkbox" name="membersOptionsFilter" onClick="SetMembersOptions(this)" />
+        <label class="membersOptionsFilter" for="protectedCheckbox">
+				Include Protected Members
+			</label>
+        <br />
+        <input id="assemblyCheckbox" type="checkbox" name="membersOptionsFilter" onClick="SetMembersOptions(this)" />
+        <label class="membersOptionsFilter" for="assemblyCheckbox">
+				Include Internal Members
+			</label>
+        <br />
+        <input id="privateCheckbox" type="checkbox" name="membersOptionsFilter" onClick="SetMembersOptions(this)" />
+        <label class="membersOptionsFilter" for="privateCheckbox">
+				Include Private Members
+			</label>
+        <br />
+        <input id="netcfCheckbox" type="checkbox" name="membersOptionsFilter" onClick="SetMembersOptions(this)" />
+        <label class="membersOptionsFilter" for="netcfCheckbox">
+				.NET Compact Framework Members Only
+			</label>
+        <br />
+      </span>
+    </div>
+    <div id="mainSection">
+      <div id="mainBody">
+        <div id="allHistory" class="saveHistory" onsave="saveAll()" onload="loadAll()" />
+        <p>Under utveckling</p>
+        <br />
+        <p>The following tables list the members exposed by <a href="T_RXServer_RXMasterPageVirtual.html">RXMasterPageVirtual</a>.</p>
+        <h1 class="heading">
+          <span style="cursor:default;" tabindex="0" onclick="ExpandCollapse(PublicConstructorsToggle)" onkeypress="ExpandCollapse_CheckKey(PublicConstructorsToggle)">
+            <img class="toggle" name="toggleSwitch" src="collapse.gif" id="PublicConstructorsToggle" />Public Constructors</span>
+        </h1>
+        <div class="section" name="collapseableSection" id="PublicConstructorsSection">
+          <table width="100%" class="memberListTable">
+            <col width="10%" />
+            <col width="30%" />
+            <col width="60%" />
+            <tr>
+              <th style="border-right-style: none;"> </th>
+              <th align="left" style="border-left-style: none; border-right-style: none;">Name</th>
+              <th align="left" style="border-left-style: none;">Description</th>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="pubmethod.gif" alt="Public method" />
+              </td>
+              <td class="nameCell">
+                <a href="C_RXServer_RXMasterPageVirtual_ctor.html">RXMasterPageVirtual</a>
+              </td>
+              <td>Initializes a new instance of the <nobr><b>RXMasterPageVirtual</b></nobr> class.</td>
+            </tr>
+          </table>
+          <a href="#mainBody">Top</a>
+        </div>
+        <h1 class="heading">
+          <span style="cursor:default;" tabindex="0" onclick="ExpandCollapse(PublicFieldsToggle)" onkeypress="ExpandCollapse_CheckKey(PublicFieldsToggle)">
+            <img class="toggle" name="toggleSwitch" src="collapse.gif" id="PublicFieldsToggle" />Public Fields</span>
+        </h1>
+        <div class="section" name="collapseableSection" id="PublicFieldsSection">
+          <table width="100%" class="memberListTable">
+            <col width="10%" />
+            <col width="30%" />
+            <col width="60%" />
+            <tr>
+              <th style="border-right-style: none;"> </th>
+              <th align="left" style="border-left-style: none; border-right-style: none;">Name</th>
+              <th align="left" style="border-left-style: none;">Description</th>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="pubfield.gif" alt="Public field" />
+              </td>
+              <td class="nameCell">
+                <a href="F_RXServer_RXMasterPageVirtual_PagId.html">PagId</a>
+              </td>
+              <td> </td>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="pubfield.gif" alt="Public field" />
+              </td>
+              <td class="nameCell">
+                <a href="F_RXServer_RXMasterPageVirtual_RXCurrentMenuItem.html">RXCurrentMenuItem</a>
+              </td>
+              <td> </td>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="pubfield.gif" alt="Public field" />
+              </td>
+              <td class="nameCell">
+                <a href="F_RXServer_RXMasterPageVirtual_RXMenu.html">RXMenu</a>
+              </td>
+              <td> </td>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="pubfield.gif" alt="Public field" />
+              </td>
+              <td class="nameCell">
+                <a href="F_RXServer_RXMasterPageVirtual_RXPage.html">RXPage</a>
+              </td>
+              <td> </td>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="pubfield.gif" alt="Public field" />
+              </td>
+              <td class="nameCell">
+                <a href="F_RXServer_RXMasterPageVirtual_SitId.html">SitId</a>
+              </td>
+              <td> </td>
+            </tr>
+          </table>
+          <a href="#mainBody">Top</a>
+        </div>
+        <h1 class="heading">
+          <span style="cursor:default;" tabindex="0" onclick="ExpandCollapse(PublicPropertiesToggle)" onkeypress="ExpandCollapse_CheckKey(PublicPropertiesToggle)">
+            <img class="toggle" name="toggleSwitch" src="collapse.gif" id="PublicPropertiesToggle" />Public Properties</span>
+        </h1>
+        <div class="section" name="collapseableSection" id="PublicPropertiesSection">
+          <table width="100%" class="memberListTable">
+            <col width="10%" />
+            <col width="30%" />
+            <col width="60%" />
+            <tr>
+              <th style="border-right-style: none;"> </th>
+              <th align="left" style="border-left-style: none; border-right-style: none;">Name</th>
+              <th align="left" style="border-left-style: none;">Description</th>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="pubproperty.gif" alt="Public property" />
+              </td>
+              <td class="nameCell"><a href="sdklink://cpref13/html/P_System_Web_UI_UserControl_Application.htm" >Application</a></td>
+              <td>Gets the <nobr><a href="sdklink://cpref12/html/P_System_Web_HttpContext_Application.htm" >Application</a></nobr> object for the current Web request. (inherited from <a href="sdklink://cpref13/html/T_System_Web_UI_UserControl.htm" >UserControl</a>)</td>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="pubproperty.gif" alt="Public property" />
+              </td>
+              <td class="nameCell"><a href="sdklink://cpref13/html/P_System_Web_UI_Control_AppRelativeTemplateSourceDirectory.htm" >AppRelativeTemplateSourceDirectory</a></td>
+              <td>Gets or sets the application-relative virtual directory of the <nobr><a href="sdklink://cpref13/html/T_System_Web_UI_Page.htm" >Page</a></nobr> or <nobr><a href="sdklink://cpref13/html/T_System_Web_UI_UserControl.htm" >UserControl</a></nobr> object that contains this control. (inherited from <a href="sdklink://cpref13/html/T_System_Web_UI_Control.htm" >Control</a>)</td>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="pubproperty.gif" alt="Public property" />
+              </td>
+              <td class="nameCell"><a href="sdklink://cpref13/html/P_System_Web_UI_TemplateControl_AppRelativeVirtualPath.htm" >AppRelativeVirtualPath</a></td>
+              <td>Gets or sets the application-relative, virtual directory path to the file from which the control is parsed and compiled. (inherited from <a href="sdklink://cpref13/html/T_System_Web_UI_TemplateControl.htm" >TemplateControl</a>)</td>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="pubproperty.gif" alt="Public property" />
+              </td>
+              <td class="nameCell"><a href="sdklink://cpref13/html/P_System_Web_UI_UserControl_Attributes.htm" >Attributes</a></td>
+              <td>Gets a collection of all attribute name and value pairs declared in the user control tag within the .aspx file. (inherited from <a href="sdklink://cpref13/html/T_System_Web_UI_UserControl.htm" >UserControl</a>)</td>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="pubproperty.gif" alt="Public property" />
+              </td>
+              <td class="nameCell"><a href="sdklink://cpref13/html/P_System_Web_UI_Control_BindingContainer.htm" >BindingContainer</a></td>
+              <td>Gets the control that contains this control's data binding. (inherited from <a href="sdklink://cpref13/html/T_System_Web_UI_Control.htm" >Control</a>)</td>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="pubproperty.gif" alt="Public property" />
+              </td>
+              <td class="nameCell"><a href="sdklink://cpref13/html/P_System_Web_UI_UserControl_Cache.htm" >Cache</a></td>
+              <td>Gets the <nobr><a href="sdklink://cpref12/html/T_System_Web_Caching_Cache.htm" >Cache</a></nobr> object that is associated with the application that contains the user control. (inherited from <a href="sdklink://cpref13/html/T_System_Web_UI_UserControl.htm" >UserControl</a>)</td>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="pubproperty.gif" alt="Public property" />
+              </td>
+              <td class="nameCell"><a href="sdklink://cpref13/html/P_System_Web_UI_UserControl_CachePolicy.htm" >CachePolicy</a></td>
+              <td>Gets a reference to a collection of caching parameters for this user control. (inherited from <a href="sdklink://cpref13/html/T_System_Web_UI_UserControl.htm" >UserControl</a>)</td>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="pubproperty.gif" alt="Public property" />
+              </td>
+              <td class="nameCell"><a href="sdklink://cpref13/html/P_System_Web_UI_Control_ClientID.htm" >ClientID</a></td>
+              <td>Gets the server control identifier generated by ASP.NET. (inherited from <a href="sdklink://cpref13/html/T_System_Web_UI_Control.htm" >Control</a>)</td>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="pubproperty.gif" alt="Public property" />
+              </td>
+              <td class="nameCell"><a href="sdklink://cpref13/html/P_System_Web_UI_Control_Controls.htm" >Controls</a></td>
+              <td>Gets a <nobr><a href="sdklink://cpref13/html/T_System_Web_UI_ControlCollection.htm" >ControlCollection</a></nobr> object that represents the child controls for a specified server control in the UI hierarchy. (inherited from <a href="sdklink://cpref13/html/T_System_Web_UI_Control.htm" >Control</a>)</td>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="pubproperty.gif" alt="Public property" />
+              </td>
+              <td class="nameCell"><a href="sdklink://cpref13/html/P_System_Web_UI_TemplateControl_EnableTheming.htm" >EnableTheming</a></td>
+              <td>Gets or sets a Boolean value indicating whether themes apply to the control that is derived from the <nobr><a href="sdklink://cpref13/html/T_System_Web_UI_TemplateControl.htm" >TemplateControl</a></nobr> class. (inherited from <a href="sdklink://cpref13/html/T_System_Web_UI_TemplateControl.htm" >TemplateControl</a>)</td>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="pubproperty.gif" alt="Public property" />
+              </td>
+              <td class="nameCell"><a href="sdklink://cpref13/html/P_System_Web_UI_Control_EnableViewState.htm" >EnableViewState</a></td>
+              <td>Gets or sets a value indicating whether the server control persists its view state, and the view state of any child controls it contains, to the requesting client. (inherited from <a href="sdklink://cpref13/html/T_System_Web_UI_Control.htm" >Control</a>)</td>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="pubproperty.gif" alt="Public property" />
+              </td>
+              <td class="nameCell"><a href="sdklink://cpref13/html/P_System_Web_UI_Control_ID.htm" >ID</a></td>
+              <td>Gets or sets the programmatic identifier assigned to the server control. (inherited from <a href="sdklink://cpref13/html/T_System_Web_UI_Control.htm" >Control</a>)</td>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="pubproperty.gif" alt="Public property" />
+              </td>
+              <td class="nameCell"><a href="sdklink://cpref13/html/P_System_Web_UI_UserControl_IsPostBack.htm" >IsPostBack</a></td>
+              <td>Gets a value indicating whether the user control is being loaded in response to a client postback, or if it is being loaded and accessed for the first time. (inherited from <a href="sdklink://cpref13/html/T_System_Web_UI_UserControl.htm" >UserControl</a>)</td>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="pubproperty.gif" alt="Public property" />
+              </td>
+              <td class="nameCell"><a href="sdklink://cpref13/html/P_System_Web_UI_MasterPage_Master.htm" >Master</a></td>
+              <td>Gets the parent master page of the current master in nested master pages scenarios. (inherited from <a href="sdklink://cpref13/html/T_System_Web_UI_MasterPage.htm" >MasterPage</a>)</td>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="pubproperty.gif" alt="Public property" />
+              </td>
+              <td class="nameCell"><a href="sdklink://cpref13/html/P_System_Web_UI_MasterPage_MasterPageFile.htm" >MasterPageFile</a></td>
+              <td>Gets or sets the name of the master page that contains the current content. (inherited from <a href="sdklink://cpref13/html/T_System_Web_UI_MasterPage.htm" >MasterPage</a>)</td>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="pubproperty.gif" alt="Public property" />
+              </td>
+              <td class="nameCell"><a href="sdklink://cpref13/html/P_System_Web_UI_Control_NamingContainer.htm" >NamingContainer</a></td>
+              <td>Gets a reference to the server control's naming container, which creates a unique namespace for differentiating between server controls with the same <nobr><a href="sdklink://cpref13/html/P_System_Web_UI_Control_ID.htm" >ID</a></nobr> property value. (inherited from <a href="sdklink://cpref13/html/T_System_Web_UI_Control.htm" >Control</a>)</td>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="pubproperty.gif" alt="Public property" />
+              </td>
+              <td class="nameCell"><a href="sdklink://cpref13/html/P_System_Web_UI_Control_Page.htm" >Page</a></td>
+              <td>Gets a reference to the <nobr><a href="sdklink://cpref13/html/T_System_Web_UI_Page.htm" >Page</a></nobr> instance that contains the server control. (inherited from <a href="sdklink://cpref13/html/T_System_Web_UI_Control.htm" >Control</a>)</td>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="pubproperty.gif" alt="Public property" />
+              </td>
+              <td class="nameCell"><a href="sdklink://cpref13/html/P_System_Web_UI_Control_Parent.htm" >Parent</a></td>
+              <td>Gets a reference to the server control's parent control in the page control hierarchy. (inherited from <a href="sdklink://cpref13/html/T_System_Web_UI_Control.htm" >Control</a>)</td>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="pubproperty.gif" alt="Public property" />
+              </td>
+              <td class="nameCell"><a href="sdklink://cpref13/html/P_System_Web_UI_UserControl_Request.htm" >Request</a></td>
+              <td>Gets the <nobr><a href="sdklink://cpref12/html/T_System_Web_HttpRequest.htm" >HttpRequest</a></nobr> object for the current Web request. (inherited from <a href="sdklink://cpref13/html/T_System_Web_UI_UserControl.htm" >UserControl</a>)</td>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="pubproperty.gif" alt="Public property" />
+              </td>
+              <td class="nameCell"><a href="sdklink://cpref13/html/P_System_Web_UI_UserControl_Response.htm" >Response</a></td>
+              <td>Gets the <nobr><a href="sdklink://cpref12/html/T_System_Web_HttpResponse.htm" >HttpResponse</a></nobr> object for the current Web request. (inherited from <a href="sdklink://cpref13/html/T_System_Web_UI_UserControl.htm" >UserControl</a>)</td>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="pubproperty.gif" alt="Public property" />
+              </td>
+              <td class="nameCell"><a href="sdklink://cpref13/html/P_System_Web_UI_UserControl_Server.htm" >Server</a></td>
+              <td>Gets the <nobr><a href="sdklink://cpref12/html/T_System_Web_HttpServerUtility.htm" >HttpServerUtility</a></nobr> object for the current Web request. (inherited from <a href="sdklink://cpref13/html/T_System_Web_UI_UserControl.htm" >UserControl</a>)</td>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="pubproperty.gif" alt="Public property" />
+              </td>
+              <td class="nameCell"><a href="sdklink://cpref13/html/P_System_Web_UI_UserControl_Session.htm" >Session</a></td>
+              <td>Gets the <nobr><a href="sdklink://cpref13/html/T_System_Web_SessionState_HttpSessionState.htm" >HttpSessionState</a></nobr>object for the current Web request. (inherited from <a href="sdklink://cpref13/html/T_System_Web_UI_UserControl.htm" >UserControl</a>)</td>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="pubproperty.gif" alt="Public property" />
+              </td>
+              <td class="nameCell"><a href="sdklink://cpref13/html/P_System_Web_UI_Control_Site.htm" >Site</a></td>
+              <td>Gets information about the container that hosts the current control when rendered on a design surface. (inherited from <a href="sdklink://cpref13/html/T_System_Web_UI_Control.htm" >Control</a>)</td>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="pubproperty.gif" alt="Public property" />
+              </td>
+              <td class="nameCell"><a href="sdklink://cpref13/html/P_System_Web_UI_Control_SkinID.htm" >SkinID</a></td>
+              <td>Gets or sets the skin to apply to the control. (inherited from <a href="sdklink://cpref13/html/T_System_Web_UI_Control.htm" >Control</a>)</td>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="pubproperty.gif" alt="Public property" />
+              </td>
+              <td class="nameCell"><a href="sdklink://cpref13/html/P_System_Web_UI_Control_TemplateControl.htm" >TemplateControl</a></td>
+              <td>Gets or sets a reference to the template that contains this control. (inherited from <a href="sdklink://cpref13/html/T_System_Web_UI_Control.htm" >Control</a>)</td>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="pubproperty.gif" alt="Public property" />
+              </td>
+              <td class="nameCell"><a href="sdklink://cpref13/html/P_System_Web_UI_Control_TemplateSourceDirectory.htm" >TemplateSourceDirectory</a></td>
+              <td>Gets the virtual directory of the <nobr><a href="sdklink://cpref13/html/T_System_Web_UI_Page.htm" >Page</a></nobr> or <nobr><a href="sdklink://cpref13/html/T_System_Web_UI_UserControl.htm" >UserControl</a></nobr> that contains the current server control. (inherited from <a href="sdklink://cpref13/html/T_System_Web_UI_Control.htm" >Control</a>)</td>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="pubproperty.gif" alt="Public property" />
+              </td>
+              <td class="nameCell"><a href="sdklink://cpref13/html/P_System_Web_UI_UserControl_Trace.htm" >Trace</a></td>
+              <td>Gets the <nobr><a href="sdklink://cpref12/html/T_System_Web_TraceContext.htm" >TraceContext</a></nobr> object for the current Web request. (inherited from <a href="sdklink://cpref13/html/T_System_Web_UI_UserControl.htm" >UserControl</a>)</td>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="pubproperty.gif" alt="Public property" />
+              </td>
+              <td class="nameCell"><a href="sdklink://cpref13/html/P_System_Web_UI_Control_UniqueID.htm" >UniqueID</a></td>
+              <td>Gets the unique, hierarchically qualified identifier for the server control. (inherited from <a href="sdklink://cpref13/html/T_System_Web_UI_Control.htm" >Control</a>)</td>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="pubproperty.gif" alt="Public property" />
+              </td>
+              <td class="nameCell"><a href="sdklink://cpref13/html/P_System_Web_UI_Control_Visible.htm" >Visible</a></td>
+              <td>Gets or sets a value that indicates whether a server control is rendered as UI on the page. (inherited from <a href="sdklink://cpref13/html/T_System_Web_UI_Control.htm" >Control</a>)</td>
+            </tr>
+          </table>
+          <a href="#mainBody">Top</a>
+        </div>
+        <h1 class="heading">
+          <span style="cursor:default;" tabindex="0" onclick="ExpandCollapse(FamilyPropertiesToggle)" onkeypress="ExpandCollapse_CheckKey(FamilyPropertiesToggle)">
+            <img class="toggle" name="toggleSwitch" src="collapse.gif" id="FamilyPropertiesToggle" />Protected Properties</span>
+        </h1>
+        <div class="section" name="collapseableSection" id="FamilyPropertiesSection">
+          <table width="100%" class="memberListTable">
+            <col width="10%" />
+            <col width="30%" />
+            <col width="60%" />
+            <tr>
+              <th style="border-right-style: none;"> </th>
+              <th align="left" style="border-left-style: none; border-right-style: none;">Name</th>
+              <th align="left" style="border-left-style: none;">Description</th>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="protproperty.gif" alt="Family property" />
+              </td>
+              <td class="nameCell"><a href="sdklink://cpref13/html/P_System_Web_UI_Control_Adapter.htm" >Adapter</a></td>
+              <td>Gets the browser-specific adapter for the control. (inherited from <a href="sdklink://cpref13/html/T_System_Web_UI_Control.htm" >Control</a>)</td>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="protproperty.gif" alt="Family property" />
+              </td>
+              <td class="nameCell"><a href="sdklink://cpref13/html/P_System_Web_UI_TemplateControl_AutoHandlers.htm" >AutoHandlers</a></td>
+              <td>The <nobr><a href="sdklink://cpref13/html/P_System_Web_UI_TemplateControl_AutoHandlers.htm" >AutoHandlers</a></nobr> property has been deprecated in ASP.NET NET 2.0. It is used by generated classes and is not intended for use within your code. (inherited from <a href="sdklink://cpref13/html/T_System_Web_UI_TemplateControl.htm" >TemplateControl</a>)</td>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="protproperty.gif" alt="Family property" />
+              </td>
+              <td class="nameCell"><a href="sdklink://cpref13/html/P_System_Web_UI_Control_ChildControlsCreated.htm" >ChildControlsCreated</a></td>
+              <td>Gets a value that indicates whether the server control's child controls have been created. (inherited from <a href="sdklink://cpref13/html/T_System_Web_UI_Control.htm" >Control</a>)</td>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="protproperty.gif" alt="Family property" />
+              </td>
+              <td class="nameCell"><a href="sdklink://cpref13/html/P_System_Web_UI_Control_ClientIDSeparator.htm" >ClientIDSeparator</a></td>
+              <td>Gets a character value representing the separator character used in the <nobr><a href="sdklink://cpref13/html/P_System_Web_UI_Control_ClientID.htm" >ClientID</a></nobr> property. (inherited from <a href="sdklink://cpref13/html/T_System_Web_UI_Control.htm" >Control</a>)</td>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="protproperty.gif" alt="Family property" />
+              </td>
+              <td class="nameCell"><a href="sdklink://cpref13/html/P_System_Web_UI_MasterPage_ContentPlaceHolders.htm" >ContentPlaceHolders</a></td>
+              <td>Gets a list of <nobr><a href="sdklink://cpref16/html/T_System_Web_UI_WebControls_ContentPlaceHolder.htm" >ContentPlaceHolder</a></nobr> controls that the master page uses to define different content regions. (inherited from <a href="sdklink://cpref13/html/T_System_Web_UI_MasterPage.htm" >MasterPage</a>)</td>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="protproperty.gif" alt="Family property" />
+              </td>
+              <td class="nameCell"><a href="sdklink://cpref13/html/P_System_Web_UI_MasterPage_ContentTemplates.htm" >ContentTemplates</a></td>
+              <td>Gets a list of content controls that are associated with the master page. (inherited from <a href="sdklink://cpref13/html/T_System_Web_UI_MasterPage.htm" >MasterPage</a>)</td>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="protproperty.gif" alt="Family property" />
+              </td>
+              <td class="nameCell"><a href="sdklink://cpref13/html/P_System_Web_UI_Control_Context.htm" >Context</a></td>
+              <td>Gets the <nobr><a href="sdklink://cpref12/html/T_System_Web_HttpContext.htm" >HttpContext</a></nobr> object associated with the server control for the current Web request. (inherited from <a href="sdklink://cpref13/html/T_System_Web_UI_Control.htm" >Control</a>)</td>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="protproperty.gif" alt="Family property" />
+              </td>
+              <td class="nameCell"><a href="sdklink://cpref13/html/P_System_Web_UI_Control_DesignMode.htm" >DesignMode</a></td>
+              <td>Gets a value indicating whether a control is being used on a design surface. (inherited from <a href="sdklink://cpref13/html/T_System_Web_UI_Control.htm" >Control</a>)</td>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="protproperty.gif" alt="Family property" />
+              </td>
+              <td class="nameCell"><a href="sdklink://cpref13/html/P_System_Web_UI_Control_Events.htm" >Events</a></td>
+              <td>Gets a list of event handler delegates for the control. This property is read-only. (inherited from <a href="sdklink://cpref13/html/T_System_Web_UI_Control.htm" >Control</a>)</td>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="protproperty.gif" alt="Family property" />
+              </td>
+              <td class="nameCell"><a href="sdklink://cpref13/html/P_System_Web_UI_Control_HasChildViewState.htm" >HasChildViewState</a></td>
+              <td>Gets a value indicating whether the current server control's child controls have any saved view-state settings. (inherited from <a href="sdklink://cpref13/html/T_System_Web_UI_Control.htm" >Control</a>)</td>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="protproperty.gif" alt="Family property" />
+              </td>
+              <td class="nameCell"><a href="sdklink://cpref13/html/P_System_Web_UI_Control_IdSeparator.htm" >IdSeparator</a></td>
+              <td>Gets the character used to separate control identifiers. (inherited from <a href="sdklink://cpref13/html/T_System_Web_UI_Control.htm" >Control</a>)</td>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="protproperty.gif" alt="Family property" />
+              </td>
+              <td class="nameCell"><a href="sdklink://cpref13/html/P_System_Web_UI_Control_IsChildControlStateCleared.htm" >IsChildControlStateCleared</a></td>
+              <td>Gets a value indicating whether controls contained within this control have control state. (inherited from <a href="sdklink://cpref13/html/T_System_Web_UI_Control.htm" >Control</a>)</td>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="protproperty.gif" alt="Family property" />
+              </td>
+              <td class="nameCell"><a href="sdklink://cpref13/html/P_System_Web_UI_Control_IsTrackingViewState.htm" >IsTrackingViewState</a></td>
+              <td>Gets a value that indicates whether the server control is saving changes to its view state. (inherited from <a href="sdklink://cpref13/html/T_System_Web_UI_Control.htm" >Control</a>)</td>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="protproperty.gif" alt="Family property" />
+              </td>
+              <td class="nameCell"><a href="sdklink://cpref13/html/P_System_Web_UI_Control_IsViewStateEnabled.htm" >IsViewStateEnabled</a></td>
+              <td>Gets a value indicating whether view state is enabled for this control. (inherited from <a href="sdklink://cpref13/html/T_System_Web_UI_Control.htm" >Control</a>)</td>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="protproperty.gif" alt="Family property" />
+              </td>
+              <td class="nameCell"><a href="sdklink://cpref13/html/P_System_Web_UI_Control_LoadViewStateByID.htm" >LoadViewStateByID</a></td>
+              <td>Gets a value indicating whether the control participates in loading its view state by <nobr><a href="sdklink://cpref13/html/P_System_Web_UI_Control_ID.htm" >ID</a></nobr> instead of index. (inherited from <a href="sdklink://cpref13/html/T_System_Web_UI_Control.htm" >Control</a>)</td>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="protproperty.gif" alt="Family property" />
+              </td>
+              <td class="nameCell"><a href="sdklink://cpref13/html/P_System_Web_UI_TemplateControl_SupportAutoEvents.htm" >SupportAutoEvents</a></td>
+              <td>Gets a value indicating whether the <nobr><a href="sdklink://cpref13/html/T_System_Web_UI_TemplateControl.htm" >TemplateControl</a></nobr> control supports automatic events. (inherited from <a href="sdklink://cpref13/html/T_System_Web_UI_TemplateControl.htm" >TemplateControl</a>)</td>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="protproperty.gif" alt="Family property" />
+              </td>
+              <td class="nameCell"><a href="sdklink://cpref13/html/P_System_Web_UI_Control_ViewState.htm" >ViewState</a></td>
+              <td>Gets a dictionary of state information that allows you to save and restore the view state of a server control across multiple requests for the same page. (inherited from <a href="sdklink://cpref13/html/T_System_Web_UI_Control.htm" >Control</a>)</td>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="protproperty.gif" alt="Family property" />
+              </td>
+              <td class="nameCell"><a href="sdklink://cpref13/html/P_System_Web_UI_Control_ViewStateIgnoresCase.htm" >ViewStateIgnoresCase</a></td>
+              <td>Gets a value that indicates whether the <nobr><a href="sdklink://cpref13/html/T_System_Web_UI_StateBag.htm" >StateBag</a></nobr> object is case-insensitive. (inherited from <a href="sdklink://cpref13/html/T_System_Web_UI_Control.htm" >Control</a>)</td>
+            </tr>
+          </table>
+          <a href="#mainBody">Top</a>
+        </div>
+        <h1 class="heading">
+          <span style="cursor:default;" tabindex="0" onclick="ExpandCollapse(PublicMethodsToggle)" onkeypress="ExpandCollapse_CheckKey(PublicMethodsToggle)">
+            <img class="toggle" name="toggleSwitch" src="collapse.gif" id="PublicMethodsToggle" />Public Methods</span>
+        </h1>
+        <div class="section" name="collapseableSection" id="PublicMethodsSection">
+          <table width="100%" class="memberListTable">
+            <col width="10%" />
+            <col width="30%" />
+            <col width="60%" />
+            <tr>
+              <th style="border-right-style: none;"> </th>
+              <th align="left" style="border-left-style: none; border-right-style: none;">Name</th>
+              <th align="left" style="border-left-style: none;">Description</th>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="pubmethod.gif" alt="Public method" />
+              </td>
+              <td class="nameCell"><a href="sdklink://cpref13/html/M_System_Web_UI_Control_ApplyStyleSheetSkin.htm" >ApplyStyleSheetSkin</a></td>
+              <td>Applies the style properties defined in the page style sheet to the control. (inherited from <a href="sdklink://cpref13/html/T_System_Web_UI_Control.htm" >Control</a>)</td>
+            </tr>
+            <tr>
+              <td class="imageCell">
+                <img src="pubmethod.gif" alt="Public method" />
+              </td>
+              <td class="nameCell"><a href="sdklink://cpref13/html/O_T_System_Web_UI_Control_DataBind.htm" >DataBind</a></td>
+              <td>Overloaded. Binds a data source to the invoked server control and all its child controls. (inherited from <a href="sdklink://cpref13/html/T_System_Web_UI_Control.htm" >Control</a>)</td>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="pubmethod.gif" alt="Public method" />
+              </td>
+              <td class="nameCell"><a href="sdklink://cpref13/html/M_System_Web_UI_UserControl_DesignerInitialize.htm" >DesignerInitialize</a></td>
+              <td>Performs any initialization steps on the user control that are required by RAD designers. (inherited from <a href="sdklink://cpref13/html/T_System_Web_UI_UserControl.htm" >UserControl</a>)</td>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="pubmethod.gif" alt="Public method" />
+              </td>
+              <td class="nameCell"><a href="sdklink://cpref13/html/M_System_Web_UI_Control_Dispose.htm" >Dispose</a></td>
+              <td>Enables a server control to perform final clean up before it is released from memory. (inherited from <a href="sdklink://cpref13/html/T_System_Web_UI_Control.htm" >Control</a>)</td>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="pubmethod.gif" alt="Public method" />
+              </td>
+              <td class="nameCell"><a href="sdklink://cpref2/html/M_System_Object_Equals.htm" >Equals</a></td>
+              <td>Determines whether the specified <nobr><a href="sdklink://cpref2/html/T_System_Object.htm" >Object</a></nobr> is equal to the current <nobr><b>Object</b></nobr>. (inherited from <a href="sdklink://cpref2/html/T_System_Object.htm" >Object</a>)</td>
+            </tr>
+            <tr>
+              <td class="imageCell">
+                <img src="pubmethod.gif" alt="Public method" />
+              </td>
+              <td class="nameCell"><a href="sdklink://cpref13/html/O_T_System_Web_UI_Control_FindControl.htm" >FindControl</a></td>
+              <td>Overloaded. Searches the current naming container for the specified server control. (inherited from <a href="sdklink://cpref13/html/T_System_Web_UI_Control.htm" >Control</a>)</td>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="pubmethod.gif" alt="Public method" />
+              </td>
+              <td class="nameCell"><a href="sdklink://cpref13/html/M_System_Web_UI_Control_Focus.htm" >Focus</a></td>
+              <td>Sets input focus to a control. (inherited from <a href="sdklink://cpref13/html/T_System_Web_UI_Control.htm" >Control</a>)</td>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="pubmethod.gif" alt="Public method" />
+              </td>
+              <td class="nameCell"><a href="sdklink://cpref2/html/M_System_Object_GetHashCode.htm" >GetHashCode</a></td>
+              <td>Serves as a hash function for a particular type. <nobr><a href="sdklink://cpref2/html/M_System_Object_GetHashCode.htm" >GetHashCode</a></nobr> is suitable for use in hashing algorithms and data structures like a hash table. (inherited from <a href="sdklink://cpref2/html/T_System_Object.htm" >Object</a>)</td>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="pubmethod.gif" alt="Public method" />
+              </td>
+              <td class="nameCell"><a href="sdklink://cpref2/html/M_System_Object_GetType.htm" >GetType</a></td>
+              <td>Gets the <nobr><a href="sdklink://cpref2/html/T_System_Type.htm" >Type</a></nobr> of the current instance. (inherited from <a href="sdklink://cpref2/html/T_System_Object.htm" >Object</a>)</td>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="pubmethod.gif" alt="Public method" />
+              </td>
+              <td class="nameCell"><a href="sdklink://cpref13/html/M_System_Web_UI_Control_HasControls.htm" >HasControls</a></td>
+              <td>Determines if the server control contains any child controls. (inherited from <a href="sdklink://cpref13/html/T_System_Web_UI_Control.htm" >Control</a>)</td>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="pubmethod.gif" alt="Public method" />
+              </td>
+              <td class="nameCell"><a href="sdklink://cpref13/html/M_System_Web_UI_UserControl_InitializeAsUserControl.htm" >InitializeAsUserControl</a></td>
+              <td>Initializes the <nobr><a href="sdklink://cpref13/html/T_System_Web_UI_UserControl.htm" >UserControl</a></nobr> object that has been created declaratively. Since there are some differences between pages and user controls, this method makes sure that the user control is initialized properly. (inherited from <a href="sdklink://cpref13/html/T_System_Web_UI_UserControl.htm" >UserControl</a>)</td>
+            </tr>
+            <tr>
+              <td class="imageCell">
+                <img src="pubmethod.gif" alt="Public method" />
+              </td>
+              <td class="nameCell"><a href="sdklink://cpref13/html/O_T_System_Web_UI_TemplateControl_LoadControl.htm" >LoadControl</a></td>
+              <td>Overloaded. Loads a <nobr><a href="sdklink://cpref13/html/T_System_Web_UI_Control.htm" >Control</a></nobr>. (inherited from <a href="sdklink://cpref13/html/T_System_Web_UI_TemplateControl.htm" >TemplateControl</a>)</td>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="pubmethod.gif" alt="Public method" />
+              </td>
+              <td class="nameCell"><a href="sdklink://cpref13/html/M_System_Web_UI_TemplateControl_LoadTemplate.htm" >LoadTemplate</a></td>
+              <td>Obtains an instance of the <nobr><a href="sdklink://cpref13/html/T_System_Web_UI_ITemplate.htm" >ITemplate</a></nobr> interface from an external file. (inherited from <a href="sdklink://cpref13/html/T_System_Web_UI_TemplateControl.htm" >TemplateControl</a>)</td>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="pubmethod.gif" alt="Public method" />
+              </td>
+              <td class="nameCell"><a href="sdklink://cpref13/html/M_System_Web_UI_UserControl_MapPath.htm" >MapPath</a></td>
+              <td>Assigns a virtual file path, either absolute or relative, to a physical file path. (inherited from <a href="sdklink://cpref13/html/T_System_Web_UI_UserControl.htm" >UserControl</a>)</td>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="pubmethod.gif" alt="Public method" />
+              </td>
+              <td class="nameCell">
+                <a href="M_RXServer_RXMasterPageVirtual_Page_Init.html">Page_Init</a>
+              </td>
+              <td> </td>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="pubmethod.gif" alt="Public method" />
+              </td>
+              <td class="nameCell">
+                <a href="M_RXServer_RXMasterPageVirtual_Page_PreInit.html">Page_PreInit</a>
+              </td>
+              <td> </td>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="pubmethod.gif" alt="Public method" />
+              </td>
+              <td class="nameCell"><a href="sdklink://cpref13/html/M_System_Web_UI_TemplateControl_ParseControl.htm" >ParseControl</a></td>
+              <td>Parses an input string into a <nobr><a href="sdklink://cpref13/html/T_System_Web_UI_Control.htm" >Control</a></nobr> object on the Web Forms page or user control. (inherited from <a href="sdklink://cpref13/html/T_System_Web_UI_TemplateControl.htm" >TemplateControl</a>)</td>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="pubmethod.gif" alt="Public method" />
+              </td>
+              <td class="nameCell"><a href="sdklink://cpref13/html/M_System_Web_UI_TemplateControl_ReadStringResource.htm" >ReadStringResource</a></td>
+              <td>Reads a string resource. The <nobr><a href="sdklink://cpref13/html/M_System_Web_UI_TemplateControl_ReadStringResource.htm" >ReadStringResource</a></nobr> method is not intended for use from within your code. (inherited from <a href="sdklink://cpref13/html/T_System_Web_UI_TemplateControl.htm" >TemplateControl</a>)</td>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="pubmethod.gif" alt="Public method" />
+              </td>
+              <td class="nameCell">
+                <a href="M_RXServer_RXMasterPageVirtual_RenderContentControl.html">RenderContentControl</a>
+              </td>
+              <td> </td>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="pubmethod.gif" alt="Public method" />
+              </td>
+              <td class="nameCell">
+                <a href="M_RXServer_RXMasterPageVirtual_RenderContentSpacer.html">RenderContentSpacer</a>
+              </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td class="imageCell">
+                <img src="pubmethod.gif" alt="Public method" />
+              </td>
+              <td class="nameCell"><a href="sdklink://cpref13/html/O_T_System_Web_UI_Control_RenderControl.htm" >RenderControl</a></td>
+              <td>Overloaded. Outputs server control content and stores tracing information about the control if tracing is enabled. (inherited from <a href="sdklink://cpref13/html/T_System_Web_UI_Control.htm" >Control</a>)</td>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="pubmethod.gif" alt="Public method" />
+              </td>
+              <td class="nameCell"><a href="sdklink://cpref13/html/M_System_Web_UI_Control_ResolveClientUrl.htm" >ResolveClientUrl</a></td>
+              <td>Gets a URL that can be used by the browser. (inherited from <a href="sdklink://cpref13/html/T_System_Web_UI_Control.htm" >Control</a>)</td>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="pubmethod.gif" alt="Public method" />
+              </td>
+              <td class="nameCell"><a href="sdklink://cpref13/html/M_System_Web_UI_Control_ResolveUrl.htm" >ResolveUrl</a></td>
+              <td>Converts a URL into one that is usable on the requesting client. (inherited from <a href="sdklink://cpref13/html/T_System_Web_UI_Control.htm" >Control</a>)</td>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="pubmethod.gif" alt="Public method" />
+              </td>
+              <td class="nameCell"><a href="sdklink://cpref13/html/M_System_Web_UI_Control_SetRenderMethodDelegate.htm" >SetRenderMethodDelegate</a></td>
+              <td>Assigns an event handler delegate to render the server control and its content into its parent control. (inherited from <a href="sdklink://cpref13/html/T_System_Web_UI_Control.htm" >Control</a>)</td>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="pubmethod.gif" alt="Public method" />
+              </td>
+              <td class="nameCell"><a href="sdklink://cpref13/html/M_System_Web_UI_TemplateControl_TestDeviceFilter.htm" >TestDeviceFilter</a></td>
+              <td>Returns a Boolean value indicating whether a device filter applies to the HTTP request. (inherited from <a href="sdklink://cpref13/html/T_System_Web_UI_TemplateControl.htm" >TemplateControl</a>)</td>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="pubmethod.gif" alt="Public method" />
+              </td>
+              <td class="nameCell"><a href="sdklink://cpref2/html/M_System_Object_ToString.htm" >ToString</a></td>
+              <td>Returns a <nobr><a href="sdklink://cpref2/html/T_System_String.htm" >String</a></nobr> that represents the current <nobr><a href="sdklink://cpref2/html/T_System_Object.htm" >Object</a></nobr>. (inherited from <a href="sdklink://cpref2/html/T_System_Object.htm" >Object</a>)</td>
+            </tr>
+          </table>
+          <a href="#mainBody">Top</a>
+        </div>
+        <h1 class="heading">
+          <span style="cursor:default;" tabindex="0" onclick="ExpandCollapse(FamilyMethodsToggle)" onkeypress="ExpandCollapse_CheckKey(FamilyMethodsToggle)">
+            <img class="toggle" name="toggleSwitch" src="collapse.gif" id="FamilyMethodsToggle" />Protected Methods</span>
+        </h1>
+        <div class="section" name="collapseableSection" id="FamilyMethodsSection">
+          <table width="100%" class="memberListTable">
+            <col width="10%" />
+            <col width="30%" />
+            <col width="60%" />
+            <tr>
+              <th style="border-right-style: none;"> </th>
+              <th align="left" style="border-left-style: none; border-right-style: none;">Name</th>
+              <th align="left" style="border-left-style: none;">Description</th>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="protmethod.gif" alt="Family method" />
+              </td>
+              <td class="nameCell"><a href="sdklink://cpref13/html/M_System_Web_UI_MasterPage_AddContentTemplate.htm" >AddContentTemplate</a></td>
+              <td>Adds a <nobr><a href="sdklink://cpref16/html/T_System_Web_UI_WebControls_Content.htm" >Content</a></nobr> control to the <nobr><a href="sdklink://cpref13/html/P_System_Web_UI_MasterPage_ContentTemplates.htm" >ContentTemplates</a></nobr> dictionary. (inherited from <a href="sdklink://cpref13/html/T_System_Web_UI_MasterPage.htm" >MasterPage</a>)</td>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="protmethod.gif" alt="Family method" />
+              </td>
+              <td class="nameCell"><a href="sdklink://cpref13/html/M_System_Web_UI_Control_AddedControl.htm" >AddedControl</a></td>
+              <td>Called after a child control is added to the <nobr><a href="sdklink://cpref13/html/P_System_Web_UI_Control_Controls.htm" >Controls</a></nobr> collection of the <nobr><a href="sdklink://cpref13/html/T_System_Web_UI_Control.htm" >Control</a></nobr> object. (inherited from <a href="sdklink://cpref13/html/T_System_Web_UI_Control.htm" >Control</a>)</td>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="protmethod.gif" alt="Family method" />
+              </td>
+              <td class="nameCell"><a href="sdklink://cpref13/html/M_System_Web_UI_Control_AddParsedSubObject.htm" >AddParsedSubObject</a></td>
+              <td>Notifies the server control that an element, either XML or HTML, was parsed, and adds the element to the server control's <nobr><a href="sdklink://cpref13/html/T_System_Web_UI_ControlCollection.htm" >ControlCollection</a></nobr> object. (inherited from <a href="sdklink://cpref13/html/T_System_Web_UI_Control.htm" >Control</a>)</td>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="protmethod.gif" alt="Family method" />
+              </td>
+              <td class="nameCell"><a href="sdklink://cpref13/html/M_System_Web_UI_Control_BuildProfileTree.htm" >BuildProfileTree</a></td>
+              <td>Gathers information about the server control and delivers it to the <nobr><a href="sdklink://cpref13/html/P_System_Web_UI_Page_Trace.htm" >Trace</a></nobr> property to be displayed when tracing is enabled for the page. (inherited from <a href="sdklink://cpref13/html/T_System_Web_UI_Control.htm" >Control</a>)</td>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="protmethod.gif" alt="Family method" />
+              </td>
+              <td class="nameCell"><a href="sdklink://cpref13/html/M_System_Web_UI_Control_ClearChildControlState.htm" >ClearChildControlState</a></td>
+              <td>Deletes the control-state information for the server control's child controls. (inherited from <a href="sdklink://cpref13/html/T_System_Web_UI_Control.htm" >Control</a>)</td>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="protmethod.gif" alt="Family method" />
+              </td>
+              <td class="nameCell"><a href="sdklink://cpref13/html/M_System_Web_UI_Control_ClearChildState.htm" >ClearChildState</a></td>
+              <td>Deletes the view-state and control-state information for all the server control's child controls. (inherited from <a href="sdklink://cpref13/html/T_System_Web_UI_Control.htm" >Control</a>)</td>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="protmethod.gif" alt="Family method" />
+              </td>
+              <td class="nameCell"><a href="sdklink://cpref13/html/M_System_Web_UI_Control_ClearChildViewState.htm" >ClearChildViewState</a></td>
+              <td>Deletes the view-state information for all the server control's child controls. (inherited from <a href="sdklink://cpref13/html/T_System_Web_UI_Control.htm" >Control</a>)</td>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="protmethod.gif" alt="Family method" />
+              </td>
+              <td class="nameCell"><a href="sdklink://cpref13/html/M_System_Web_UI_TemplateControl_Construct.htm" >Construct</a></td>
+              <td>Performs design-time logic. (inherited from <a href="sdklink://cpref13/html/T_System_Web_UI_TemplateControl.htm" >TemplateControl</a>)</td>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="protmethod.gif" alt="Family method" />
+              </td>
+              <td class="nameCell"><a href="sdklink://cpref13/html/M_System_Web_UI_Control_CreateChildControls.htm" >CreateChildControls</a></td>
+              <td>Called by the ASP.NET page framework to notify server controls that use composition-based implementation to create any child controls they contain in preparation for posting back or rendering. (inherited from <a href="sdklink://cpref13/html/T_System_Web_UI_Control.htm" >Control</a>)</td>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="protmethod.gif" alt="Family method" />
+              </td>
+              <td class="nameCell"><a href="sdklink://cpref13/html/M_System_Web_UI_Control_CreateControlCollection.htm" >CreateControlCollection</a></td>
+              <td>Creates a new <nobr><a href="sdklink://cpref13/html/T_System_Web_UI_ControlCollection.htm" >ControlCollection</a></nobr> object to hold the child controls (both literal and server) of the server control. (inherited from <a href="sdklink://cpref13/html/T_System_Web_UI_Control.htm" >Control</a>)</td>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="protmethod.gif" alt="Family method" />
+              </td>
+              <td class="nameCell"><a href="sdklink://cpref13/html/M_System_Web_UI_TemplateControl_CreateResourceBasedLiteralControl.htm" >CreateResourceBasedLiteralControl</a></td>
+              <td>Accesses literal strings stored in a resource. The <nobr><a href="sdklink://cpref13/html/M_System_Web_UI_TemplateControl_CreateResourceBasedLiteralControl.htm" >CreateResourceBasedLiteralControl</a></nobr> method is not intended for use from within your code. (inherited from <a href="sdklink://cpref13/html/T_System_Web_UI_TemplateControl.htm" >TemplateControl</a>)</td>
+            </tr>
+            <tr>
+              <td class="imageCell">
+                <img src="protmethod.gif" alt="Family method" />
+              </td>
+              <td class="nameCell"><a href="sdklink://cpref13/html/O_T_System_Web_UI_Control_DataBind.htm" >DataBind</a></td>
+              <td>Overloaded. Binds a data source to the invoked server control and all its child controls. (inherited from <a href="sdklink://cpref13/html/T_System_Web_UI_Control.htm" >Control</a>)</td>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="protmethod.gif" alt="Family method" />
+              </td>
+              <td class="nameCell"><a href="sdklink://cpref13/html/M_System_Web_UI_Control_DataBindChildren.htm" >DataBindChildren</a></td>
+              <td>Binds a data source to the server control's child controls. (inherited from <a href="sdklink://cpref13/html/T_System_Web_UI_Control.htm" >Control</a>)</td>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="protmethod.gif" alt="Family method" />
+              </td>
+              <td class="nameCell"><a href="sdklink://cpref13/html/M_System_Web_UI_Control_EnsureChildControls.htm" >EnsureChildControls</a></td>
+              <td>Determines whether the server control contains child controls. If it does not, it creates child controls. (inherited from <a href="sdklink://cpref13/html/T_System_Web_UI_Control.htm" >Control</a>)</td>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="protmethod.gif" alt="Family method" />
+              </td>
+              <td class="nameCell"><a href="sdklink://cpref13/html/M_System_Web_UI_Control_EnsureID.htm" >EnsureID</a></td>
+              <td>Creates an identifier for controls that do not have an identifier assigned. (inherited from <a href="sdklink://cpref13/html/T_System_Web_UI_Control.htm" >Control</a>)</td>
+            </tr>
+            <tr>
+              <td class="imageCell">
+                <img src="protmethod.gif" alt="Family method" />
+              </td>
+              <td class="nameCell"><a href="sdklink://cpref13/html/O_T_System_Web_UI_TemplateControl_Eval.htm" >Eval</a></td>
+              <td>Overloaded. Provides support for parsing and evaluating a data-binding expression against an object at run time. (inherited from <a href="sdklink://cpref13/html/T_System_Web_UI_TemplateControl.htm" >TemplateControl</a>)</td>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="protmethod.gif" alt="Family method" />
+              </td>
+              <td class="nameCell"><a href="sdklink://cpref2/html/M_System_Object_Finalize.htm" >Finalize</a></td>
+              <td>Allows an <nobr><a href="sdklink://cpref2/html/T_System_Object.htm" >Object</a></nobr> to attempt to free resources and perform other cleanup operations before the <nobr><b>Object</b></nobr> is reclaimed by garbage collection. (inherited from <a href="sdklink://cpref2/html/T_System_Object.htm" >Object</a>)</td>
+            </tr>
+            <tr>
+              <td class="imageCell">
+                <img src="protmethod.gif" alt="Family method" />
+              </td>
+              <td class="nameCell"><a href="sdklink://cpref13/html/O_T_System_Web_UI_Control_FindControl.htm" >FindControl</a></td>
+              <td>Overloaded. Searches the current naming container for the specified server control. (inherited from <a href="sdklink://cpref13/html/T_System_Web_UI_Control.htm" >Control</a>)</td>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="protmethod.gif" alt="Family method" />
+              </td>
+              <td class="nameCell"><a href="sdklink://cpref13/html/M_System_Web_UI_TemplateControl_FrameworkInitialize.htm" >FrameworkInitialize</a></td>
+              <td>Initializes the control that is derived from the <nobr><a href="sdklink://cpref13/html/T_System_Web_UI_TemplateControl.htm" >TemplateControl</a></nobr> class. (inherited from <a href="sdklink://cpref13/html/T_System_Web_UI_TemplateControl.htm" >TemplateControl</a>)</td>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="protmethod.gif" alt="Family method" />
+              </td>
+              <td class="nameCell"><a href="sdklink://cpref13/html/M_System_Web_UI_Control_GetDesignModeState.htm" >GetDesignModeState</a></td>
+              <td>Gets design-time data for a control. (inherited from <a href="sdklink://cpref13/html/T_System_Web_UI_Control.htm" >Control</a>)</td>
+            </tr>
+            <tr>
+              <td class="imageCell">
+                <img src="protmethod.gif" alt="Family method" />
+              </td>
+              <td class="nameCell"><a href="sdklink://cpref13/html/O_T_System_Web_UI_TemplateControl_GetGlobalResourceObject.htm" >GetGlobalResourceObject</a></td>
+              <td>Overloaded. Gets an application-level resource. (inherited from <a href="sdklink://cpref13/html/T_System_Web_UI_TemplateControl.htm" >TemplateControl</a>)</td>
+            </tr>
+            <tr>
+              <td class="imageCell">
+                <img src="protmethod.gif" alt="Family method" />
+              </td>
+              <td class="nameCell"><a href="sdklink://cpref13/html/O_T_System_Web_UI_TemplateControl_GetLocalResourceObject.htm" >GetLocalResourceObject</a></td>
+              <td>Overloaded. Gets a page-level resource. (inherited from <a href="sdklink://cpref13/html/T_System_Web_UI_TemplateControl.htm" >TemplateControl</a>)</td>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="protmethod.gif" alt="Family method" />
+              </td>
+              <td class="nameCell"><a href="sdklink://cpref13/html/M_System_Web_UI_Control_HasEvents.htm" >HasEvents</a></td>
+              <td>Returns a value indicating whether events are registered for the control or any child controls. (inherited from <a href="sdklink://cpref13/html/T_System_Web_UI_Control.htm" >Control</a>)</td>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="protmethod.gif" alt="Family method" />
+              </td>
+              <td class="nameCell"><a href="sdklink://cpref13/html/M_System_Web_UI_Control_IsLiteralContent.htm" >IsLiteralContent</a></td>
+              <td>Determines if the server control holds only literal content. (inherited from <a href="sdklink://cpref13/html/T_System_Web_UI_Control.htm" >Control</a>)</td>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="protmethod.gif" alt="Family method" />
+              </td>
+              <td class="nameCell"><a href="sdklink://cpref13/html/M_System_Web_UI_Control_LoadControlState.htm" >LoadControlState</a></td>
+              <td>Restores control-state information from a previous page request that was saved by the <nobr><a href="sdklink://cpref13/html/M_System_Web_UI_Control_SaveControlState.htm" >SaveControlState</a></nobr> method. (inherited from <a href="sdklink://cpref13/html/T_System_Web_UI_Control.htm" >Control</a>)</td>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="protmethod.gif" alt="Family method" />
+              </td>
+              <td class="nameCell"><a href="sdklink://cpref13/html/M_System_Web_UI_UserControl_LoadViewState.htm" >LoadViewState</a></td>
+              <td>Restores the view-state information from a previous user control request that was saved by the <nobr><a href="sdklink://cpref13/html/M_System_Web_UI_UserControl_SaveViewState.htm" >SaveViewState</a></nobr> method. (inherited from <a href="sdklink://cpref13/html/T_System_Web_UI_UserControl.htm" >UserControl</a>)</td>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="protmethod.gif" alt="Family method" />
+              </td>
+              <td class="nameCell"><a href="sdklink://cpref13/html/M_System_Web_UI_Control_MapPathSecure.htm" >MapPathSecure</a></td>
+              <td>Retrieves the physical path that a virtual path, either absolute or relative, maps to. (inherited from <a href="sdklink://cpref13/html/T_System_Web_UI_Control.htm" >Control</a>)</td>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="protmethod.gif" alt="Family method" />
+              </td>
+              <td class="nameCell"><a href="sdklink://cpref2/html/M_System_Object_MemberwiseClone.htm" >MemberwiseClone</a></td>
+              <td>Creates a shallow copy of the current <nobr><a href="sdklink://cpref2/html/T_System_Object.htm" >Object</a></nobr>. (inherited from <a href="sdklink://cpref2/html/T_System_Object.htm" >Object</a>)</td>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="protmethod.gif" alt="Family method" />
+              </td>
+              <td class="nameCell"><a href="sdklink://cpref13/html/M_System_Web_UI_TemplateControl_OnAbortTransaction.htm" >OnAbortTransaction</a></td>
+              <td>Raises the <nobr><a href="sdklink://cpref13/html/E_System_Web_UI_TemplateControl_AbortTransaction.htm" >AbortTransaction</a></nobr> event. (inherited from <a href="sdklink://cpref13/html/T_System_Web_UI_TemplateControl.htm" >TemplateControl</a>)</td>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="protmethod.gif" alt="Family method" />
+              </td>
+              <td class="nameCell"><a href="sdklink://cpref13/html/M_System_Web_UI_Control_OnBubbleEvent.htm" >OnBubbleEvent</a></td>
+              <td>Determines whether the event for the server control is passed up the page's UI server control hierarchy. (inherited from <a href="sdklink://cpref13/html/T_System_Web_UI_Control.htm" >Control</a>)</td>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="protmethod.gif" alt="Family method" />
+              </td>
+              <td class="nameCell"><a href="sdklink://cpref13/html/M_System_Web_UI_TemplateControl_OnCommitTransaction.htm" >OnCommitTransaction</a></td>
+              <td>Raises the <nobr><a href="sdklink://cpref13/html/E_System_Web_UI_TemplateControl_CommitTransaction.htm" >CommitTransaction</a></nobr> event. (inherited from <a href="sdklink://cpref13/html/T_System_Web_UI_TemplateControl.htm" >TemplateControl</a>)</td>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="protmethod.gif" alt="Family method" />
+              </td>
+              <td class="nameCell"><a href="sdklink://cpref13/html/M_System_Web_UI_Control_OnDataBinding.htm" >OnDataBinding</a></td>
+              <td>Raises the <nobr><a href="sdklink://cpref13/html/E_System_Web_UI_Control_DataBinding.htm" >DataBinding</a></nobr> event. (inherited from <a href="sdklink://cpref13/html/T_System_Web_UI_Control.htm" >Control</a>)</td>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="protmethod.gif" alt="Family method" />
+              </td>
+              <td class="nameCell"><a href="sdklink://cpref13/html/M_System_Web_UI_TemplateControl_OnError.htm" >OnError</a></td>
+              <td>Raises the <nobr><a href="sdklink://cpref13/html/E_System_Web_UI_TemplateControl_Error.htm" >Error</a></nobr> event. (inherited from <a href="sdklink://cpref13/html/T_System_Web_UI_TemplateControl.htm" >TemplateControl</a>)</td>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="protmethod.gif" alt="Family method" />
+              </td>
+              <td class="nameCell"><a href="sdklink://cpref13/html/M_System_Web_UI_UserControl_OnInit.htm" >OnInit</a></td>
+              <td>Raises the <nobr><a href="sdklink://cpref13/html/E_System_Web_UI_Control_Init.htm" >Init</a></nobr> event. (inherited from <a href="sdklink://cpref13/html/T_System_Web_UI_UserControl.htm" >UserControl</a>)</td>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="protmethod.gif" alt="Family method" />
+              </td>
+              <td class="nameCell"><a href="sdklink://cpref13/html/M_System_Web_UI_Control_OnLoad.htm" >OnLoad</a></td>
+              <td>Raises the <nobr><a href="sdklink://cpref13/html/E_System_Web_UI_Control_Load.htm" >Load</a></nobr> event. (inherited from <a href="sdklink://cpref13/html/T_System_Web_UI_Control.htm" >Control</a>)</td>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="protmethod.gif" alt="Family method" />
+              </td>
+              <td class="nameCell"><a href="sdklink://cpref13/html/M_System_Web_UI_Control_OnPreRender.htm" >OnPreRender</a></td>
+              <td>Raises the <nobr><a href="sdklink://cpref13/html/E_System_Web_UI_Control_PreRender.htm" >PreRender</a></nobr> event. (inherited from <a href="sdklink://cpref13/html/T_System_Web_UI_Control.htm" >Control</a>)</td>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="protmethod.gif" alt="Family method" />
+              </td>
+              <td class="nameCell"><a href="sdklink://cpref13/html/M_System_Web_UI_Control_OnUnload.htm" >OnUnload</a></td>
+              <td>Raises the <nobr><a href="sdklink://cpref13/html/E_System_Web_UI_Control_Unload.htm" >Unload</a></nobr> event. (inherited from <a href="sdklink://cpref13/html/T_System_Web_UI_Control.htm" >Control</a>)</td>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="protmethod.gif" alt="Family method" />
+              </td>
+              <td class="nameCell"><a href="sdklink://cpref13/html/M_System_Web_UI_Control_OpenFile.htm" >OpenFile</a></td>
+              <td>Gets a <nobr><a href="sdklink://cpref8/html/T_System_IO_Stream.htm" >Stream</a></nobr> used to read a file. (inherited from <a href="sdklink://cpref13/html/T_System_Web_UI_Control.htm" >Control</a>)</td>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="protmethod.gif" alt="Family method" />
+              </td>
+              <td class="nameCell"><a href="sdklink://cpref13/html/M_System_Web_UI_Control_RaiseBubbleEvent.htm" >RaiseBubbleEvent</a></td>
+              <td>Assigns any sources of the event and its information to the control's parent. (inherited from <a href="sdklink://cpref13/html/T_System_Web_UI_Control.htm" >Control</a>)</td>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="protmethod.gif" alt="Family method" />
+              </td>
+              <td class="nameCell"><a href="sdklink://cpref13/html/M_System_Web_UI_Control_RemovedControl.htm" >RemovedControl</a></td>
+              <td>Called after a control is removed from the <nobr><a href="sdklink://cpref13/html/P_System_Web_UI_Control_Controls.htm" >Controls</a></nobr> collection of another control. (inherited from <a href="sdklink://cpref13/html/T_System_Web_UI_Control.htm" >Control</a>)</td>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="protmethod.gif" alt="Family method" />
+              </td>
+              <td class="nameCell"><a href="sdklink://cpref13/html/M_System_Web_UI_Control_Render.htm" >Render</a></td>
+              <td>Sends server control content to a provided <nobr><a href="sdklink://cpref13/html/T_System_Web_UI_HtmlTextWriter.htm" >HtmlTextWriter</a></nobr> object, which writes the content to be rendered on the client. (inherited from <a href="sdklink://cpref13/html/T_System_Web_UI_Control.htm" >Control</a>)</td>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="protmethod.gif" alt="Family method" />
+              </td>
+              <td class="nameCell"><a href="sdklink://cpref13/html/M_System_Web_UI_Control_RenderChildren.htm" >RenderChildren</a></td>
+              <td>Outputs the content of a server control's children to a provided <nobr><a href="sdklink://cpref13/html/T_System_Web_UI_HtmlTextWriter.htm" >HtmlTextWriter</a></nobr> object, which writes the content to be rendered on the client. (inherited from <a href="sdklink://cpref13/html/T_System_Web_UI_Control.htm" >Control</a>)</td>
+            </tr>
+            <tr>
+              <td class="imageCell">
+                <img src="protmethod.gif" alt="Family method" />
+              </td>
+              <td class="nameCell"><a href="sdklink://cpref13/html/O_T_System_Web_UI_Control_RenderControl.htm" >RenderControl</a></td>
+              <td>Overloaded. Outputs server control content and stores tracing information about the control if tracing is enabled. (inherited from <a href="sdklink://cpref13/html/T_System_Web_UI_Control.htm" >Control</a>)</td>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="protmethod.gif" alt="Family method" />
+              </td>
+              <td class="nameCell"><a href="sdklink://cpref13/html/M_System_Web_UI_Control_ResolveAdapter.htm" >ResolveAdapter</a></td>
+              <td>Gets the control adapter responsible for rendering the specified control. (inherited from <a href="sdklink://cpref13/html/T_System_Web_UI_Control.htm" >Control</a>)</td>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="protmethod.gif" alt="Family method" />
+              </td>
+              <td class="nameCell"><a href="sdklink://cpref13/html/M_System_Web_UI_Control_SaveControlState.htm" >SaveControlState</a></td>
+              <td>Saves any server control state changes that have occurred since the time the page was posted back to the server. (inherited from <a href="sdklink://cpref13/html/T_System_Web_UI_Control.htm" >Control</a>)</td>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="protmethod.gif" alt="Family method" />
+              </td>
+              <td class="nameCell"><a href="sdklink://cpref13/html/M_System_Web_UI_UserControl_SaveViewState.htm" >SaveViewState</a></td>
+              <td>Saves any user control view-state changes that have occurred since the last page postback. (inherited from <a href="sdklink://cpref13/html/T_System_Web_UI_UserControl.htm" >UserControl</a>)</td>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="protmethod.gif" alt="Family method" />
+              </td>
+              <td class="nameCell"><a href="sdklink://cpref13/html/M_System_Web_UI_Control_SetDesignModeState.htm" >SetDesignModeState</a></td>
+              <td>Sets design-time data for a control. (inherited from <a href="sdklink://cpref13/html/T_System_Web_UI_Control.htm" >Control</a>)</td>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="protmethod.gif" alt="Family method" />
+              </td>
+              <td class="nameCell"><a href="sdklink://cpref13/html/M_System_Web_UI_TemplateControl_SetStringResourcePointer.htm" >SetStringResourcePointer</a></td>
+              <td>Sets a pointer to a string resource. The <nobr><a href="sdklink://cpref13/html/M_System_Web_UI_TemplateControl_SetStringResourcePointer.htm" >SetStringResourcePointer</a></nobr> method is used by generated classes and is not intended for use from within your code. (inherited from <a href="sdklink://cpref13/html/T_System_Web_UI_TemplateControl.htm" >TemplateControl</a>)</td>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="protmethod.gif" alt="Family method" />
+              </td>
+              <td class="nameCell"><a href="sdklink://cpref13/html/M_System_Web_UI_Control_TrackViewState.htm" >TrackViewState</a></td>
+              <td>Causes tracking of view-state changes to the server control so they can be stored in the server control's <nobr><a href="sdklink://cpref13/html/T_System_Web_UI_StateBag.htm" >StateBag</a></nobr> object. This object is accessible through the <nobr><a href="sdklink://cpref13/html/P_System_Web_UI_Control_ViewState.htm" >ViewState</a></nobr> property. (inherited from <a href="sdklink://cpref13/html/T_System_Web_UI_Control.htm" >Control</a>)</td>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="protmethod.gif" alt="Family method" />
+              </td>
+              <td class="nameCell"><a href="sdklink://cpref13/html/M_System_Web_UI_TemplateControl_WriteUTF8ResourceString.htm" >WriteUTF8ResourceString</a></td>
+              <td>Writes a resource string to an <nobr><a href="sdklink://cpref13/html/T_System_Web_UI_HtmlTextWriter.htm" >HtmlTextWriter</a></nobr> control. The <nobr><a href="sdklink://cpref13/html/M_System_Web_UI_TemplateControl_WriteUTF8ResourceString.htm" >WriteUTF8ResourceString</a></nobr> method is used by generated classes and is not intended for use from within your code. (inherited from <a href="sdklink://cpref13/html/T_System_Web_UI_TemplateControl.htm" >TemplateControl</a>)</td>
+            </tr>
+            <tr>
+              <td class="imageCell">
+                <img src="protmethod.gif" alt="Family method" />
+              </td>
+              <td class="nameCell"><a href="sdklink://cpref13/html/O_T_System_Web_UI_TemplateControl_XPath.htm" >XPath</a></td>
+              <td>Overloaded. Provides support for parsing and evaluating an XPath data-binding expression against an object at run time. (inherited from <a href="sdklink://cpref13/html/T_System_Web_UI_TemplateControl.htm" >TemplateControl</a>)</td>
+            </tr>
+            <tr>
+              <td class="imageCell">
+                <img src="protmethod.gif" alt="Family method" />
+              </td>
+              <td class="nameCell"><a href="sdklink://cpref13/html/O_T_System_Web_UI_TemplateControl_XPathSelect.htm" >XPathSelect</a></td>
+              <td>Overloaded. Provides run-time data binding against XML-based data and returns a node collection that implements the <nobr><a href="sdklink://cpref2/html/T_System_Collections_IEnumerable.htm" >IEnumerable</a></nobr> interface. (inherited from <a href="sdklink://cpref13/html/T_System_Web_UI_TemplateControl.htm" >TemplateControl</a>)</td>
+            </tr>
+          </table>
+          <a href="#mainBody">Top</a>
+        </div>
+        <h1 class="heading">
+          <span style="cursor:default;" tabindex="0" onclick="ExpandCollapse(PublicEventsToggle)" onkeypress="ExpandCollapse_CheckKey(PublicEventsToggle)">
+            <img class="toggle" name="toggleSwitch" src="collapse.gif" id="PublicEventsToggle" />Public Events</span>
+        </h1>
+        <div class="section" name="collapseableSection" id="PublicEventsSection">
+          <table width="100%" class="memberListTable">
+            <col width="10%" />
+            <col width="30%" />
+            <col width="60%" />
+            <tr>
+              <th style="border-right-style: none;"> </th>
+              <th align="left" style="border-left-style: none; border-right-style: none;">Name</th>
+              <th align="left" style="border-left-style: none;">Description</th>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="pubevent.gif" alt="Public event" />
+              </td>
+              <td class="nameCell"><a href="sdklink://cpref13/html/E_System_Web_UI_TemplateControl_AbortTransaction.htm" >AbortTransaction</a></td>
+              <td>Occurs when a user ends a transaction. (inherited from <a href="sdklink://cpref13/html/T_System_Web_UI_TemplateControl.htm" >TemplateControl</a>)</td>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="pubevent.gif" alt="Public event" />
+              </td>
+              <td class="nameCell"><a href="sdklink://cpref13/html/E_System_Web_UI_TemplateControl_CommitTransaction.htm" >CommitTransaction</a></td>
+              <td>Occurs when a transaction completes. (inherited from <a href="sdklink://cpref13/html/T_System_Web_UI_TemplateControl.htm" >TemplateControl</a>)</td>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="pubevent.gif" alt="Public event" />
+              </td>
+              <td class="nameCell"><a href="sdklink://cpref13/html/E_System_Web_UI_Control_DataBinding.htm" >DataBinding</a></td>
+              <td>Occurs when the server control binds to a data source. (inherited from <a href="sdklink://cpref13/html/T_System_Web_UI_Control.htm" >Control</a>)</td>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="pubevent.gif" alt="Public event" />
+              </td>
+              <td class="nameCell"><a href="sdklink://cpref13/html/E_System_Web_UI_Control_Disposed.htm" >Disposed</a></td>
+              <td>Occurs when a server control is released from memory, which is the last stage of the server control lifecycle when an ASP.NET page is requested. (inherited from <a href="sdklink://cpref13/html/T_System_Web_UI_Control.htm" >Control</a>)</td>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="pubevent.gif" alt="Public event" />
+              </td>
+              <td class="nameCell"><a href="sdklink://cpref13/html/E_System_Web_UI_TemplateControl_Error.htm" >Error</a></td>
+              <td>Occurs when an unhandled exception is thrown. (inherited from <a href="sdklink://cpref13/html/T_System_Web_UI_TemplateControl.htm" >TemplateControl</a>)</td>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="pubevent.gif" alt="Public event" />
+              </td>
+              <td class="nameCell"><a href="sdklink://cpref13/html/E_System_Web_UI_Control_Init.htm" >Init</a></td>
+              <td>Occurs when the server control is initialized, which is the first step in its lifecycle. (inherited from <a href="sdklink://cpref13/html/T_System_Web_UI_Control.htm" >Control</a>)</td>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="pubevent.gif" alt="Public event" />
+              </td>
+              <td class="nameCell"><a href="sdklink://cpref13/html/E_System_Web_UI_Control_Load.htm" >Load</a></td>
+              <td>Occurs when the server control is loaded into the <nobr><a href="sdklink://cpref13/html/T_System_Web_UI_Page.htm" >Page</a></nobr> object. (inherited from <a href="sdklink://cpref13/html/T_System_Web_UI_Control.htm" >Control</a>)</td>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="pubevent.gif" alt="Public event" />
+              </td>
+              <td class="nameCell"><a href="sdklink://cpref13/html/E_System_Web_UI_Control_PreRender.htm" >PreRender</a></td>
+              <td>Occurs after the <nobr><a href="sdklink://cpref13/html/T_System_Web_UI_Control.htm" >Control</a></nobr> object is loaded but prior to rendering. (inherited from <a href="sdklink://cpref13/html/T_System_Web_UI_Control.htm" >Control</a>)</td>
+            </tr>
+            <tr VALIGN="top">
+              <td class="imageCell">
+                <img src="pubevent.gif" alt="Public event" />
+              </td>
+              <td class="nameCell"><a href="sdklink://cpref13/html/E_System_Web_UI_Control_Unload.htm" >Unload</a></td>
+              <td>Occurs when the server control is unloaded from memory. (inherited from <a href="sdklink://cpref13/html/T_System_Web_UI_Control.htm" >Control</a>)</td>
+            </tr>
+          </table>
+          <a href="#mainBody">Top</a>
+        </div>
+        <h1 class="heading">
+          <span style="cursor:default;" onclick="ExpandCollapse(seeAlsoToggle)" onkeypress="ExpandCollapse_CheckKey(seeAlsoToggle)" tabindex="0">
+            <img id="seeAlsoToggle" class="toggle" name="toggleSwitch" src="collapse.gif" />See Also</span>
+        </h1>
+        <div id="seeAlsoSection" class="section" name="collapseableSection">
+          <a href="T_RXServer_RXMasterPageVirtual.html">RXMasterPageVirtual Class</a>
+          <br />
+          <a href="N_RXServer.html">RXServer Namespace</a>
+        </div>
+      </div>
+      <object type="application/x-oleobject" classid="clsid:1e2a7bd0-dab9-11d0-b93a-00c04fc99f9e" viewastext="true" style="display: none;">
+        <param name="Keyword" value="RXServer.RXMasterPageVirtual class" />
+        <param name="Keyword" value="RXMasterPageVirtual class" />
+        <param name="Keyword" value="RXMasterPageVirtual class, all members" /> </object>
+      <DIV CLASS="footer">
+        <p>
+          <center>
+            <font color="red">
+              <i>
+                Syntax based on .NET Framework version 2.0.<br />
+                Documentation version 1.0.0.0.
+              </i>
+            </font>
+          </center>
+        </p>
+      </DIV><!--[if gte IE 5]><tool:tip element="membersOptionsFilterToolTip" avoidmouse="false" /><![endif]--></div>
+  </body>
+</html>

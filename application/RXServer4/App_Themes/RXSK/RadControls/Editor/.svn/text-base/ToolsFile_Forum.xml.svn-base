@@ -1,0 +1,21 @@
+﻿<root>
+  <tools name="Formatting" enabled="true" dockable="true">
+    <tool name="Bold" />
+    <tool name="Italic" />
+    <tool name="Underline" />
+  </tools>
+  <tools name="MainToolbar" dockable="true" enabled="true">
+      <tool name="Undo" />
+      <tool name="Redo" />
+      <tool separator="true"/>
+      <tool name="Cut" />
+      <tool name="Copy" />
+      <tool Name="PastePlainText" shortcut="CTRL+V"/>
+  </tools>
+  <tools name="Links" dockable="true" enabled="true">
+      <tool name="LinkManager" />
+  </tools>
+  <tools name="Extra" dockable="true" enabled="true">
+    <tool name="InsertEmoticon" Text="Insert Smiley" />
+  </tools>
+</root>

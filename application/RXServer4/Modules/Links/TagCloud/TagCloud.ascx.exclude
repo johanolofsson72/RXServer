@@ -1,0 +1,52 @@
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeFile="TagCloud.ascx.cs" Inherits="Modules_Links_TagCloud_TagCloud" %>
+<%@ Register TagPrefix="telerik" Namespace="Telerik.Web.UI" Assembly="Telerik.Web.UI" %>
+
+<div id="TagCloud_admin" style="position: relative;" runat="server" visible="false">
+    <div id="adminbar" style="position:relative; float:left; height:35px;">
+        <table cellpadding="0" cellspacing="0">
+            <tr>
+<%--                <td style="background-color: #674343; text-align: center; height:25px; width:24px;">
+                    <asp:ImageButton ID="img_AdminDelete" ToolTip="Delete" ImageUrl="~/App_Themes/WebAdmin/Images/adminbar_delete_red.gif" runat="server" /></td>
+                <td style="width:1px; font-size:1px;">&nbsp;</td>--%>
+                <td style="background-color: #666666; text-align: center; height:25px; width:24px;">
+                    <asp:ImageButton ID="img_AdminMoveUp" ToolTip="MoveUp"
+                        ImageUrl="~/App_Themes/WebAdmin/Images/adminbar_moveup.gif" runat="server" onclick="img_AdminMoveUp_Click" /></td>
+                <td style="width:3px; font-size:1px;"><asp:Image ID="Image3" runat="server" ImageUrl="~/App_Themes/WebAdmin/Images/adminbar_divider.gif" /></td>
+                <td style="background-color: #666666; text-align: center; height:25px; width:24px;">
+                    <asp:ImageButton ID="img_AdminMoveDown" ToolTip="MoveDown" ImageUrl="~/App_Themes/WebAdmin/Images/adminbar_movedown.gif" runat="server" onclick="img_AdminMoveDown_Click" /></td>
+                <td style="width:1px; font-size:1px;">&nbsp;</td>
+                <td style="background-color: #666666; text-align: center; height:25px; width:24px;">
+                    <asp:ImageButton ID="imbAdminVisible" runat="server" onclick="img_AdminVisible_Click" /></td>
+                <td style="width:1px; font-size:1px;">&nbsp;</td>
+            </tr>
+            <tr>
+                <td style="font-size:1px; height:5px; text-align:center;"><asp:Image ID="Image0" runat="server" ImageUrl="~/App_Themes/WebAdmin/Images/adminbar_arrow_gray.gif" /></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+</div> 
+
+<div id="TagCloud_main" runat="server" visible="false" style="position: relative; float: left; width:590px;">
+    <div style="position:relative; float: left; width: 100%; padding-bottom: 15px;">
+       <asp:Label ID="lblTagCloudHeader" runat="server" class='hm_header_1' />
+    </div>
+    <div id="Cloud_top" style="position: relative; float: left; width:590px; height: 44px; background-image: url('Images/Modules/HM/bg_box_top.png'); background-repeat:no-repeat;" class='png_img'> &nbsp;</div> 
+    <div id="Cloud" runat="server" style="position: relative; float: left; width:540px; background-image: url('Images/Modules/HM/bg_box.gif'); background-repeat: repeat-y; padding: 0px 25px 0px 25px;">  
+        <div id="tagCloud">
+            <asp:Literal ID="ltrTagCloud" runat="server"></asp:Literal>
+        </div> 
+    </div>
+    <div id="Cloud_bot" style="position: relative; float: left; width:590px; height: 52px;  background-image: url('Images/Modules/HM/bg_box_bottom.png'); background-repeat:no-repeat;" class='png_img'> 
+    &nbsp;
+    </div>
+    <div id="space" runat="server" style="position: relative; float: left; height: 20px; width: 100%; display:inline;">
+        &nbsp;
+    </div>
+        
+</div>

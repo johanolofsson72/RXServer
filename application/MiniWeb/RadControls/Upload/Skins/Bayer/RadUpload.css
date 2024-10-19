@@ -1,0 +1,59 @@
+/* r.a.d.upload classic skin */
+.RadUploadTable
+{
+	background-color: #fafafa;
+	border: solid 0px #ccc;
+	border-collapse: collapse !important;
+	/*filter: progid:DXImageTransform.Microsoft.Shadow(direction=140,color=#404040,strength=3); */
+	margin-top: 0px;
+	margin-bottom: 0px;
+	width: 290px;
+	font: normal 11px Verdana, Arial, Sans-serif;
+	color: #333333;
+}
+.RadUploadTable TD
+{
+	padding: 0px;
+}
+.RadUploadButtonArea
+{
+	background-color: Transparent;
+}
+
+.RadUploadInputField
+{
+	width: 215px;
+	border: solid 1px #A8A79B;
+	border-right: 0px;
+	vertical-align: top;
+	height: 20px;
+		width: 190;
+	_width: 190px;
+}
+
+input.RealFileInput
+{
+	position: relative;
+	-moz-opacity: 0;
+	filter: alpha(opacity: 0);
+	opacity: 0;
+	z-index: 2;
+	width: 290;
+	_width: 290px;
+}
+
+.RadUploadSelectButton
+{
+	border: 0px;
+	background-color: Transparent;
+	background-image: url(Img/butt_select_file.gif);
+	background-repeat: no-repeat;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	vertical-align: top;
+	color: #626262;
+	text-decoration: none;
+	line-height: 14px;
+	height: 21px;
+	width: 66px;
+}

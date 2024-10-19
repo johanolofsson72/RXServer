@@ -1,0 +1,9 @@
+
+MSSQL
+ALTER TABLE mod_modules ADD mod_ssl INT NOT NULL DEFAULT 0
+GO
+
+
+
+MySQL
+ALTER TABLE mod_modules ADD mod_ssl INT NOT NULL DEFAULT 0;

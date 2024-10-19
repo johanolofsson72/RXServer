@@ -1,0 +1,45 @@
+/*
+	---------------------------------------------------------------------------
+	- Web 2.0 AJAX Loading Panel 1.0.0                                        -
+	---------------------------------------------------------------------------
+	- created by: Martin Ivanov (September 2007)                              -
+	- website: http://www.acidmartin.com or http://acidmartin.wemakesites.net -
+	- email: acid_martin@yahoo.com or martin@acidmartin.com                   -
+	---------------------------------------------------------------------------
+*/
+
+html, *html body
+{
+	height: 100%;
+	margin: 0;
+}
+
+div#LoadingMessageModalPane,
+div#loadingMessageContainer
+{
+	display: none;
+	cursor: default;
+}
+
+div#LoadingMessageModalPane
+{
+	position: absolute; top: 0; left: 0;
+	width: 100%; height: 100%;
+	-moz-user-select: none;
+}
+
+.modalPaneTrue
+{
+	z-index: 56000;
+	-moz-opacity: .7;
+}
+
+div#loadingMessageContainer
+{
+	z-index: 56001;
+	border: solid 1px white;
+	position: fixed; _position: absolute; top: 50%; left: 50%;
+	text-align: center;
+	padding: 0 12px;
+	background-position: center; background-repeat: no-repeat;
+}

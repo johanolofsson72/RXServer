@@ -1,0 +1,59 @@
+﻿<!-- IMPORTANT! Data text field Title is mandatory for nodes. -->
+<!-- IMPORTANT! Data text field names has to be uniqe inside each node. -->
+<!-- IMPORTANT! Default value for image is overriden at code level to empty string. -->
+<!-- IMPORTANT! Allow empty for image is overriden at code level to true. -->
+<!-- IMPORTANT! Allow empty for decimal and bool is overriden at code level to false. -->
+<itemregister>
+  <name>Produktregister</name>
+  <node>
+    <name>Kategori</name>
+    <stackability>1</stackability>
+    <parentrestrictions>Produktregister|Kategori</parentrestrictions>
+    <childcount>0</childcount>
+    <data>
+      <textfield allowEmpty="false">Titel</textfield>
+      <bool default="false">Populera från underkategorier</bool>
+      <htmltextfield>Beskrivning</htmltextfield>
+    </data>
+  </node>
+  <node>
+    <name>Produkt</name>
+    <stackability>0</stackability>
+    <parentrestrictions>Kategori</parentrestrictions>
+    <childcount>0</childcount>
+    <data>
+      <textfield allowEmpty="false">Titel</textfield>
+      <textfield allowEmpty="false">Artikelid</textfield>
+      <htmltextfield>Beskrivning</htmltextfield>
+      <textfield>Varianttitel</textfield>
+      <textfield default="st" allowEmpty="false">Pris sufix</textfield>
+      <decimal default="0">Pris</decimal>
+      <decimal default="0">Extrapris</decimal>
+      <decimal default="0,25">Moms</decimal>
+      <bool default="true">I lager</bool>
+    </data>
+  </node>
+  <node>
+    <name>Variant</name>
+    <stackability>0</stackability>
+    <parentrestrictions>Produkt</parentrestrictions>
+    <childcount>0</childcount>
+    <data>
+      <textfield allowEmpty="false">Titel</textfield>
+    </data>
+  </node>
+  <node>
+    <name>Bild</name>
+    <stackability>0</stackability>
+    <parentrestrictions>Produkt</parentrestrictions>
+    <childcount>0</childcount>
+    <data>
+      <textfield allowEmpty="false">Titel</textfield>
+      <image>
+        <name>Galleribild</name>
+        <extensions>.jpg|.jpeg|.gif|.png|.bmp</extensions>
+        <sizelimit>10485760</sizelimit>
+      </image>
+    </data>
+  </node>
+</itemregister>

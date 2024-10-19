@@ -1,0 +1,14 @@
+<%@ Master Language="C#" AutoEventWireup="true" MasterPageFile="MainTemplate.master" CodeFile="Template2.master.cs" Inherits="Template2" %>
+<%@ Register Assembly="RXContentHolder" Namespace="RXServer" TagPrefix="rx" %>
+<%@ Register Assembly="Telerik.Web.UI" Namespace="Telerik.Web.UI" TagPrefix="telerik" %>
+
+
+<asp:Content ID="Content" ContentPlaceHolderId="MainContentPane1" runat="server">
+    <div id="template2_mainleft" style="width: 215px; position: relative; float: left; display:inline;">
+        <asp:ContentPlaceHolder ID="ContentPane3" runat="server"/>
+    </div>
+    <div id="template2_mainright" style="width: 665px; position: relative; float: right; display:inline;">
+        <asp:ContentPlaceHolder ID="ContentPane1A" runat="server"/>
+        <asp:ContentPlaceHolder ID="ContentPane1" runat="server"/>
+    </div>
+</asp:Content>
